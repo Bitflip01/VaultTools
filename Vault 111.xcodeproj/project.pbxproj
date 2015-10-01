@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DAE1BBDAFD00096BC9D /* main.m */; };
+		FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */; };
+		FADA2DB51BBDAFD00096BC9D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB41BBDAFD00096BC9D /* FirstViewController.m */; };
+		FADA2DB81BBDAFD00096BC9D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB71BBDAFD00096BC9D /* SecondViewController.m */; };
+		FADA2DBB1BBDAFD00096BC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DB91BBDAFD00096BC9D /* Main.storyboard */; };
+		FADA2DBD1BBDAFD00096BC9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DBC1BBDAFD00096BC9D /* Assets.xcassets */; };
+		FADA2DC01BBDAFD00096BC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DBE1BBDAFD00096BC9D /* LaunchScreen.storyboard */; };
+		FADA2DCB1BBDAFD00096BC9D /* Vault_111Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DCA1BBDAFD00096BC9D /* Vault_111Tests.m */; };
+		FADA2DD61BBDAFD10096BC9D /* Vault_111UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DD51BBDAFD10096BC9D /* Vault_111UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADA2DC71BBDAFD00096BC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADA2DA21BBDAFD00096BC9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADA2DA91BBDAFD00096BC9D;
+			remoteInfo = "Vault 111";
+		};
+		FADA2DD21BBDAFD10096BC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADA2DA21BBDAFD00096BC9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADA2DA91BBDAFD00096BC9D;
+			remoteInfo = "Vault 111";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FADA2DAA1BBDAFD00096BC9D /* Vault 111.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vault 111.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADA2DAE1BBDAFD00096BC9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FADA2DB31BBDAFD00096BC9D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		FADA2DB41BBDAFD00096BC9D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		FADA2DB61BBDAFD00096BC9D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FADA2DB71BBDAFD00096BC9D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FADA2DBA1BBDAFD00096BC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FADA2DBC1BBDAFD00096BC9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FADA2DBF1BBDAFD00096BC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FADA2DC11BBDAFD00096BC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADA2DC61BBDAFD00096BC9D /* Vault 111Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vault 111Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADA2DCA1BBDAFD00096BC9D /* Vault_111Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vault_111Tests.m; sourceTree = "<group>"; };
+		FADA2DCC1BBDAFD00096BC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADA2DD11BBDAFD10096BC9D /* Vault 111UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vault 111UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADA2DD51BBDAFD10096BC9D /* Vault_111UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vault_111UITests.m; sourceTree = "<group>"; };
+		FADA2DD71BBDAFD10096BC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADA2DA71BBDAFD00096BC9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DC31BBDAFD00096BC9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DCE1BBDAFD10096BC9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FADA2DA11BBDAFD00096BC9D = {
+			isa = PBXGroup;
+			children = (
+				FADA2DAC1BBDAFD00096BC9D /* Vault 111 */,
+				FADA2DC91BBDAFD00096BC9D /* Vault 111Tests */,
+				FADA2DD41BBDAFD10096BC9D /* Vault 111UITests */,
+				FADA2DAB1BBDAFD00096BC9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FADA2DAB1BBDAFD00096BC9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADA2DAA1BBDAFD00096BC9D /* Vault 111.app */,
+				FADA2DC61BBDAFD00096BC9D /* Vault 111Tests.xctest */,
+				FADA2DD11BBDAFD10096BC9D /* Vault 111UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADA2DAC1BBDAFD00096BC9D /* Vault 111 */ = {
+			isa = PBXGroup;
+			children = (
+				FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */,
+				FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */,
+				FADA2DB31BBDAFD00096BC9D /* FirstViewController.h */,
+				FADA2DB41BBDAFD00096BC9D /* FirstViewController.m */,
+				FADA2DB61BBDAFD00096BC9D /* SecondViewController.h */,
+				FADA2DB71BBDAFD00096BC9D /* SecondViewController.m */,
+				FADA2DB91BBDAFD00096BC9D /* Main.storyboard */,
+				FADA2DBC1BBDAFD00096BC9D /* Assets.xcassets */,
+				FADA2DBE1BBDAFD00096BC9D /* LaunchScreen.storyboard */,
+				FADA2DC11BBDAFD00096BC9D /* Info.plist */,
+				FADA2DAD1BBDAFD00096BC9D /* Supporting Files */,
+			);
+			path = "Vault 111";
+			sourceTree = "<group>";
+		};
+		FADA2DAD1BBDAFD00096BC9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FADA2DAE1BBDAFD00096BC9D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FADA2DC91BBDAFD00096BC9D /* Vault 111Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FADA2DCA1BBDAFD00096BC9D /* Vault_111Tests.m */,
+				FADA2DCC1BBDAFD00096BC9D /* Info.plist */,
+			);
+			path = "Vault 111Tests";
+			sourceTree = "<group>";
+		};
+		FADA2DD41BBDAFD10096BC9D /* Vault 111UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FADA2DD51BBDAFD10096BC9D /* Vault_111UITests.m */,
+				FADA2DD71BBDAFD10096BC9D /* Info.plist */,
+			);
+			path = "Vault 111UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADA2DA91BBDAFD00096BC9D /* Vault 111 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADA2DDA1BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault 111" */;
+			buildPhases = (
+				FADA2DA61BBDAFD00096BC9D /* Sources */,
+				FADA2DA71BBDAFD00096BC9D /* Frameworks */,
+				FADA2DA81BBDAFD00096BC9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vault 111";
+			productName = "Vault 111";
+			productReference = FADA2DAA1BBDAFD00096BC9D /* Vault 111.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FADA2DC51BBDAFD00096BC9D /* Vault 111Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADA2DDD1BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault 111Tests" */;
+			buildPhases = (
+				FADA2DC21BBDAFD00096BC9D /* Sources */,
+				FADA2DC31BBDAFD00096BC9D /* Frameworks */,
+				FADA2DC41BBDAFD00096BC9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADA2DC81BBDAFD00096BC9D /* PBXTargetDependency */,
+			);
+			name = "Vault 111Tests";
+			productName = "Vault 111Tests";
+			productReference = FADA2DC61BBDAFD00096BC9D /* Vault 111Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FADA2DD01BBDAFD10096BC9D /* Vault 111UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADA2DE01BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault 111UITests" */;
+			buildPhases = (
+				FADA2DCD1BBDAFD10096BC9D /* Sources */,
+				FADA2DCE1BBDAFD10096BC9D /* Frameworks */,
+				FADA2DCF1BBDAFD10096BC9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADA2DD31BBDAFD10096BC9D /* PBXTargetDependency */,
+			);
+			name = "Vault 111UITests";
+			productName = "Vault 111UITests";
+			productReference = FADA2DD11BBDAFD10096BC9D /* Vault 111UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADA2DA21BBDAFD00096BC9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Alexander Heemann";
+				TargetAttributes = {
+					FADA2DA91BBDAFD00096BC9D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					FADA2DC51BBDAFD00096BC9D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FADA2DA91BBDAFD00096BC9D;
+					};
+					FADA2DD01BBDAFD10096BC9D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FADA2DA91BBDAFD00096BC9D;
+					};
+				};
+			};
+			buildConfigurationList = FADA2DA51BBDAFD00096BC9D /* Build configuration list for PBXProject "Vault 111" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADA2DA11BBDAFD00096BC9D;
+			productRefGroup = FADA2DAB1BBDAFD00096BC9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADA2DA91BBDAFD00096BC9D /* Vault 111 */,
+				FADA2DC51BBDAFD00096BC9D /* Vault 111Tests */,
+				FADA2DD01BBDAFD10096BC9D /* Vault 111UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADA2DA81BBDAFD00096BC9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADA2DC01BBDAFD00096BC9D /* LaunchScreen.storyboard in Resources */,
+				FADA2DBD1BBDAFD00096BC9D /* Assets.xcassets in Resources */,
+				FADA2DBB1BBDAFD00096BC9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DC41BBDAFD00096BC9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DCF1BBDAFD10096BC9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADA2DA61BBDAFD00096BC9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADA2DB81BBDAFD00096BC9D /* SecondViewController.m in Sources */,
+				FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */,
+				FADA2DB51BBDAFD00096BC9D /* FirstViewController.m in Sources */,
+				FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DC21BBDAFD00096BC9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADA2DCB1BBDAFD00096BC9D /* Vault_111Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DCD1BBDAFD10096BC9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADA2DD61BBDAFD10096BC9D /* Vault_111UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADA2DC81BBDAFD00096BC9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADA2DA91BBDAFD00096BC9D /* Vault 111 */;
+			targetProxy = FADA2DC71BBDAFD00096BC9D /* PBXContainerItemProxy */;
+		};
+		FADA2DD31BBDAFD10096BC9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADA2DA91BBDAFD00096BC9D /* Vault 111 */;
+			targetProxy = FADA2DD21BBDAFD10096BC9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FADA2DB91BBDAFD00096BC9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADA2DBA1BBDAFD00096BC9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FADA2DBE1BBDAFD00096BC9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADA2DBF1BBDAFD00096BC9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FADA2DD81BBDAFD10096BC9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADA2DD91BBDAFD10096BC9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADA2DDB1BBDAFD10096BC9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Vault 111/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FADA2DDC1BBDAFD10096BC9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Vault 111/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FADA2DDE1BBDAFD10096BC9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Vault 111Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vault 111.app/Vault 111";
+			};
+			name = Debug;
+		};
+		FADA2DDF1BBDAFD10096BC9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Vault 111Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vault 111.app/Vault 111";
+			};
+			name = Release;
+		};
+		FADA2DE11BBDAFD10096BC9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Vault 111UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Vault 111";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FADA2DE21BBDAFD10096BC9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Vault 111UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Vault 111";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADA2DA51BBDAFD00096BC9D /* Build configuration list for PBXProject "Vault 111" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADA2DD81BBDAFD10096BC9D /* Debug */,
+				FADA2DD91BBDAFD10096BC9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADA2DDA1BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault 111" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADA2DDB1BBDAFD10096BC9D /* Debug */,
+				FADA2DDC1BBDAFD10096BC9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FADA2DDD1BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault 111Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADA2DDE1BBDAFD10096BC9D /* Debug */,
+				FADA2DDF1BBDAFD10096BC9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FADA2DE01BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault 111UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADA2DE11BBDAFD10096BC9D /* Debug */,
+				FADA2DE21BBDAFD10096BC9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FADA2DA21BBDAFD00096BC9D /* Project object */;
+}
