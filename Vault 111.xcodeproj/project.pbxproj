@@ -59,6 +59,7 @@
 		FA2865791BBF29EF00D61C83 /* Perk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Perk.m; path = ../Perk.m; sourceTree = "<group>"; };
 		FA28657E1BBF2A5900D61C83 /* CharacterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterManager.h; sourceTree = "<group>"; };
 		FA28657F1BBF2A5900D61C83 /* CharacterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterManager.m; sourceTree = "<group>"; };
+		FA2865811BBFC30500D61C83 /* Vault111-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vault111-Prefix.pch"; sourceTree = "<group>"; };
 		FADA2DAA1BBDAFD00096BC9D /* Vault 111.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vault 111.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA2DAE1BBDAFD00096BC9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 		FADA2DA11BBDAFD00096BC9D = {
 			isa = PBXGroup;
 			children = (
+				FA2865811BBFC30500D61C83 /* Vault111-Prefix.pch */,
 				FADA2DAC1BBDAFD00096BC9D /* Vault 111 */,
 				FADA2DC91BBDAFD00096BC9D /* Vault 111Tests */,
 				FADA2DD41BBDAFD10096BC9D /* Vault 111UITests */,
@@ -539,6 +541,8 @@
 			baseConfigurationReference = 034F01D2603CAE04A8AB447E /* Pods-Vault 111.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$SRCROOT/Vault111-Prefix.pch";
 				INFOPLIST_FILE = "Vault 111/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -552,6 +556,8 @@
 			baseConfigurationReference = 527DB0D67E60E80738767AE0 /* Pods-Vault 111.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$SRCROOT/Vault111-Prefix.pch";
 				INFOPLIST_FILE = "Vault 111/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

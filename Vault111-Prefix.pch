@@ -1,0 +1,15 @@
+//
+//  Vault111-Prefix.pch
+//  Vault 111
+//
+//  Created by Alexander Heemann on 03/10/15.
+//  Copyright © 2015 Alexander Heemann. All rights reserved.
+//
+
+#ifndef Vault111_Prefix_pch
+#define Vault111_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Vault111_Prefix_pch */

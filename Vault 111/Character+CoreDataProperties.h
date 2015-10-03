@@ -1,9 +1,9 @@
 //
 //  Character+CoreDataProperties.h
-//  Vault 111
+//  
 //
-//  Created by Alexander Heemann on 02/10/15.
-//  Copyright © 2015 Alexander Heemann. All rights reserved.
+//  Created by Alexander Heemann on 03/10/15.
+//
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
 //  to delete and recreate this implementation file for your updated model.
@@ -24,16 +24,20 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *name;
 @property (nullable, nonatomic, retain) NSNumber *perception;
 @property (nullable, nonatomic, retain) NSNumber *strength;
-@property (nullable, nonatomic, retain) NSSet<NSManagedObject *> *perks;
+@property (nullable, nonatomic, retain) NSDate *dateCreated;
+@property (nullable, nonatomic, retain) NSDate *lastUsed;
+@property (nullable, nonatomic, retain) NSNumber *specialPoints;
+@property (nullable, nonatomic, retain) NSNumber *perkPoints;
+@property (nullable, nonatomic, retain) NSSet<Perk *> *perks;
 
 @end
 
 @interface Character (CoreDataGeneratedAccessors)
 
-- (void)addPerksObject:(NSManagedObject *)value;
-- (void)removePerksObject:(NSManagedObject *)value;
-- (void)addPerks:(NSSet<NSManagedObject *> *)values;
-- (void)removePerks:(NSSet<NSManagedObject *> *)values;
+- (void)addPerksObject:(Perk *)value;
+- (void)removePerksObject:(Perk *)value;
+- (void)addPerks:(NSSet<Perk *> *)values;
+- (void)removePerks:(NSSet<Perk *> *)values;
 
 @end
 
