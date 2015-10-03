@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
     SPECIALCellCount,
 };
 
-@interface SPECIALViewController ()
+@interface SPECIALViewController ()<SPECIALTableViewCellDataSource>
 
 @property (nonatomic, strong, readwrite) NSMutableArray *SPECIALArray;
 
@@ -68,10 +68,19 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SPECIALTableViewCell *cell = (SPECIALTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"SPECIALTableViewCell"];
+    cell.dataSource = self;
     
     cell.special = self.SPECIALArray[indexPath.row];
     
     return cell;
+}
+
+#pragma mark SPECIALTableViewDataSource
+
+- (BOOL)canIncreaseSpecial
+{
+    return [CharacterManager sharedCharacterManager].currentCharacter.specialPoints > 0 ||
+           [CharacterManager sharedCharacterManager].currentCharacter.perkPoints > 0;
 }
 
 

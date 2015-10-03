@@ -33,8 +33,12 @@
 }
 - (IBAction)specialValueStepperChangedValue:(id)sender
 {
-    UIStepper *stepper = sender;
-    self.specialValueLabel.text = [NSString stringWithFormat:@"%ld", (long)stepper.value];
+    if ([self.dataSource canIncreaseSpecial])
+    {
+        UIStepper *stepper = sender;
+        self.specialValueLabel.text = [NSString stringWithFormat:@"%ld", (long)stepper.value];
+        self.special.value++;
+    }
 }
 
 @end
