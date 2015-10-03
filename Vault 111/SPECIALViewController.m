@@ -74,8 +74,14 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
     cell.delegate = self;
     SPECIAL *special = self.SPECIALArray[indexPath.row];
     cell.specialValueStepper.value = special.value;
+    cell.specialValue = special.value;
     cell.specialValueLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)special.value];
     cell.specialValueStepper.maximumValue = MAX(1, MIN(10, [self canIncreaseSpecial] ? 10 : special.value));
+    
+    UIView *selectedBGView = [[UIView alloc] init];
+    selectedBGView.backgroundColor = [UIColor clearColor];
+    cell.selectedBackgroundView = selectedBGView;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     cell.special = special;
     

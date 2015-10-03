@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *specialNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *specialValueLabel;
 @property (weak, nonatomic) IBOutlet UIStepper *specialValueStepper;
+@property (nonatomic, assign, readwrite) NSInteger specialValue;
 @property (nonatomic, assign, readwrite) id<SPECIALTableViewCellDataSource> dataSource;
 @property (nonatomic, assign, readwrite) id<SPECIALTableViewCellDelegate> delegate;
 

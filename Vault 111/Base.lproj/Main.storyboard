@@ -82,6 +82,22 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wrq-2d-DI2" userLabel="Bar Container View">
+                                            <rect key="frame" x="13" y="13" width="420" height="43.5"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbI-P6-uIF" userLabel="Bar View">
+                                                    <rect key="frame" x="0.0" y="0.0" width="420" height="43.5"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="xbI-P6-uIF" firstAttribute="top" secondItem="Wrq-2d-DI2" secondAttribute="top" id="D5b-91-1S6"/>
+                                                <constraint firstItem="xbI-P6-uIF" firstAttribute="leading" secondItem="Wrq-2d-DI2" secondAttribute="leading" id="Sgd-EB-jw4"/>
+                                                <constraint firstAttribute="bottom" secondItem="xbI-P6-uIF" secondAttribute="bottom" id="Z5b-3f-ps7"/>
+                                                <constraint firstItem="xbI-P6-uIF" firstAttribute="trailing" secondItem="Wrq-2d-DI2" secondAttribute="trailing" id="jsl-Y5-4qO"/>
+                                            </constraints>
+                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strength" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA2-5b-40M">
                                             <rect key="frame" x="28" y="24.5" width="66.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -105,7 +121,11 @@
                                         <constraint firstItem="oA2-5b-40M" firstAttribute="centerY" secondItem="nwr-wx-KKj" secondAttribute="centerY" id="49t-sK-ypU"/>
                                         <constraint firstItem="xbo-LP-Bhy" firstAttribute="leading" secondItem="cnb-SG-HUT" secondAttribute="trailing" constant="40.5" id="6Nk-xd-IYj"/>
                                         <constraint firstItem="xbo-LP-Bhy" firstAttribute="trailing" secondItem="nwr-wx-KKj" secondAttribute="trailing" multiplier="0.9" id="7ZJ-BH-Z6C"/>
+                                        <constraint firstItem="Wrq-2d-DI2" firstAttribute="leading" secondItem="nwr-wx-KKj" secondAttribute="leadingMargin" constant="5" id="C9f-OE-sKT"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Wrq-2d-DI2" secondAttribute="bottom" constant="5" id="Qmw-xY-yPq"/>
+                                        <constraint firstItem="xbo-LP-Bhy" firstAttribute="leading" secondItem="Wrq-2d-DI2" secondAttribute="trailing" constant="13" id="Zjv-h7-ljf"/>
                                         <constraint firstItem="oA2-5b-40M" firstAttribute="leading" secondItem="nwr-wx-KKj" secondAttribute="leadingMargin" constant="20" id="aMP-4F-cR2"/>
+                                        <constraint firstItem="Wrq-2d-DI2" firstAttribute="top" secondItem="nwr-wx-KKj" secondAttribute="topMargin" constant="5" id="att-e9-snf"/>
                                         <constraint firstItem="xbo-LP-Bhy" firstAttribute="leading" secondItem="cnb-SG-HUT" secondAttribute="trailing" constant="40.5" id="p6y-sP-udi"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="xbo-LP-Bhy" secondAttribute="trailing" constant="39" id="tkT-wY-GMe"/>
                                         <constraint firstItem="xbo-LP-Bhy" firstAttribute="centerY" secondItem="nwr-wx-KKj" secondAttribute="centerY" id="tyF-IF-kLg"/>
@@ -121,6 +141,9 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="barContainerView" destination="Wrq-2d-DI2" id="7ee-Ej-NUr"/>
+                                    <outlet property="barView" destination="xbI-P6-uIF" id="rIJ-2w-BL9"/>
+                                    <outlet property="barViewConstraint" destination="jsl-Y5-4qO" id="rIL-Ef-uuy"/>
                                     <outlet property="specialNameLabel" destination="oA2-5b-40M" id="OIN-4U-FmY"/>
                                     <outlet property="specialValueLabel" destination="cnb-SG-HUT" id="UZK-nn-hlm"/>
                                     <outlet property="specialValueStepper" destination="xbo-LP-Bhy" id="xJK-m0-KuH"/>
