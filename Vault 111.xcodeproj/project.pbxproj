@@ -17,7 +17,6 @@
 		FA28658C1BC01E5C00D61C83 /* SPECIALFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA28658B1BC01E5C00D61C83 /* SPECIALFooterView.xib */; settings = {ASSET_TAGS = (); }; };
 		FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DAE1BBDAFD00096BC9D /* main.m */; };
 		FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */; };
-		FADA2DB51BBDAFD00096BC9D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB41BBDAFD00096BC9D /* FirstViewController.m */; };
 		FADA2DB81BBDAFD00096BC9D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB71BBDAFD00096BC9D /* SecondViewController.m */; };
 		FADA2DBB1BBDAFD00096BC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DB91BBDAFD00096BC9D /* Main.storyboard */; };
 		FADA2DBD1BBDAFD00096BC9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DBC1BBDAFD00096BC9D /* Assets.xcassets */; };
@@ -69,8 +68,6 @@
 		FADA2DAE1BBDAFD00096BC9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FADA2DB31BBDAFD00096BC9D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		FADA2DB41BBDAFD00096BC9D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		FADA2DB61BBDAFD00096BC9D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		FADA2DB71BBDAFD00096BC9D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		FADA2DBA1BBDAFD00096BC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -163,8 +160,6 @@
 			children = (
 				FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */,
 				FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */,
-				FADA2DB31BBDAFD00096BC9D /* FirstViewController.h */,
-				FADA2DB41BBDAFD00096BC9D /* FirstViewController.m */,
 				FADA2DE61BBDB2FA0096BC9D /* SPECIALViewController.h */,
 				FADA2DE71BBDB2FA0096BC9D /* SPECIALViewController.m */,
 				FADA2DB61BBDAFD00096BC9D /* SecondViewController.h */,
@@ -408,7 +403,6 @@
 				FADA2DE51BBDB0550096BC9D /* Vault111Model.xcdatamodeld in Sources */,
 				FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */,
 				FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */,
-				FADA2DB51BBDAFD00096BC9D /* FirstViewController.m in Sources */,
 				FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
