@@ -11,6 +11,7 @@
 #import "SPECIAL.h"
 #import "Character.h"
 #import "CharacterManager.h"
+#import "SPECIALFooterView.h"
 
 typedef NS_ENUM(NSUInteger, SPECIALCell)
 {
@@ -79,6 +80,20 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
     cell.special = special;
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 108;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    SPECIALFooterView *footerView = [[[NSBundle mainBundle] loadNibNamed:@"SPECIALFooterView" owner:self options:nil] objectAtIndex:0];
+    footerView.remainingPointslabel.text = [NSString stringWithFormat:@"%ld Points Remaining",
+                                            [[CharacterManager sharedCharacterManager].currentCharacter.specialPoints integerValue] +
+                                            [[CharacterManager sharedCharacterManager].currentCharacter.perkPoints integerValue]];
+    return footerView;
 }
 
 #pragma mark SPECIALTableViewCellDataSource

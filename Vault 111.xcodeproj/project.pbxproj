@@ -13,6 +13,8 @@
 		FA28657D1BBF29EF00D61C83 /* Perk.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865791BBF29EF00D61C83 /* Perk.m */; settings = {ASSET_TAGS = (); }; };
 		FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA28657F1BBF2A5900D61C83 /* CharacterManager.m */; settings = {ASSET_TAGS = (); }; };
 		FA2865871BBFDB4100D61C83 /* Character+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865861BBFDB4100D61C83 /* Character+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		FA28658A1BC01E4900D61C83 /* SPECIALFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865891BC01E4900D61C83 /* SPECIALFooterView.m */; settings = {ASSET_TAGS = (); }; };
+		FA28658C1BC01E5C00D61C83 /* SPECIALFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA28658B1BC01E5C00D61C83 /* SPECIALFooterView.xib */; settings = {ASSET_TAGS = (); }; };
 		FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DAE1BBDAFD00096BC9D /* main.m */; };
 		FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */; };
 		FADA2DB51BBDAFD00096BC9D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB41BBDAFD00096BC9D /* FirstViewController.m */; };
@@ -60,6 +62,9 @@
 		FA2865811BBFC30500D61C83 /* Vault111-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vault111-Prefix.pch"; sourceTree = "<group>"; };
 		FA2865851BBFDB4100D61C83 /* Character+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Character+CoreDataProperties.h"; sourceTree = "<group>"; };
 		FA2865861BBFDB4100D61C83 /* Character+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Character+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FA2865881BC01E4900D61C83 /* SPECIALFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPECIALFooterView.h; sourceTree = "<group>"; };
+		FA2865891BC01E4900D61C83 /* SPECIALFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIALFooterView.m; sourceTree = "<group>"; };
+		FA28658B1BC01E5C00D61C83 /* SPECIALFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPECIALFooterView.xib; sourceTree = "<group>"; };
 		FADA2DAA1BBDAFD00096BC9D /* Vault 111.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vault 111.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA2DAE1BBDAFD00096BC9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -171,6 +176,9 @@
 				FADA2DB91BBDAFD00096BC9D /* Main.storyboard */,
 				FADA2DE91BBDB41B0096BC9D /* SPECIALTableViewCell.h */,
 				FADA2DEA1BBDB41B0096BC9D /* SPECIALTableViewCell.m */,
+				FA2865881BC01E4900D61C83 /* SPECIALFooterView.h */,
+				FA2865891BC01E4900D61C83 /* SPECIALFooterView.m */,
+				FA28658B1BC01E5C00D61C83 /* SPECIALFooterView.xib */,
 				FADA2DBC1BBDAFD00096BC9D /* Assets.xcassets */,
 				FADA2DBE1BBDAFD00096BC9D /* LaunchScreen.storyboard */,
 				FADA2DC11BBDAFD00096BC9D /* Info.plist */,
@@ -328,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADA2DC01BBDAFD00096BC9D /* LaunchScreen.storyboard in Resources */,
+				FA28658C1BC01E5C00D61C83 /* SPECIALFooterView.xib in Resources */,
 				FADA2DBD1BBDAFD00096BC9D /* Assets.xcassets in Resources */,
 				FADA2DBB1BBDAFD00096BC9D /* Main.storyboard in Resources */,
 			);
@@ -394,6 +403,7 @@
 				FADA2DB81BBDAFD00096BC9D /* SecondViewController.m in Sources */,
 				FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */,
 				FADA2DE81BBDB2FA0096BC9D /* SPECIALViewController.m in Sources */,
+				FA28658A1BC01E4900D61C83 /* SPECIALFooterView.m in Sources */,
 				FA28657D1BBF29EF00D61C83 /* Perk.m in Sources */,
 				FADA2DE51BBDB0550096BC9D /* Vault111Model.xcdatamodeld in Sources */,
 				FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */,
