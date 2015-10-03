@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
     SPECIALCellCount,
 };
 
-@interface SPECIALViewController ()<SPECIALTableViewCellDataSource>
+@interface SPECIALViewController ()<SPECIALTableViewCellDataSource, SPECIALTableViewCellDelegate>
 
 @property (nonatomic, strong, readwrite) NSMutableArray *SPECIALArray;
 
@@ -41,6 +41,7 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
     for (NSInteger specialType = 0; specialType < SPECIALCellCount; specialType++)
     {
         SPECIAL *special = [[SPECIAL alloc] initWithType:specialType];
+        special.value = [[CharacterManager sharedCharacterManager].currentCharacter specialValueForType:specialType];
         [self.SPECIALArray addObject:special];
     }
     self.tableView.rowHeight = 55;
@@ -69,20 +70,32 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
 {
     SPECIALTableViewCell *cell = (SPECIALTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"SPECIALTableViewCell"];
     cell.dataSource = self;
+    cell.delegate = self;
+    SPECIAL *special = self.SPECIALArray[indexPath.row];
+    cell.specialValueStepper.value = special.value;
+    cell.specialValueLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)special.value];
+    cell.specialValueStepper.maximumValue = MAX(1, MIN(10, [self canIncreaseSpecial] ? 10 : special.value));
     
-    cell.special = self.SPECIALArray[indexPath.row];
+    cell.special = special;
     
     return cell;
 }
 
-#pragma mark SPECIALTableViewDataSource
+#pragma mark SPECIALTableViewCellDataSource
 
 - (BOOL)canIncreaseSpecial
 {
-    return [CharacterManager sharedCharacterManager].currentCharacter.specialPoints > 0 ||
-           [CharacterManager sharedCharacterManager].currentCharacter.perkPoints > 0;
+    return [[CharacterManager sharedCharacterManager].currentCharacter.specialPoints integerValue] > 0 ||
+           [[CharacterManager sharedCharacterManager].currentCharacter.perkPoints integerValue] > 0;
 }
 
+#pragma mark SPECIALTableViewCellDelegate
+
+- (void)cell:(SPECIALTableViewCell *)cell changedSpecial:(SPECIAL *)special
+{
+    [self.tableView reloadData];
+    [[CharacterManager sharedCharacterManager].currentCharacter setSpecial:special];
+}
 
 /*
 // Override to support conditional editing of the table view.

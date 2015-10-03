@@ -18,7 +18,7 @@
 
 @protocol SPECIALTableViewCellDelegate <NSObject>
 
-- (void)cell:(SPECIALTableViewCell *)cell increasedSpecial:(SPECIAL *)special;
+- (void)cell:(SPECIALTableViewCell *)cell changedSpecial:(SPECIAL *)special;
 
 @end
 
@@ -29,5 +29,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *specialValueLabel;
 @property (weak, nonatomic) IBOutlet UIStepper *specialValueStepper;
 @property (nonatomic, assign, readwrite) id<SPECIALTableViewCellDataSource> dataSource;
+@property (nonatomic, assign, readwrite) id<SPECIALTableViewCellDelegate> delegate;
 
 @end

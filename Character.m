@@ -11,7 +11,6 @@
 #define START_SPECIAL_POINTS 21
 
 @implementation Character
-
 // Insert code here to add functionality to your managed object subclass
 
 - (void)setupDefault
@@ -19,15 +18,102 @@
     self.specialPoints = @(START_SPECIAL_POINTS);
     self.dateCreated = [NSDate date];
     self.lastUsed = [NSDate date];
-    self.strength = @(0);
-    self.perception = @(0);
-    self.endurance = @(0);
-    self.charisma = @(0);
-    self.intelligence = @(0);
-    self.agility = @(0);
-    self.luck = @(0);
+    self.strength = @(1);
+    self.perception = @(1);
+    self.endurance = @(1);
+    self.charisma = @(1);
+    self.intelligence = @(1);
+    self.agility = @(1);
+    self.luck = @(1);
     self.perkPoints = @(0);
     self.level = @(1);
+}
+
+- (void)setSpecial:(SPECIAL *)special
+{
+    switch (special.type)
+    {
+        case SPECIALTypeStrength:
+            self.strength = @(special.value);
+            break;
+        case SPECIALTypePerception:
+            self.perception = @(special.value);
+            break;
+        case SPECIALTypeEndurance:
+            self.endurance = @(special.value);
+            break;
+        case SPECIALTypeCharisma:
+            self.charisma = @(special.value);
+            break;
+        case SPECIALTypeIntelligence:
+            self.intelligence = @(special.value);
+            break;
+        case SPECIALTypeAgility:
+            self.agility = @(special.value);
+            break;
+        case SPECIALTypeLuck:
+            self.luck = @(special.value);
+            break;
+    }
+    [self updateSpecialPoints];
+    
+    [self save];
+}
+
+- (void)updateSpecialPoints
+{
+    NSInteger sum = [self.strength integerValue] +
+                    [self.perception integerValue] +
+                    [self.endurance integerValue] +
+                    [self.charisma integerValue] +
+                    [self.intelligence integerValue] +
+                    [self.agility integerValue] +
+                    [self.luck integerValue];
+    
+    self.specialPoints = @(MAX(0, (START_SPECIAL_POINTS + 7) - sum));
+}
+
+- (void)incrementSPECIALPoints
+{
+    self.specialPoints = @([self.specialPoints integerValue] + 1);
+}
+
+- (void)decrementSPECIALPoints
+{
+    self.specialPoints = @([self.specialPoints integerValue] - 1);
+}
+
+- (void)save
+{
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+}
+
+- (NSInteger)specialValueForType:(SPECIALType)type
+{
+    switch (type)
+    {
+        case SPECIALTypeStrength:
+            return [self.strength integerValue];
+            break;
+        case SPECIALTypePerception:
+            return [self.perception integerValue];
+            break;
+        case SPECIALTypeEndurance:
+            return [self.endurance integerValue];
+            break;
+        case SPECIALTypeCharisma:
+            return [self.charisma integerValue];
+            break;
+        case SPECIALTypeIntelligence:
+            return [self.intelligence integerValue];
+            break;
+        case SPECIALTypeAgility:
+            return [self.agility integerValue];
+            break;
+        case SPECIALTypeLuck:
+            return [self.luck integerValue];
+            break;
+    }
 }
 
 @end

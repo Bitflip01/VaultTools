@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "SPECIAL.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Insert code here to declare functionality of your managed object subclass
 - (void)setupDefault;
+- (void)setSpecial:(SPECIAL *)special;
+- (void)save;
+- (void)incrementSPECIALPoints;
+- (void)decrementSPECIALPoints;
+- (NSInteger)specialValueForType:(SPECIALType)type;
 
 @end
 
