@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+    <entity name="Character" representedClassName="Character" syncable="YES">
+        <attribute name="agility" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="charisma" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="endurance" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="intelligence" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="luck" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="perception" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="strength" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="perks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Perk" syncable="YES"/>
+    </entity>
+    <entity name="Perk" representedClassName="Perk" syncable="YES">
+        <attribute name="minLevel" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="minSpecial" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rank" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="specialType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="nextRank" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Perk" inverseName="previousRank" inverseEntity="Perk" syncable="YES"/>
+        <relationship name="previousRank" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Perk" inverseName="nextRank" inverseEntity="Perk" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Character" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="Perk" positionX="-54" positionY="45" width="128" height="150"/>
+    </elements>
+</model>
