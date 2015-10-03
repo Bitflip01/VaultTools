@@ -31,5 +31,10 @@
 
     // Configure the view for the selected state
 }
+- (IBAction)specialValueStepperChangedValue:(id)sender
+{
+    UIStepper *stepper = sender;
+    self.specialValueLabel.text = [NSString stringWithFormat:@"%ld", (long)stepper.value];
+}
 
 @end

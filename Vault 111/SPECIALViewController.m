@@ -10,6 +10,7 @@
 #import "SPECIALTableViewCell.h"
 #import "SPECIAL.h"
 #import "Character.h"
+#import "CharacterManager.h"
 
 typedef NS_ENUM(NSUInteger, SPECIALCell)
 {
@@ -26,7 +27,6 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
 @interface SPECIALViewController ()
 
 @property (nonatomic, strong, readwrite) NSMutableArray *SPECIALArray;
-@property (nonatomic, strong, readwrite) Character *currentCharacter;
 
 @end
 
@@ -43,6 +43,7 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
         SPECIAL *special = [[SPECIAL alloc] initWithType:specialType];
         [self.SPECIALArray addObject:special];
     }
+    self.tableView.rowHeight = 55;
 }
 
 - (void)didReceiveMemoryWarning

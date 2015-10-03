@@ -13,5 +13,7 @@
 
 @property (nonatomic, strong, readwrite) SPECIAL *special;
 @property (weak, nonatomic) IBOutlet UILabel *specialNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *specialValueLabel;
+@property (weak, nonatomic) IBOutlet UIStepper *specialValueStepper;
 
 @end

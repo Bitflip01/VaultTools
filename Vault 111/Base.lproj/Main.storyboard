@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Second-->
@@ -69,32 +70,60 @@
         <scene sceneID="YZ4-Hl-4yx">
             <objects>
                 <tableViewController id="w1d-Ru-0uN" customClass="SPECIALViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pQC-ol-Ehg">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="pQC-ol-Ehg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SPECIALTableViewCell" id="b4A-36-FxN" customClass="SPECIALTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SPECIALTableViewCell" rowHeight="70" id="b4A-36-FxN" customClass="SPECIALTableViewCell">
+                                <rect key="frame" x="0.0" y="113.5" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b4A-36-FxN" id="nwr-wx-KKj">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strength" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA2-5b-40M">
-                                            <rect key="frame" x="49" y="11" width="67" height="21"/>
+                                            <rect key="frame" x="28" y="24.5" width="66.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnb-SG-HUT">
+                                            <rect key="frame" x="397.5" y="25" width="8" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="xbo-LP-Bhy">
+                                            <rect key="frame" x="446" y="20.5" width="94" height="29"/>
+                                            <connections>
+                                                <action selector="specialValueStepperChangedValue:" destination="b4A-36-FxN" eventType="valueChanged" id="hGi-TW-nYz"/>
+                                            </connections>
+                                        </stepper>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="oA2-5b-40M" firstAttribute="centerY" secondItem="nwr-wx-KKj" secondAttribute="centerY" id="49t-sK-ypU"/>
-                                        <constraint firstItem="oA2-5b-40M" firstAttribute="leading" secondItem="nwr-wx-KKj" secondAttribute="leadingMargin" constant="41" id="aMP-4F-cR2"/>
+                                        <constraint firstItem="xbo-LP-Bhy" firstAttribute="leading" secondItem="cnb-SG-HUT" secondAttribute="trailing" constant="40.5" id="6Nk-xd-IYj"/>
+                                        <constraint firstItem="xbo-LP-Bhy" firstAttribute="trailing" secondItem="nwr-wx-KKj" secondAttribute="trailing" multiplier="0.9" id="7ZJ-BH-Z6C"/>
+                                        <constraint firstItem="oA2-5b-40M" firstAttribute="leading" secondItem="nwr-wx-KKj" secondAttribute="leadingMargin" constant="20" id="aMP-4F-cR2"/>
+                                        <constraint firstItem="xbo-LP-Bhy" firstAttribute="leading" secondItem="cnb-SG-HUT" secondAttribute="trailing" constant="40.5" id="p6y-sP-udi"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xbo-LP-Bhy" secondAttribute="trailing" constant="39" id="tkT-wY-GMe"/>
+                                        <constraint firstItem="xbo-LP-Bhy" firstAttribute="centerY" secondItem="nwr-wx-KKj" secondAttribute="centerY" id="tyF-IF-kLg"/>
+                                        <constraint firstItem="cnb-SG-HUT" firstAttribute="centerY" secondItem="oA2-5b-40M" secondAttribute="centerY" id="ut7-99-6MH"/>
+                                        <constraint firstItem="cnb-SG-HUT" firstAttribute="centerX" secondItem="nwr-wx-KKj" secondAttribute="trailingMargin" multiplier="0.7" id="yY0-Jp-jJr"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="yY0-Jp-jJr"/>
+                                            <exclude reference="p6y-sP-udi"/>
+                                            <exclude reference="tkT-wY-GMe"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="specialNameLabel" destination="oA2-5b-40M" id="OIN-4U-FmY"/>
+                                    <outlet property="specialValueLabel" destination="cnb-SG-HUT" id="UZK-nn-hlm"/>
+                                    <outlet property="specialValueStepper" destination="xbo-LP-Bhy" id="xJK-m0-KuH"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
