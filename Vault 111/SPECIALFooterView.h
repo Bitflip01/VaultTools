@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SPECIALFooterView : UIView
+@property (weak, nonatomic) IBOutlet UILabel *remainingPointslabel;
 
 @end
