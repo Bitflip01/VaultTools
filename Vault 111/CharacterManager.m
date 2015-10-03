@@ -8,6 +8,12 @@
 
 #import "CharacterManager.h"
 
+@interface CharacterManager ()
+
+@property (nonatomic, strong, readwrite) Character *currentCharacter;
+
+@end
+
 @implementation CharacterManager
 
 + (CharacterManager *)sharedCharacterManager
@@ -21,6 +27,21 @@
                   });
     
     return sharedCharacterManager;
+}
+
+- (void)loadLastCharacter
+{
+    self.currentCharacter = [[Character MR_findAllSortedBy:@"lastUsed" ascending:NO] firstObject];
+}
+
+- (void)loadLastCharacterOrCreateNew
+{
+    [self loadLastCharacter];
+    if (!self.currentCharacter)
+    {
+        self.currentCharacter = [Character MR_createEntity];
+        [self.currentCharacter setupDefault];        
+    }
 }
 
 

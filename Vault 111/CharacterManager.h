@@ -12,6 +12,8 @@
 @interface CharacterManager : NSObject
 
 + (CharacterManager *)sharedCharacterManager;
+- (void)loadLastCharacter;
+- (void)loadLastCharacterOrCreateNew;
 
 @property (nonatomic, strong, readonly) Character *currentCharacter;
 
