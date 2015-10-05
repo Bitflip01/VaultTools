@@ -15,9 +15,13 @@
 		FA2865871BBFDB4100D61C83 /* Character+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865861BBFDB4100D61C83 /* Character+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		FA28658A1BC01E4900D61C83 /* SPECIALFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865891BC01E4900D61C83 /* SPECIALFooterView.m */; settings = {ASSET_TAGS = (); }; };
 		FA28658C1BC01E5C00D61C83 /* SPECIALFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA28658B1BC01E5C00D61C83 /* SPECIALFooterView.xib */; settings = {ASSET_TAGS = (); }; };
+		FA28658F1BC0540E00D61C83 /* PerksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA28658E1BC0540E00D61C83 /* PerksViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FA2865921BC058E700D61C83 /* PerksCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865911BC058E700D61C83 /* PerksCollectionViewLayout.m */; settings = {ASSET_TAGS = (); }; };
+		FA2865951BC0692B00D61C83 /* PerkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865941BC0692B00D61C83 /* PerkCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA2865981BC19E9E00D61C83 /* PerkDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865971BC19E9E00D61C83 /* PerkDescription.m */; settings = {ASSET_TAGS = (); }; };
+		FA28659A1BC1B9EB00D61C83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */; };
 		FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DAE1BBDAFD00096BC9D /* main.m */; };
 		FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */; };
-		FADA2DB81BBDAFD00096BC9D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB71BBDAFD00096BC9D /* SecondViewController.m */; };
 		FADA2DBB1BBDAFD00096BC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DB91BBDAFD00096BC9D /* Main.storyboard */; };
 		FADA2DBD1BBDAFD00096BC9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DBC1BBDAFD00096BC9D /* Assets.xcassets */; };
 		FADA2DC01BBDAFD00096BC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DBE1BBDAFD00096BC9D /* LaunchScreen.storyboard */; };
@@ -64,12 +68,19 @@
 		FA2865881BC01E4900D61C83 /* SPECIALFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPECIALFooterView.h; sourceTree = "<group>"; };
 		FA2865891BC01E4900D61C83 /* SPECIALFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIALFooterView.m; sourceTree = "<group>"; };
 		FA28658B1BC01E5C00D61C83 /* SPECIALFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPECIALFooterView.xib; sourceTree = "<group>"; };
+		FA28658D1BC0540E00D61C83 /* PerksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksViewController.h; sourceTree = "<group>"; };
+		FA28658E1BC0540E00D61C83 /* PerksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksViewController.m; sourceTree = "<group>"; };
+		FA2865901BC058E700D61C83 /* PerksCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksCollectionViewLayout.h; sourceTree = "<group>"; };
+		FA2865911BC058E700D61C83 /* PerksCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksCollectionViewLayout.m; sourceTree = "<group>"; };
+		FA2865931BC0692B00D61C83 /* PerkCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerkCollectionViewCell.h; sourceTree = "<group>"; };
+		FA2865941BC0692B00D61C83 /* PerkCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerkCollectionViewCell.m; sourceTree = "<group>"; };
+		FA2865961BC19E9E00D61C83 /* PerkDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerkDescription.h; sourceTree = "<group>"; };
+		FA2865971BC19E9E00D61C83 /* PerkDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerkDescription.m; sourceTree = "<group>"; };
+		FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FADA2DAA1BBDAFD00096BC9D /* Vault 111.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vault 111.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA2DAE1BBDAFD00096BC9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FADA2DB61BBDAFD00096BC9D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		FADA2DB71BBDAFD00096BC9D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		FADA2DBA1BBDAFD00096BC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FADA2DBC1BBDAFD00096BC9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADA2DBF1BBDAFD00096BC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA28659A1BC1B9EB00D61C83 /* QuartzCore.framework in Frameworks */,
 				7896D7940503BCA878A48928 /* libPods-Vault 111.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +139,7 @@
 		F45FFF813241D83DB925BB2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */,
 				A618D283EF2E7B3685CCDBD0 /* libPods-Vault 111.a */,
 			);
 			name = Frameworks;
@@ -162,8 +175,12 @@
 				FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */,
 				FADA2DE61BBDB2FA0096BC9D /* SPECIALViewController.h */,
 				FADA2DE71BBDB2FA0096BC9D /* SPECIALViewController.m */,
-				FADA2DB61BBDAFD00096BC9D /* SecondViewController.h */,
-				FADA2DB71BBDAFD00096BC9D /* SecondViewController.m */,
+				FA28658D1BC0540E00D61C83 /* PerksViewController.h */,
+				FA28658E1BC0540E00D61C83 /* PerksViewController.m */,
+				FA2865901BC058E700D61C83 /* PerksCollectionViewLayout.h */,
+				FA2865911BC058E700D61C83 /* PerksCollectionViewLayout.m */,
+				FA2865931BC0692B00D61C83 /* PerkCollectionViewCell.h */,
+				FA2865941BC0692B00D61C83 /* PerkCollectionViewCell.m */,
 				FA28657E1BBF2A5900D61C83 /* CharacterManager.h */,
 				FA28657F1BBF2A5900D61C83 /* CharacterManager.m */,
 				FADA2DEF1BBDB6A80096BC9D /* Model */,
@@ -219,6 +236,8 @@
 				FA2865771BBF29EF00D61C83 /* Perk+CoreDataProperties.m */,
 				FA2865781BBF29EF00D61C83 /* Perk.h */,
 				FA2865791BBF29EF00D61C83 /* Perk.m */,
+				FA2865961BC19E9E00D61C83 /* PerkDescription.h */,
+				FA2865971BC19E9E00D61C83 /* PerkDescription.m */,
 				FADA2DEC1BBDB6A20096BC9D /* SPECIAL.h */,
 				FADA2DED1BBDB6A20096BC9D /* SPECIAL.m */,
 			);
@@ -393,17 +412,20 @@
 			files = (
 				FA28657C1BBF29EF00D61C83 /* Perk+CoreDataProperties.m in Sources */,
 				FA28657B1BBF29EF00D61C83 /* Character.m in Sources */,
+				FA2865981BC19E9E00D61C83 /* PerkDescription.m in Sources */,
 				FA2865871BBFDB4100D61C83 /* Character+CoreDataProperties.m in Sources */,
 				FADA2DEB1BBDB41B0096BC9D /* SPECIALTableViewCell.m in Sources */,
-				FADA2DB81BBDAFD00096BC9D /* SecondViewController.m in Sources */,
 				FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */,
 				FADA2DE81BBDB2FA0096BC9D /* SPECIALViewController.m in Sources */,
 				FA28658A1BC01E4900D61C83 /* SPECIALFooterView.m in Sources */,
 				FA28657D1BBF29EF00D61C83 /* Perk.m in Sources */,
 				FADA2DE51BBDB0550096BC9D /* Vault111Model.xcdatamodeld in Sources */,
+				FA28658F1BC0540E00D61C83 /* PerksViewController.m in Sources */,
 				FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */,
 				FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */,
+				FA2865921BC058E700D61C83 /* PerksCollectionViewLayout.m in Sources */,
 				FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */,
+				FA2865951BC0692B00D61C83 /* PerkCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

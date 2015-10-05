@@ -1,0 +1,116 @@
+//
+//  PerksViewController.m
+//  Vault 111
+//
+//  Created by Alexander Heemann on 03/10/15.
+//  Copyright © 2015 Alexander Heemann. All rights reserved.
+//
+
+#import "PerksViewController.h"
+#import "PerkCollectionViewCell.h"
+#import "PerkDescription.h"
+
+@interface PerksViewController ()
+
+@property (nonatomic, strong, readwrite) NSArray *perks;
+
+@end
+
+@implementation PerksViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    PerkDescription *ironFist = [PerkDescription new];
+    ironFist.name = @"Iron Fist";
+    
+    PerkDescription *pickpocket = [PerkDescription new];
+    pickpocket.name = @"Pickpocket";
+    
+    NSMutableArray *mutablePerks = [NSMutableArray array];
+    for (int i = 0; i < 7; i++)
+    {
+        NSMutableArray *perkSection = [NSMutableArray array];
+        for (int j = 0; j < 10; j++)
+        {
+            PerkDescription *ironFist = [PerkDescription new];
+            ironFist.name = @"Iron Fist";
+            [perkSection addObject:ironFist];
+        }
+        [mutablePerks addObject:perkSection];
+    }
+    
+    self.perks = [mutablePerks copy];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return [self.perks[section] count];
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    PerkCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PerkCollectionViewCell" forIndexPath:indexPath];
+    cell.perk = self.perks[indexPath.section][indexPath.row];
+    return cell;
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return self.perks.count;
+}
+
+#pragma mark -
+#pragma mark - UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIAlertController *controller = [UIAlertController alertControllerWithTitle: @"didSelectItemAtIndexPath:"
+                                                                        message: [NSString stringWithFormat: @"Indexpath = %@", indexPath]
+                                                                 preferredStyle: UIAlertControllerStyleAlert];
+    
+    UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"Dismiss"
+                                                          style: UIAlertActionStyleDestructive
+                                                        handler: nil];
+    
+    [controller addAction: alertAction];
+    
+    [self presentViewController: controller animated: YES completion: nil];
+}
+
+#pragma mark -
+#pragma mark - UICollectionViewFlowLayout
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGFloat picDimension = 30;
+    return CGSizeMake(picDimension, picDimension);
+}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    CGFloat leftRightInset = 10;
+    return UIEdgeInsetsMake(0, leftRightInset, 0, leftRightInset);
+}
+
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
