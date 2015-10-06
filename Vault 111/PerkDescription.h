@@ -11,11 +11,11 @@
 
 @interface PerkDescription : NSObject
 
-@property (nullable, nonatomic, assign, readwrite) NSInteger *minLevel;
-@property (nullable, nonatomic, assign, readwrite) NSInteger *minSpecial;
+@property (nonatomic, assign, readwrite) NSInteger minLevel;
+@property (nonatomic, assign, readwrite) NSInteger minSpecial;
 @property (nullable, nonatomic, copy, readwrite) NSString *name;
-@property (nullable, nonatomic, assign, readwrite) NSInteger *rank;
-@property (nullable, nonatomic, assign, readwrite) SPECIALType *specialType;
+@property (nonatomic, assign, readwrite) NSInteger rank;
+@property (nonatomic, assign, readwrite) SPECIALType specialType;
 @property (nullable, nonatomic, strong, readwrite) PerkDescription * nextRank;
 @property (nullable, nonatomic, strong, readwrite) PerkDescription * previousRank;
 

@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Perk.h"
+#import "PerkDescription.h"
 
 @interface PerkCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *perkTitleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *perkImageView;
-@property (nonatomic, strong, readwrite) Perk *perk;
+@property (nonatomic, strong, readwrite) PerkDescription *perk;
 
 @end

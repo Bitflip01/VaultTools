@@ -18,7 +18,7 @@
     self.layer.borderColor = [UIColor blackColor].CGColor;
 }
 
-- (void)setPerk:(Perk *)perk
+- (void)setPerk:(PerkDescription *)perk
 {
     self.perkTitleLabel.text = perk.name;
 }
