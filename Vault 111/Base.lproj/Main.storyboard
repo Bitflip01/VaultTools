@@ -179,16 +179,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="97"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDh-gG-Le0">
-                                                    <rect key="frame" x="28.5" y="43.5" width="33.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDh-gG-Le0">
+                                                    <rect key="frame" x="33" y="47" width="25" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="nDh-gG-Le0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lhz-rw-zYc" secondAttribute="leadingMargin" id="4Zq-nj-lMq"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="nDh-gG-Le0" secondAttribute="bottom" constant="25" id="6JB-9b-UPz"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="nDh-gG-Le0" secondAttribute="trailing" id="9Oj-ca-QBj"/>
                                             <constraint firstItem="nDh-gG-Le0" firstAttribute="leading" secondItem="lhz-rw-zYc" secondAttribute="leadingMargin" constant="20.5" id="HVY-Aa-QhO"/>
                                             <constraint firstItem="nDh-gG-Le0" firstAttribute="centerX" secondItem="lhz-rw-zYc" secondAttribute="centerX" id="JPp-eB-CoB"/>
                                             <constraint firstItem="nDh-gG-Le0" firstAttribute="top" secondItem="lhz-rw-zYc" secondAttribute="topMargin" constant="35.5" id="OUT-CT-jJq"/>
@@ -224,6 +226,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Perks" id="tco-em-gJf"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ceu-ds-ASI" id="9Tl-xY-IOB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TfP-RY-DuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

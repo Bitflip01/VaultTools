@@ -73,7 +73,7 @@
 {
     NSUInteger numberOfItems = [self.collectionView numberOfItemsInSection:0];
     CGFloat heigth = numberOfItems * (self.itemHeight + self.verticalInset);
-    CGFloat width = numberOfItems * self.itemWidth + self.horizontalInset;
+    CGFloat width = numberOfItems * (self.itemWidth + self.horizontalInset);
     CGSize contentSize = CGSizeMake(width, heigth);
     
     return contentSize;

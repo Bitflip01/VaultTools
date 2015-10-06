@@ -9,10 +9,14 @@
 #import "PerksViewController.h"
 #import "PerkCollectionViewCell.h"
 #import "PerkDescription.h"
+#import "PerksCollectionViewLayout.h"
+#import "PerksLoader.h"
 
-@interface PerksViewController ()
+@interface PerksViewController ()<UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong, readwrite) NSArray *perks;
+@property (nonatomic, strong, readwrite) UIPinchGestureRecognizer *pinchGestureRecognizer;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -22,26 +26,27 @@
 {
     [super viewDidLoad];
     
-    PerkDescription *ironFist = [PerkDescription new];
-    ironFist.name = @"Iron Fist";
-    
-    PerkDescription *pickpocket = [PerkDescription new];
-    pickpocket.name = @"Pickpocket";
+    NSArray *perks = [PerksLoader loadPerksFromJSON];
     
     NSMutableArray *mutablePerks = [NSMutableArray array];
-    for (int i = 0; i < 7; i++)
+    for (int i = 0; i < perks.count; i++)
     {
         NSMutableArray *perkSection = [NSMutableArray array];
-        for (int j = 0; j < 10; j++)
+        for (int j = 0; j < [perks[i] count]; j++)
         {
-            PerkDescription *ironFist = [PerkDescription new];
-            ironFist.name = @"Iron Fist";
-            [perkSection addObject:ironFist];
+            NSDictionary *perkDict = perks[i][j];
+            PerkDescription *perk = [PerkDescription new];
+            perk.name = perkDict[@"name"];
+            [perkSection addObject:perk];
         }
         [mutablePerks addObject:perkSection];
     }
     
     self.perks = [mutablePerks copy];
+    self.pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinch:)];
+    self.pinchGestureRecognizer.delegate = self;
+    self.pinchGestureRecognizer.cancelsTouchesInView = YES;
+    [self.view addGestureRecognizer:self.pinchGestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,6 +66,9 @@
 {
     PerkCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PerkCollectionViewCell" forIndexPath:indexPath];
     cell.perk = self.perks[indexPath.section][indexPath.row];
+    PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
+    cell.perkTitleLabel.font = [UIFont systemFontOfSize:12 * (layout.itemWidth/80.0)];
+    
     return cell;
 }
 
@@ -85,6 +93,22 @@
     [controller addAction: alertAction];
     
     [self presentViewController: controller animated: YES completion: nil];
+}
+
+-(void)handlePinch:(UIPinchGestureRecognizer *)pinchRecogniser
+{
+    PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
+    
+    CGFloat itemWidth = MAX(30, MIN(100, layout.itemWidth * pinchRecogniser.scale));
+    layout.itemWidth = itemWidth;
+    layout.itemHeight = itemWidth;
+    [self.collectionView.collectionViewLayout invalidateLayout];
+    [self.collectionView reloadData];
+}
+
+-(BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
 }
 
 #pragma mark -
