@@ -1,0 +1,18 @@
+[
+ [{"name": "Iron Fist"}, {"name": "Big Leagues"}, {"name": "Armorer"}, {"name": "Weaponsmith"}, {"name": "Big Guns"}, {"name": "Strong Back"}, {"name": "Size Matters"},
+{"name": "Defender"}, {"name": "Unbreakable"}, {"name": "Juggernaut"}],
+ 
+ [{"name": "Pickpocket"}, {"name": "Rifleman"}, {"name": "Awareness"}, {"name": "Lockpick"}, {"name": "Demolition Expert"}, {"name": "Night Person"}, {"name": "Absorption"}, {"name": "Sniper"}, {"name": "Detection"}, {"name": "Concentrated Fire"}],
+ 
+ [{"name": "Toughness"}, {"name": "Lead Belly"}, {"name": "Life Giver"}, {"name": "Chem Resistant"}, {"name": "Marine Boy"}, {"name": "Rad Resistant"}, {"name": "Adamantium Skeleton"}, {"name": "Cannibal"}, {"name": "Blast Radius"}, {"name": "Solar Powered"}],
+ 
+ [{"name": "Cap Collector"}, {"name": "Lady Killer"}, {"name": "Lone Wanderer"}, {"name": "Attack Dog"}, {"name": "Animal Friend"}, {"name": "Local Leader"}, {"name": "Party Boy"}, {"name": "Inspirational"}, {"name": "Wasteland Whisperer"}, {"name": "Intimidation"}],
+ 
+ [{"name": "V.A.N.S."}, {"name": "Medic"}, {"name": "Gun Nut"}, {"name": "Hacker"}, {"name": "Engineer"}, {"name": "Science!"}, {"name": "Chemist"},
+  {"name": "Robotics Expert"}, {"name": "Fusion"}, {"name": "Nerd Rage!"}],
+ 
+ [{"name": "Gunslinger"}, {"name": "Commando"}, {"name": "Sneak"}, {"name": "Mister Sandman"}, {"name": "Action Boy"}, {"name": "Avoidance"}, {"name": "Ninja"},
+  {"name": "Quick Shot"}, {"name": "Escape Artist"}, {"name": "Gun Fu"}],
+ 
+ [{"name": "Fortune Finder"}, {"name": "Scrounger"}, {"name": "Bloody Mess"}, {"name": "Mysterious Stranger"}, {"name": "Wasteland Surprise"}, {"name": "Better Criticals"}, {"name": "Deadly Aim"}, {"name": "Grim Reaper's Sprint"}, {"name": "Luck of the Irish"}, {"name": "Bullet Dodger"}]
+]
