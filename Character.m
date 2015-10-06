@@ -94,26 +94,36 @@
     {
         case SPECIALTypeStrength:
             return [self.strength integerValue];
-            break;
+            
         case SPECIALTypePerception:
             return [self.perception integerValue];
-            break;
+            
         case SPECIALTypeEndurance:
             return [self.endurance integerValue];
-            break;
+            
         case SPECIALTypeCharisma:
             return [self.charisma integerValue];
-            break;
+            
         case SPECIALTypeIntelligence:
             return [self.intelligence integerValue];
-            break;
+            
         case SPECIALTypeAgility:
             return [self.agility integerValue];
-            break;
+            
         case SPECIALTypeLuck:
             return [self.luck integerValue];
-            break;
     }
+}
+
+- (BOOL)canCharacterTakePerk:(PerkDescription *)perk
+{
+    NSInteger specialValue = [self specialValueForType:perk.specialType];
+    if (specialValue < perk.minSpecial)
+    {
+        return NO;
+    }
+    
+    return YES;
 }
 
 @end

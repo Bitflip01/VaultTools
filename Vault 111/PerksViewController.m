@@ -11,6 +11,7 @@
 #import "PerkDescription.h"
 #import "PerksCollectionViewLayout.h"
 #import "PerksLoader.h"
+#import "CharacterManager.h"
 
 @interface PerksViewController ()<UIGestureRecognizerDelegate>
 
@@ -29,14 +30,16 @@
     NSArray *perks = [PerksLoader loadPerksFromJSON];
     
     NSMutableArray *mutablePerks = [NSMutableArray array];
-    for (int i = 0; i < perks.count; i++)
+    for (int specialType = 0; specialType < perks.count; specialType++)
     {
         NSMutableArray *perkSection = [NSMutableArray array];
-        for (int j = 0; j < [perks[i] count]; j++)
+        for (int perkId = 0; perkId < [perks[specialType] count]; perkId++)
         {
-            NSDictionary *perkDict = perks[i][j];
+            NSDictionary *perkDict = perks[specialType][perkId];
             PerkDescription *perk = [PerkDescription new];
             perk.name = perkDict[@"name"];
+            perk.minSpecial = perkId + 1;
+            perk.specialType = specialType;
             [perkSection addObject:perk];
         }
         [mutablePerks addObject:perkSection];
@@ -47,6 +50,12 @@
     self.pinchGestureRecognizer.delegate = self;
     self.pinchGestureRecognizer.cancelsTouchesInView = YES;
     [self.view addGestureRecognizer:self.pinchGestureRecognizer];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.collectionView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,9 +74,18 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     PerkCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PerkCollectionViewCell" forIndexPath:indexPath];
-    cell.perk = self.perks[indexPath.section][indexPath.row];
+    PerkDescription *perk = self.perks[indexPath.section][indexPath.row];
+    cell.perk = perk;
     PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
     cell.perkTitleLabel.font = [UIFont systemFontOfSize:12 * (layout.itemWidth/80.0)];
+    if ([[CharacterManager sharedCharacterManager].currentCharacter canCharacterTakePerk:perk])
+    {
+        cell.backgroundColor = [UIColor whiteColor];
+    }
+    else
+    {
+        cell.backgroundColor = [UIColor grayColor];
+    }
     
     return cell;
 }
