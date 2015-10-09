@@ -20,8 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *name;
 @property (nullable, nonatomic, retain) NSNumber *rank;
 @property (nullable, nonatomic, retain) NSNumber *specialType;
-@property (nullable, nonatomic, retain) Perk *nextRank;
-@property (nullable, nonatomic, retain) Perk *previousRank;
 
 @end
 

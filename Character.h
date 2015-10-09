@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "SPECIAL.h"
+#import "Perk.h"
 #import "PerkDescription.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -21,8 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)save;
 - (void)incrementSPECIALPoints;
 - (void)decrementSPECIALPoints;
-- (BOOL)canCharacterTakePerk:(PerkDescription *)perk;
+- (BOOL)canCharacterTakePerk:(PerkDescription *)perk atRank:(NSInteger)rank;
+- (BOOL)hasEnoughSpecialPointsForPerk:(PerkDescription *)perk;
+- (Perk *)perkForPerkDescription:(PerkDescription *)perkDescription;
 - (NSInteger)specialValueForType:(SPECIALType)type;
+- (void)save;
 
 @end
 

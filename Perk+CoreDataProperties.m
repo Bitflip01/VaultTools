@@ -18,7 +18,5 @@
 @dynamic name;
 @dynamic rank;
 @dynamic specialType;
-@dynamic nextRank;
-@dynamic previousRank;
 
 @end

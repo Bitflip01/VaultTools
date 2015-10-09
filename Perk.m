@@ -10,6 +10,17 @@
 
 @implementation Perk
 
-// Insert code here to add functionality to your managed object subclass
+- (void)setupWithPerkDescription:(PerkDescription *)perkDescription
+{
+    self.name = perkDescription.name;
+    self.rank = @(perkDescription.rank);
+    self.specialType = @(perkDescription.specialType);
+    self.minSpecial = @(perkDescription.minSpecial);
+}
+
+- (void)save
+{
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+}
 
 @end

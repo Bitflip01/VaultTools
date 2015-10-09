@@ -25,7 +25,7 @@
     self.intelligence = @(1);
     self.agility = @(1);
     self.luck = @(1);
-    self.perkPoints = @(0);
+    self.perkPoints = @(10);
     self.level = @(1);
 }
 
@@ -115,7 +115,21 @@
     }
 }
 
-- (BOOL)canCharacterTakePerk:(PerkDescription *)perk
+- (Perk *)perkForPerkDescription:(PerkDescription *)perkDescription
+{
+    NSSet<Perk *>* passingPerks = [self.perks objectsPassingTest:^BOOL(Perk * _Nonnull obj, BOOL * _Nonnull stop) {
+        if ([obj.name isEqualToString:perkDescription.name])
+        {
+            *stop = YES;
+            return YES;
+        }
+        return NO;
+    }];
+    
+    return [passingPerks anyObject];
+}
+
+- (BOOL)canCharacterTakePerk:(PerkDescription *)perk atRank:(NSInteger)rank
 {
     NSInteger specialValue = [self specialValueForType:perk.specialType];
     if (specialValue < perk.minSpecial)
@@ -123,6 +137,29 @@
         return NO;
     }
     
+    if (rank <= perk.maxRank)
+    {
+        PerkRank *perkRank = perk.ranks[rank - 1];
+        if ([self.level integerValue] < perkRank.minLevel)
+        {
+            return NO;
+        }
+    }
+    else
+    {
+        return NO;
+    }
+    
+    return YES;
+}
+
+- (BOOL)hasEnoughSpecialPointsForPerk:(PerkDescription *)perk
+{
+    NSInteger specialValue = [self specialValueForType:perk.specialType];
+    if (specialValue < perk.minSpecial)
+    {
+        return NO;
+    }
     return YES;
 }
 

@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "PerkDescription.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Perk : NSManagedObject
 
-// Insert code here to declare functionality of your managed object subclass
+- (void)save;
+- (void)setupWithPerkDescription:(PerkDescription *)perkDescription;
 
 @end
 

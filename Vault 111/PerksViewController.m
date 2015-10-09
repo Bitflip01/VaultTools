@@ -12,6 +12,7 @@
 #import "PerksCollectionViewLayout.h"
 #import "PerksLoader.h"
 #import "CharacterManager.h"
+#import "PerksDetailViewController.h"
 
 @interface PerksViewController ()<UIGestureRecognizerDelegate>
 
@@ -40,6 +41,7 @@
             perk.name = perkDict[@"name"];
             perk.minSpecial = perkId + 1;
             perk.specialType = specialType;
+            perk.maxRank = 1;
             [perkSection addObject:perk];
         }
         [mutablePerks addObject:perkSection];
@@ -78,7 +80,7 @@
     cell.perk = perk;
     PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
     cell.perkTitleLabel.font = [UIFont systemFontOfSize:12 * (layout.itemWidth/80.0)];
-    if ([[CharacterManager sharedCharacterManager].currentCharacter canCharacterTakePerk:perk])
+    if ([[CharacterManager sharedCharacterManager].currentCharacter hasEnoughSpecialPointsForPerk:perk])
     {
         cell.backgroundColor = [UIColor whiteColor];
     }
@@ -100,17 +102,15 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIAlertController *controller = [UIAlertController alertControllerWithTitle: @"didSelectItemAtIndexPath:"
-                                                                        message: [NSString stringWithFormat: @"Indexpath = %@", indexPath]
-                                                                 preferredStyle: UIAlertControllerStyleAlert];
-    
-    UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"Dismiss"
-                                                          style: UIAlertActionStyleDestructive
-                                                        handler: nil];
-    
-    [controller addAction: alertAction];
-    
-    [self presentViewController: controller animated: YES completion: nil];
+    [self performSegueWithIdentifier:@"ShowPerksDetailViewControllerSeque" sender:indexPath];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    PerksDetailViewController *perksDetailViewController = segue.destinationViewController;
+    NSIndexPath *indexPath = (NSIndexPath *)sender;
+    PerkDescription *perkDescription = self.perks[indexPath.section][indexPath.row];
+    perksDetailViewController.perkDescription = perkDescription;
 }
 
 -(void)handlePinch:(UIPinchGestureRecognizer *)pinchRecogniser

@@ -8,15 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "SPECIAL.h"
+#import "PerkRank.h"
 
 @interface PerkDescription : NSObject
 
 @property (nonatomic, assign, readwrite) NSInteger minLevel;
 @property (nonatomic, assign, readwrite) NSInteger minSpecial;
 @property (nullable, nonatomic, copy, readwrite) NSString *name;
+@property (nullable, nonatomic, copy, readwrite) NSString *notes;
 @property (nonatomic, assign, readwrite) NSInteger rank;
+@property (nonatomic, assign, readwrite) NSInteger maxRank;
 @property (nonatomic, assign, readwrite) SPECIALType specialType;
-@property (nullable, nonatomic, strong, readwrite) PerkDescription * nextRank;
-@property (nullable, nonatomic, strong, readwrite) PerkDescription * previousRank;
+@property (nullable, nonatomic, strong, readwrite) NSArray *ranks;
 
 @end

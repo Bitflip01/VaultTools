@@ -22,11 +22,9 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rank" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="specialType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="nextRank" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Perk" inverseName="previousRank" inverseEntity="Perk" syncable="YES"/>
-        <relationship name="previousRank" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Perk" inverseName="nextRank" inverseEntity="Perk" syncable="YES"/>
     </entity>
     <elements>
         <element name="Character" positionX="-63" positionY="-18" width="128" height="255"/>
-        <element name="Perk" positionX="-54" positionY="45" width="128" height="150"/>
+        <element name="Perk" positionX="-54" positionY="45" width="128" height="120"/>
     </elements>
 </model>
