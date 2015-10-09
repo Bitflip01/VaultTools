@@ -48,6 +48,11 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
     self.tableView.rowHeight = 55;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
