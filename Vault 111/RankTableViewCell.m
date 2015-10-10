@@ -22,4 +22,17 @@
     // Configure the view for the selected state
 }
 
+- (void)setRankTaken:(BOOL)rankTaken
+{
+    _rankTaken = rankTaken;
+    if (rankTaken)
+    {
+        self.starImageView.image = [UIImage imageNamed:@"star_selected"];
+    }
+    else
+    {
+        self.starImageView.image = [UIImage imageNamed:@"star_deselected"];
+    }
+}
+
 @end

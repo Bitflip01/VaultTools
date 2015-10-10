@@ -10,5 +10,7 @@
 
 @interface RankTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *rankDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *starImageView;
+@property (nonatomic, assign, readwrite) BOOL rankTaken;
 
 @end

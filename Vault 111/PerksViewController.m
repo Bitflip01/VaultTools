@@ -39,9 +39,22 @@
             NSDictionary *perkDict = perks[specialType][perkId];
             PerkDescription *perk = [PerkDescription new];
             perk.name = perkDict[@"name"];
+            
+            // Ranks
+            NSArray *ranks = perkDict[@"ranks"];
+            NSMutableArray *mutableRanks = [NSMutableArray array];
+            for (NSDictionary *rankDict in ranks)
+            {
+                PerkRank *perkRank = [PerkRank new];
+                perkRank.rankDescription = rankDict[@"rankDescription"];
+                perkRank.minLevel = [rankDict[@"minLevel"] integerValue];
+                [mutableRanks addObject:perkRank];
+            }
+            
+            perk.ranks = [mutableRanks copy];
             perk.minSpecial = perkId + 1;
             perk.specialType = specialType;
-            perk.maxRank = 1;
+            perk.maxRank = [perkDict[@"maxRank"] integerValue];
             [perkSection addObject:perk];
         }
         [mutablePerks addObject:perkSection];

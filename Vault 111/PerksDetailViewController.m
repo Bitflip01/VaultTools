@@ -133,6 +133,7 @@ typedef NS_ENUM(NSUInteger, PerksDetailViewControllerSection)
             
             PerkRank *rank = self.perkDescription.ranks[indexPath.row];
             rankTableViewCell.rankDescriptionLabel.text = rank.rankDescription;
+            rankTableViewCell.rankTaken = self.perkDescription.rank > indexPath.row;
             cell = rankTableViewCell;
             break;
         }
@@ -141,6 +142,7 @@ typedef NS_ENUM(NSUInteger, PerksDetailViewControllerSection)
             break;
     }
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
