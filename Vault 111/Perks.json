@@ -6,7 +6,13 @@
  
  [{"name": "Toughness"}, {"name": "Lead Belly"}, {"name": "Life Giver"}, {"name": "Chem Resistant"}, {"name": "Marine Boy"}, {"name": "Rad Resistant"}, {"name": "Adamantium Skeleton"}, {"name": "Cannibal"}, {"name": "Blast Radius"}, {"name": "Solar Powered"}],
  
- [{"name": "Cap Collector"}, {"name": "Lady Killer"}, {"name": "Lone Wanderer"}, {"name": "Attack Dog"}, {"name": "Animal Friend"}, {"name": "Local Leader"}, {"name": "Party Boy"}, {"name": "Inspirational"}, {"name": "Wasteland Whisperer"}, {"name": "Intimidation"}],
+ [{"name": "Cap Collector"}, {"name": "Lady Killer"}, {"name": "Lone Wanderer"}, {"name": "Attack Dog"}, {"name": "Animal Friend"},
+  {"name": "Local Leader", "ranks": [{"rankDescription": "As the ruler everyone turns to, you are able to establish supply lines between your workshop settlements",
+                                     "minLevel": 0},
+                                     {"rankDescription": "You are now able to assign one named companion as the leader of each workshop settlement",
+                                     "minLevel": 0}], "maxRank": 2
+  },
+  {"name": "Party Boy"}, {"name": "Inspirational"}, {"name": "Wasteland Whisperer"}, {"name": "Intimidation"}],
  
  [{"name": "V.A.N.S."}, {"name": "Medic"}, {"name": "Gun Nut"}, {"name": "Hacker"}, {"name": "Engineer"}, {"name": "Science!"}, {"name": "Chemist"},
   {"name": "Robotics Expert"}, {"name": "Fusion"}, {"name": "Nerd Rage!"}],
