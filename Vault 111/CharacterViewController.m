@@ -10,10 +10,13 @@
 #import "CharacterLevelCell.h"
 #import "CharacterManager.h"
 #import "CharacterNameCell.h"
+#import "PerksDetailViewController.h"
+#import "CharacterPerkCell.h"
 
 typedef NS_ENUM(NSUInteger, CharacterViewControllerSection)
 {
     CharacterViewControllerSectionOverview,
+    CharacterViewControllerSectionPerks,
     CharacterViewControllerSectionCount
 };
 
@@ -27,6 +30,7 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
 @interface CharacterViewController () <CharacterLevelCellDelegate, UITextFieldDelegate>
 
 @property (nonatomic, strong, readwrite) UITextField *nameTextField;
+@property (nonatomic, strong, readwrite) NSArray *perks;
 
 @end
 
@@ -41,6 +45,19 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // Sort perks in alphabetic order
+    self.perks = [[[CharacterManager sharedCharacterManager].currentCharacter.perks allObjects] sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        Perk *perk1 = obj1;
+        Perk *perk2 = obj2;
+        return [perk1.name compare:perk2.name];
+    }];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,6 +79,9 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
     {
         case CharacterViewControllerSectionOverview:
             return CharacterOverviewRowCount;
+            
+        case CharacterViewControllerSectionPerks:
+            return self.perks.count;
             
         default:
             return 0;
@@ -108,6 +128,15 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
             }
             break;
         }
+        case CharacterViewControllerSectionPerks:
+        {
+            CharacterPerkCell *characterPerkCell = (CharacterPerkCell *)[tableView dequeueReusableCellWithIdentifier:@"CharacterPerkCell"
+                                                                                                        forIndexPath:indexPath];
+            Perk *perk = self.perks[indexPath.row];
+            characterPerkCell.perkNameLabel.text = perk.name;
+            
+            cell = characterPerkCell;
+        }
             
             
         default:
@@ -117,6 +146,36 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
     
     
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    switch (section)
+    {
+        case CharacterViewControllerSectionOverview:
+            return @"Overview";
+            break;
+        case CharacterViewControllerSectionPerks:
+            return @"Perks";
+        default:
+            break;
+    }
+    return nil;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.section)
+    {
+        case CharacterViewControllerSectionOverview:
+            return 60;
+        
+        case CharacterViewControllerSectionPerks:
+            return 60;
+        default:
+            break;
+    }
+    return 60;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView

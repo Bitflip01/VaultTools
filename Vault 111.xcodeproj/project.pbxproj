@@ -16,6 +16,7 @@
 		FA088FF01BC95947003413B0 /* CharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FEF1BC95947003413B0 /* CharacterViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FA088FF31BC959BD003413B0 /* CharacterLevelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FF21BC959BD003413B0 /* CharacterLevelCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA088FF61BCA5D23003413B0 /* CharacterNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FF51BCA5D23003413B0 /* CharacterNameCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA088FF91BCA8153003413B0 /* CharacterPerkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FF81BCA8153003413B0 /* CharacterPerkCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA1D50741BC31D5700F850A8 /* Perks.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1D50731BC31D5700F850A8 /* Perks.json */; settings = {ASSET_TAGS = (); }; };
 		FA1D50771BC401AF00F850A8 /* PerksLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D50761BC401AF00F850A8 /* PerksLoader.m */; settings = {ASSET_TAGS = (); }; };
 		FA1D50801BC5039C00F850A8 /* PerkRank.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D507F1BC5039C00F850A8 /* PerkRank.m */; settings = {ASSET_TAGS = (); }; };
@@ -80,6 +81,8 @@
 		FA088FF21BC959BD003413B0 /* CharacterLevelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterLevelCell.m; sourceTree = "<group>"; };
 		FA088FF41BCA5D23003413B0 /* CharacterNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterNameCell.h; sourceTree = "<group>"; };
 		FA088FF51BCA5D23003413B0 /* CharacterNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterNameCell.m; sourceTree = "<group>"; };
+		FA088FF71BCA8153003413B0 /* CharacterPerkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterPerkCell.h; sourceTree = "<group>"; };
+		FA088FF81BCA8153003413B0 /* CharacterPerkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterPerkCell.m; sourceTree = "<group>"; };
 		FA1D50731BC31D5700F850A8 /* Perks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Perks.json; sourceTree = "<group>"; };
 		FA1D50751BC401AF00F850A8 /* PerksLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksLoader.h; sourceTree = "<group>"; };
 		FA1D50761BC401AF00F850A8 /* PerksLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksLoader.m; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 				FA088FF21BC959BD003413B0 /* CharacterLevelCell.m */,
 				FA088FF41BCA5D23003413B0 /* CharacterNameCell.h */,
 				FA088FF51BCA5D23003413B0 /* CharacterNameCell.m */,
+				FA088FF71BCA8153003413B0 /* CharacterPerkCell.h */,
+				FA088FF81BCA8153003413B0 /* CharacterPerkCell.m */,
 			);
 			name = Character;
 			sourceTree = "<group>";
@@ -498,6 +503,7 @@
 				FA088FE31BC7D204003413B0 /* RankTableViewCell.m in Sources */,
 				FA28657C1BBF29EF00D61C83 /* Perk+CoreDataProperties.m in Sources */,
 				FA088FF01BC95947003413B0 /* CharacterViewController.m in Sources */,
+				FA088FF91BCA8153003413B0 /* CharacterPerkCell.m in Sources */,
 				FA1D50771BC401AF00F850A8 /* PerksLoader.m in Sources */,
 				FA088FF31BC959BD003413B0 /* CharacterLevelCell.m in Sources */,
 				FA28657B1BBF29EF00D61C83 /* Character.m in Sources */,

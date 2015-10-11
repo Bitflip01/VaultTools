@@ -125,6 +125,29 @@
                                     <outlet property="levelUpButton" destination="LsN-Dh-nBx" id="tap-Bm-FCq"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterPerkCell" rowHeight="65" id="p4B-NP-D76" customClass="CharacterPerkCell">
+                                <rect key="frame" x="0.0" y="235.5" width="600" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p4B-NP-D76" id="Ep5-yy-ZKh">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="64.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perk Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSD-MY-oze">
+                                            <rect key="frame" x="59" y="21.5" width="84" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="sSD-MY-oze" firstAttribute="leading" secondItem="Ep5-yy-ZKh" secondAttribute="trailingMargin" multiplier="0.1" id="FTm-We-Mfo"/>
+                                        <constraint firstItem="sSD-MY-oze" firstAttribute="centerY" secondItem="Ep5-yy-ZKh" secondAttribute="centerY" id="f1M-07-aaY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="perkNameLabel" destination="sSD-MY-oze" id="YiG-fC-k7N"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="rWP-ce-mqk" id="4IZ-Af-swS"/>
