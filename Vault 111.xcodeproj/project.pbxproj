@@ -87,6 +87,7 @@
 		FA08908C1BCAD4AD003413B0 /* GrimReaper'sSprint.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08908B1BCAD4AD003413B0 /* GrimReaper'sSprint.json */; settings = {ASSET_TAGS = (); }; };
 		FA08908E1BCAD4C7003413B0 /* LuckOfTheIrish.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08908D1BCAD4C7003413B0 /* LuckOfTheIrish.json */; settings = {ASSET_TAGS = (); }; };
 		FA0890901BCAD4DC003413B0 /* Bulletproof.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08908F1BCAD4DC003413B0 /* Bulletproof.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890961BCAF2AF003413B0 /* SpecialCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0890951BCAF2AF003413B0 /* SpecialCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA1D50741BC31D5700F850A8 /* Perks.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1D50731BC31D5700F850A8 /* Perks.json */; settings = {ASSET_TAGS = (); }; };
 		FA1D50771BC401AF00F850A8 /* PerksLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D50761BC401AF00F850A8 /* PerksLoader.m */; settings = {ASSET_TAGS = (); }; };
 		FA1D50801BC5039C00F850A8 /* PerkRank.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D507F1BC5039C00F850A8 /* PerkRank.m */; settings = {ASSET_TAGS = (); }; };
@@ -223,6 +224,8 @@
 		FA08908B1BCAD4AD003413B0 /* GrimReaper'sSprint.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "GrimReaper'sSprint.json"; sourceTree = "<group>"; };
 		FA08908D1BCAD4C7003413B0 /* LuckOfTheIrish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LuckOfTheIrish.json; sourceTree = "<group>"; };
 		FA08908F1BCAD4DC003413B0 /* Bulletproof.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bulletproof.json; sourceTree = "<group>"; };
+		FA0890941BCAF2AF003413B0 /* SpecialCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialCollectionViewCell.h; sourceTree = "<group>"; };
+		FA0890951BCAF2AF003413B0 /* SpecialCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialCollectionViewCell.m; sourceTree = "<group>"; };
 		FA1D50731BC31D5700F850A8 /* Perks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Perks.json; sourceTree = "<group>"; };
 		FA1D50751BC401AF00F850A8 /* PerksLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksLoader.h; sourceTree = "<group>"; };
 		FA1D50761BC401AF00F850A8 /* PerksLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksLoader.m; sourceTree = "<group>"; };
@@ -491,6 +494,8 @@
 				FA1D50761BC401AF00F850A8 /* PerksLoader.m */,
 				FA2865931BC0692B00D61C83 /* PerkCollectionViewCell.h */,
 				FA2865941BC0692B00D61C83 /* PerkCollectionViewCell.m */,
+				FA0890941BCAF2AF003413B0 /* SpecialCollectionViewCell.h */,
+				FA0890951BCAF2AF003413B0 /* SpecialCollectionViewCell.m */,
 				FA28658D1BC0540E00D61C83 /* PerksViewController.h */,
 				FA28658E1BC0540E00D61C83 /* PerksViewController.m */,
 				FA088FDB1BC6F0B8003413B0 /* PerksDetailViewController.h */,
@@ -859,6 +864,7 @@
 				FA088FF61BCA5D23003413B0 /* CharacterNameCell.m in Sources */,
 				FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */,
 				FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */,
+				FA0890961BCAF2AF003413B0 /* SpecialCollectionViewCell.m in Sources */,
 				FA2865921BC058E700D61C83 /* PerksCollectionViewLayout.m in Sources */,
 				FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */,
 				FA2865951BC0692B00D61C83 /* PerkCollectionViewCell.m in Sources */,

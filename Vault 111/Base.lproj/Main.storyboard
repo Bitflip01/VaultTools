@@ -347,6 +347,31 @@
                                             <outlet property="perkTitleLabel" destination="nDh-gG-Le0" id="OhL-Ja-3Ob"/>
                                         </connections>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SpecialCollectionViewCell" id="Iay-MA-36B" customClass="SpecialCollectionViewCell">
+                                        <rect key="frame" x="100" y="65" width="95" height="95"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPECIAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3l-w6-tdh">
+                                                    <rect key="frame" x="13.5" y="37.5" width="67" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="H3l-w6-tdh" firstAttribute="centerY" secondItem="Iay-MA-36B" secondAttribute="centerY" id="4qn-z8-NBF"/>
+                                            <constraint firstItem="H3l-w6-tdh" firstAttribute="centerX" secondItem="Iay-MA-36B" secondAttribute="centerX" id="CSU-G3-eIO"/>
+                                        </constraints>
+                                        <size key="customSize" width="95" height="95"/>
+                                        <connections>
+                                            <outlet property="specialTitleLabel" destination="H3l-w6-tdh" id="Bcl-Gs-eWa"/>
+                                        </connections>
+                                    </collectionViewCell>
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="OQe-8z-9Da" id="sec-Xq-Gqp"/>
@@ -576,6 +601,6 @@
         <image name="star_deselected" width="106" height="101"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a0H-Ld-Et2"/>
+        <segue reference="vwW-Rj-HsY"/>
     </inferredMetricsTieBreakers>
 </document>

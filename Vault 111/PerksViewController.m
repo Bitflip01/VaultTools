@@ -13,6 +13,7 @@
 #import "PerksLoader.h"
 #import "CharacterManager.h"
 #import "PerksDetailViewController.h"
+#import "SpecialCollectionViewCell.h"
 
 @interface PerksViewController ()<UIGestureRecognizerDelegate>
 
@@ -56,26 +57,35 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    PerkCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PerkCollectionViewCell" forIndexPath:indexPath];
-    PerkDescription *perk = self.perks[indexPath.section][indexPath.row];
-    cell.perk = perk;
-    PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
-    cell.perkTitleLabel.font = [UIFont systemFontOfSize:12 * (layout.itemWidth/80.0)];
-    if ([[CharacterManager sharedCharacterManager].currentCharacter hasEnoughSpecialPointsForPerk:perk])
+    UICollectionViewCell *cell;
+    
+    if (indexPath.row == 0)
     {
-        cell.backgroundColor = [UIColor whiteColor];
+        SpecialCollectionViewCell *specialCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SpecialCollectionViewCell" forIndexPath:indexPath];
+        specialCell.specialTitleLabel.text = [SPECIAL nameForType:indexPath.section];
+        PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
+        specialCell.specialTitleLabel.font = [UIFont systemFontOfSize:14 * (layout.itemWidth/80.0)];
+        cell = specialCell;
     }
     else
     {
-        cell.backgroundColor = [UIColor grayColor];
+        PerkCollectionViewCell *perkCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PerkCollectionViewCell" forIndexPath:indexPath];
+        PerkDescription *perk = self.perks[indexPath.section][indexPath.row - 1];
+        perkCell.perk = perk;
+        PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
+        perkCell.perkTitleLabel.font = [UIFont systemFontOfSize:12 * (layout.itemWidth/80.0)];
+        if ([[CharacterManager sharedCharacterManager].currentCharacter hasEnoughSpecialPointsForPerk:perk])
+        {
+            perkCell.backgroundColor = [UIColor whiteColor];
+        }
+        else
+        {
+            perkCell.backgroundColor = [UIColor grayColor];
+        }
+        cell = perkCell;
     }
     
     return cell;
-}
-
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-{
-
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -88,14 +98,17 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"ShowPerksDetailViewControllerSeque" sender:indexPath];
+    if (indexPath.row > 0)
+    {
+        [self performSegueWithIdentifier:@"ShowPerksDetailViewControllerSeque" sender:indexPath];
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     PerksDetailViewController *perksDetailViewController = segue.destinationViewController;
     NSIndexPath *indexPath = (NSIndexPath *)sender;
-    PerkDescription *perkDescription = self.perks[indexPath.section][indexPath.row];
+    PerkDescription *perkDescription = self.perks[indexPath.section][indexPath.row - 1];
     perksDetailViewController.perkDescription = perkDescription;
 }
 
