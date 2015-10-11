@@ -155,10 +155,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Character" id="HAf-bq-hQs"/>
+                    <connections>
+                        <segue destination="ytD-yK-mqI" kind="show" identifier="ShowPerksDetailViewControllerFromCharacterSeque" id="a0H-Ld-Et2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Lo-zP-NmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="-1153"/>
+            <point key="canvasLocation" x="1786" y="-1141"/>
         </scene>
         <!--SPECIAL-->
         <scene sceneID="YZ4-Hl-4yx">
@@ -253,7 +256,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I4n-Jr-8k3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592" y="-337"/>
+            <point key="canvasLocation" x="1490" y="-235"/>
         </scene>
         <!--SPECIAL-->
         <scene sceneID="oDe-2d-odj">
@@ -272,7 +275,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vo-7V-S5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="-337"/>
+            <point key="canvasLocation" x="724" y="-337"/>
         </scene>
         <!--Perks-->
         <scene sceneID="QQZ-Ud-VgH">
@@ -572,4 +575,7 @@
     <resources>
         <image name="star_deselected" width="106" height="101"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="a0H-Ld-Et2"/>
+    </inferredMetricsTieBreakers>
 </document>
