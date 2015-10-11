@@ -1,0 +1,10 @@
+{"name": "Inspirational",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 8,
+    "specialType": "charisma",
+    "description": "TBD",
+}

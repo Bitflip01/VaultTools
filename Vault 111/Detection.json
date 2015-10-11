@@ -1,0 +1,10 @@
+{"name": "Detection",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 9,
+    "specialType": "perception",
+    "description": "TBD",
+}

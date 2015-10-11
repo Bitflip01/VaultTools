@@ -1,0 +1,10 @@
+{"name": "Demolition Expert",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 5,
+    "specialType": "perception",
+    "description": "TBD",
+}

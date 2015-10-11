@@ -1,0 +1,10 @@
+{"name": "Concentrated Fire",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 10,
+    "specialType": "perception",
+    "description": "TBD",
+}

@@ -1,0 +1,10 @@
+{"name": "Mysterious Stranger",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 4,
+    "specialType": "luck",
+    "description": "TBD",
+}

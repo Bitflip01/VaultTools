@@ -1,0 +1,10 @@
+{"name": "Scrounger",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 2,
+    "specialType": "luck",
+    "description": "TBD",
+}

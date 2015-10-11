@@ -1,0 +1,10 @@
+{"name": "Science!",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 6,
+    "specialType": "intelligence",
+    "description": "TBD",
+}

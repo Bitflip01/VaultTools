@@ -1,0 +1,10 @@
+{"name": "Defender",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 8,
+    "specialType": "strength",
+    "description": "TBD",
+}

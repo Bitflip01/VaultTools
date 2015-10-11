@@ -1,0 +1,10 @@
+{"name": "Pickpocket",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 1,
+    "specialType": "perception",
+    "description": "TBD",
+}

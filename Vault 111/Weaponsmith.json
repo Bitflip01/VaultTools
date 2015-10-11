@@ -1,0 +1,10 @@
+{"name": "Weaponsmith",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 4,
+    "specialType": "strength",
+    "description": "TBD",
+}

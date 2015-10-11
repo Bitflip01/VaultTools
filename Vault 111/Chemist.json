@@ -1,0 +1,10 @@
+{"name": "Chemist",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 7,
+    "specialType": "intelligence",
+    "description": "TBD",
+}

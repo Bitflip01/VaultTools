@@ -18,6 +18,75 @@
 		FA088FF61BCA5D23003413B0 /* CharacterNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FF51BCA5D23003413B0 /* CharacterNameCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA088FF91BCA8153003413B0 /* CharacterPerkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FF81BCA8153003413B0 /* CharacterPerkCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA088FFB1BCA8E00003413B0 /* LocalLeader.json in Resources */ = {isa = PBXBuildFile; fileRef = FA088FFA1BCA8E00003413B0 /* LocalLeader.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890001BCACB72003413B0 /* IronFist.json in Resources */ = {isa = PBXBuildFile; fileRef = FA088FFF1BCACB72003413B0 /* IronFist.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890021BCACC2F003413B0 /* BigLeagues.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890011BCACC2F003413B0 /* BigLeagues.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890041BCACCA0003413B0 /* Armorer.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890031BCACCA0003413B0 /* Armorer.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890061BCACCC3003413B0 /* Weaponsmith.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890051BCACCC3003413B0 /* Weaponsmith.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890081BCACCE5003413B0 /* BigGuns.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890071BCACCE5003413B0 /* BigGuns.json */; settings = {ASSET_TAGS = (); }; };
+		FA08900A1BCACCF9003413B0 /* StrongBack.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890091BCACCF9003413B0 /* StrongBack.json */; settings = {ASSET_TAGS = (); }; };
+		FA08900C1BCACD12003413B0 /* SizeMatters.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08900B1BCACD12003413B0 /* SizeMatters.json */; settings = {ASSET_TAGS = (); }; };
+		FA08900E1BCACD27003413B0 /* Defender.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08900D1BCACD27003413B0 /* Defender.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890101BCACD3C003413B0 /* Slayer.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08900F1BCACD3C003413B0 /* Slayer.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890141BCACDA9003413B0 /* Juggernaut.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890131BCACDA9003413B0 /* Juggernaut.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890171BCACE15003413B0 /* Pickpocket.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890161BCACE15003413B0 /* Pickpocket.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890191BCACE33003413B0 /* Rifleman.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890181BCACE33003413B0 /* Rifleman.json */; settings = {ASSET_TAGS = (); }; };
+		FA08901B1BCACE48003413B0 /* Awareness.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08901A1BCACE48003413B0 /* Awareness.json */; settings = {ASSET_TAGS = (); }; };
+		FA08901D1BCACE6B003413B0 /* Lockpick.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08901C1BCACE6B003413B0 /* Lockpick.json */; settings = {ASSET_TAGS = (); }; };
+		FA08901F1BCACE83003413B0 /* DemolitionExpert.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08901E1BCACE83003413B0 /* DemolitionExpert.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890211BCACE9A003413B0 /* NightPerson.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890201BCACE9A003413B0 /* NightPerson.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890231BCACEB0003413B0 /* Resonance.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890221BCACEB0003413B0 /* Resonance.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890251BCACEC5003413B0 /* Sniper.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890241BCACEC5003413B0 /* Sniper.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890271BCACED7003413B0 /* Detection.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890261BCACED7003413B0 /* Detection.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890291BCACEFB003413B0 /* ConcentratedFire.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890281BCACEFB003413B0 /* ConcentratedFire.json */; settings = {ASSET_TAGS = (); }; };
+		FA08902C1BCACF36003413B0 /* Toughness.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08902B1BCACF36003413B0 /* Toughness.json */; settings = {ASSET_TAGS = (); }; };
+		FA08902E1BCACF5B003413B0 /* LeadBelly.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08902D1BCACF5B003413B0 /* LeadBelly.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890301BCACFEF003413B0 /* LifeGiver.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08902F1BCACFEF003413B0 /* LifeGiver.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890321BCAD007003413B0 /* ChemResistant.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890311BCAD007003413B0 /* ChemResistant.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890341BCAD01D003413B0 /* MarineBoy.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890331BCAD01D003413B0 /* MarineBoy.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890361BCAD034003413B0 /* RadResistant.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890351BCAD034003413B0 /* RadResistant.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890381BCAD051003413B0 /* AdamantiumSkeleton.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890371BCAD051003413B0 /* AdamantiumSkeleton.json */; settings = {ASSET_TAGS = (); }; };
+		FA08903A1BCAD071003413B0 /* Cannibal.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890391BCAD071003413B0 /* Cannibal.json */; settings = {ASSET_TAGS = (); }; };
+		FA08903C1BCAD08A003413B0 /* BlastRadius.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08903B1BCAD08A003413B0 /* BlastRadius.json */; settings = {ASSET_TAGS = (); }; };
+		FA08903E1BCAD09F003413B0 /* SolarPowered.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08903D1BCAD09F003413B0 /* SolarPowered.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890411BCAD0DE003413B0 /* CapCollector.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890401BCAD0DE003413B0 /* CapCollector.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890431BCAD0FC003413B0 /* LadyKiller.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890421BCAD0FC003413B0 /* LadyKiller.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890451BCAD118003413B0 /* LoneWanderer.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890441BCAD118003413B0 /* LoneWanderer.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890471BCAD132003413B0 /* AttackDog.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890461BCAD132003413B0 /* AttackDog.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890491BCAD149003413B0 /* AnimalFriend.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890481BCAD149003413B0 /* AnimalFriend.json */; settings = {ASSET_TAGS = (); }; };
+		FA08904B1BCAD16B003413B0 /* PartyBoy.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08904A1BCAD16B003413B0 /* PartyBoy.json */; settings = {ASSET_TAGS = (); }; };
+		FA08904D1BCAD17F003413B0 /* Inspirational.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08904C1BCAD17F003413B0 /* Inspirational.json */; settings = {ASSET_TAGS = (); }; };
+		FA08904F1BCAD196003413B0 /* WastelandWhisperer.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08904E1BCAD196003413B0 /* WastelandWhisperer.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890511BCAD1B8003413B0 /* Intimidation.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890501BCAD1B8003413B0 /* Intimidation.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890541BCAD204003413B0 /* VANS.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890531BCAD204003413B0 /* VANS.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890561BCAD252003413B0 /* Medic.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890551BCAD252003413B0 /* Medic.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890581BCAD262003413B0 /* GunNut.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890571BCAD262003413B0 /* GunNut.json */; settings = {ASSET_TAGS = (); }; };
+		FA08905A1BCAD27B003413B0 /* Hacker.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890591BCAD27B003413B0 /* Hacker.json */; settings = {ASSET_TAGS = (); }; };
+		FA08905C1BCAD28A003413B0 /* Engineer.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08905B1BCAD28A003413B0 /* Engineer.json */; settings = {ASSET_TAGS = (); }; };
+		FA08905E1BCAD2A6003413B0 /* Science!.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08905D1BCAD2A6003413B0 /* Science!.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890601BCAD2B9003413B0 /* Chemist.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08905F1BCAD2B9003413B0 /* Chemist.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890621BCAD2CF003413B0 /* RoboticsExpert.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890611BCAD2CF003413B0 /* RoboticsExpert.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890641BCAD2E4003413B0 /* Fusion.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890631BCAD2E4003413B0 /* Fusion.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890661BCAD2F3003413B0 /* NerdRage!.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890651BCAD2F3003413B0 /* NerdRage!.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890691BCAD319003413B0 /* Gunslinger.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890681BCAD319003413B0 /* Gunslinger.json */; settings = {ASSET_TAGS = (); }; };
+		FA08906B1BCAD330003413B0 /* Commando.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08906A1BCAD330003413B0 /* Commando.json */; settings = {ASSET_TAGS = (); }; };
+		FA08906D1BCAD34B003413B0 /* Sneak.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08906C1BCAD34B003413B0 /* Sneak.json */; settings = {ASSET_TAGS = (); }; };
+		FA08906F1BCAD35B003413B0 /* MisterSandman.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08906E1BCAD35B003413B0 /* MisterSandman.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890711BCAD375003413B0 /* ActionBoy.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890701BCAD375003413B0 /* ActionBoy.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890731BCAD387003413B0 /* Avoidance.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890721BCAD387003413B0 /* Avoidance.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890751BCAD39B003413B0 /* Ninja.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890741BCAD39B003413B0 /* Ninja.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890771BCAD3AB003413B0 /* RapidReload.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890761BCAD3AB003413B0 /* RapidReload.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890791BCAD3BE003413B0 /* Escape.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890781BCAD3BE003413B0 /* Escape.json */; settings = {ASSET_TAGS = (); }; };
+		FA08907B1BCAD3D0003413B0 /* GunFu.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08907A1BCAD3D0003413B0 /* GunFu.json */; settings = {ASSET_TAGS = (); }; };
+		FA08907E1BCAD405003413B0 /* FortuneFinder.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08907D1BCAD405003413B0 /* FortuneFinder.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890801BCAD41A003413B0 /* Scrounger.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08907F1BCAD41A003413B0 /* Scrounger.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890821BCAD430003413B0 /* BloodyMess.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890811BCAD430003413B0 /* BloodyMess.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890841BCAD449003413B0 /* MysteriousStranger.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890831BCAD449003413B0 /* MysteriousStranger.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890861BCAD46C003413B0 /* PotLuck.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890851BCAD46C003413B0 /* PotLuck.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890881BCAD47E003413B0 /* BetterCriticals.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890871BCAD47E003413B0 /* BetterCriticals.json */; settings = {ASSET_TAGS = (); }; };
+		FA08908A1BCAD490003413B0 /* KillShot.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890891BCAD490003413B0 /* KillShot.json */; settings = {ASSET_TAGS = (); }; };
+		FA08908C1BCAD4AD003413B0 /* GrimReaper'sSprint.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08908B1BCAD4AD003413B0 /* GrimReaper'sSprint.json */; settings = {ASSET_TAGS = (); }; };
+		FA08908E1BCAD4C7003413B0 /* LuckOfTheIrish.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08908D1BCAD4C7003413B0 /* LuckOfTheIrish.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890901BCAD4DC003413B0 /* Bulletproof.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08908F1BCAD4DC003413B0 /* Bulletproof.json */; settings = {ASSET_TAGS = (); }; };
 		FA1D50741BC31D5700F850A8 /* Perks.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1D50731BC31D5700F850A8 /* Perks.json */; settings = {ASSET_TAGS = (); }; };
 		FA1D50771BC401AF00F850A8 /* PerksLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D50761BC401AF00F850A8 /* PerksLoader.m */; settings = {ASSET_TAGS = (); }; };
 		FA1D50801BC5039C00F850A8 /* PerkRank.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D507F1BC5039C00F850A8 /* PerkRank.m */; settings = {ASSET_TAGS = (); }; };
@@ -85,6 +154,75 @@
 		FA088FF71BCA8153003413B0 /* CharacterPerkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterPerkCell.h; sourceTree = "<group>"; };
 		FA088FF81BCA8153003413B0 /* CharacterPerkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterPerkCell.m; sourceTree = "<group>"; };
 		FA088FFA1BCA8E00003413B0 /* LocalLeader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LocalLeader.json; sourceTree = "<group>"; };
+		FA088FFF1BCACB72003413B0 /* IronFist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IronFist.json; sourceTree = "<group>"; };
+		FA0890011BCACC2F003413B0 /* BigLeagues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BigLeagues.json; sourceTree = "<group>"; };
+		FA0890031BCACCA0003413B0 /* Armorer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Armorer.json; sourceTree = "<group>"; };
+		FA0890051BCACCC3003413B0 /* Weaponsmith.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Weaponsmith.json; sourceTree = "<group>"; };
+		FA0890071BCACCE5003413B0 /* BigGuns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BigGuns.json; sourceTree = "<group>"; };
+		FA0890091BCACCF9003413B0 /* StrongBack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StrongBack.json; sourceTree = "<group>"; };
+		FA08900B1BCACD12003413B0 /* SizeMatters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SizeMatters.json; sourceTree = "<group>"; };
+		FA08900D1BCACD27003413B0 /* Defender.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Defender.json; sourceTree = "<group>"; };
+		FA08900F1BCACD3C003413B0 /* Slayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Slayer.json; sourceTree = "<group>"; };
+		FA0890131BCACDA9003413B0 /* Juggernaut.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Juggernaut.json; sourceTree = "<group>"; };
+		FA0890161BCACE15003413B0 /* Pickpocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pickpocket.json; sourceTree = "<group>"; };
+		FA0890181BCACE33003413B0 /* Rifleman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rifleman.json; sourceTree = "<group>"; };
+		FA08901A1BCACE48003413B0 /* Awareness.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awareness.json; sourceTree = "<group>"; };
+		FA08901C1BCACE6B003413B0 /* Lockpick.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lockpick.json; sourceTree = "<group>"; };
+		FA08901E1BCACE83003413B0 /* DemolitionExpert.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemolitionExpert.json; sourceTree = "<group>"; };
+		FA0890201BCACE9A003413B0 /* NightPerson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NightPerson.json; sourceTree = "<group>"; };
+		FA0890221BCACEB0003413B0 /* Resonance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Resonance.json; sourceTree = "<group>"; };
+		FA0890241BCACEC5003413B0 /* Sniper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sniper.json; sourceTree = "<group>"; };
+		FA0890261BCACED7003413B0 /* Detection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Detection.json; sourceTree = "<group>"; };
+		FA0890281BCACEFB003413B0 /* ConcentratedFire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ConcentratedFire.json; sourceTree = "<group>"; };
+		FA08902B1BCACF36003413B0 /* Toughness.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Toughness.json; sourceTree = "<group>"; };
+		FA08902D1BCACF5B003413B0 /* LeadBelly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LeadBelly.json; sourceTree = "<group>"; };
+		FA08902F1BCACFEF003413B0 /* LifeGiver.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LifeGiver.json; sourceTree = "<group>"; };
+		FA0890311BCAD007003413B0 /* ChemResistant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChemResistant.json; sourceTree = "<group>"; };
+		FA0890331BCAD01D003413B0 /* MarineBoy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MarineBoy.json; sourceTree = "<group>"; };
+		FA0890351BCAD034003413B0 /* RadResistant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RadResistant.json; sourceTree = "<group>"; };
+		FA0890371BCAD051003413B0 /* AdamantiumSkeleton.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AdamantiumSkeleton.json; sourceTree = "<group>"; };
+		FA0890391BCAD071003413B0 /* Cannibal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cannibal.json; sourceTree = "<group>"; };
+		FA08903B1BCAD08A003413B0 /* BlastRadius.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlastRadius.json; sourceTree = "<group>"; };
+		FA08903D1BCAD09F003413B0 /* SolarPowered.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SolarPowered.json; sourceTree = "<group>"; };
+		FA0890401BCAD0DE003413B0 /* CapCollector.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CapCollector.json; sourceTree = "<group>"; };
+		FA0890421BCAD0FC003413B0 /* LadyKiller.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LadyKiller.json; sourceTree = "<group>"; };
+		FA0890441BCAD118003413B0 /* LoneWanderer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoneWanderer.json; sourceTree = "<group>"; };
+		FA0890461BCAD132003413B0 /* AttackDog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AttackDog.json; sourceTree = "<group>"; };
+		FA0890481BCAD149003413B0 /* AnimalFriend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimalFriend.json; sourceTree = "<group>"; };
+		FA08904A1BCAD16B003413B0 /* PartyBoy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PartyBoy.json; sourceTree = "<group>"; };
+		FA08904C1BCAD17F003413B0 /* Inspirational.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Inspirational.json; sourceTree = "<group>"; };
+		FA08904E1BCAD196003413B0 /* WastelandWhisperer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WastelandWhisperer.json; sourceTree = "<group>"; };
+		FA0890501BCAD1B8003413B0 /* Intimidation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Intimidation.json; sourceTree = "<group>"; };
+		FA0890531BCAD204003413B0 /* VANS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VANS.json; sourceTree = "<group>"; };
+		FA0890551BCAD252003413B0 /* Medic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Medic.json; sourceTree = "<group>"; };
+		FA0890571BCAD262003413B0 /* GunNut.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GunNut.json; sourceTree = "<group>"; };
+		FA0890591BCAD27B003413B0 /* Hacker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hacker.json; sourceTree = "<group>"; };
+		FA08905B1BCAD28A003413B0 /* Engineer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Engineer.json; sourceTree = "<group>"; };
+		FA08905D1BCAD2A6003413B0 /* Science!.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Science!.json"; sourceTree = "<group>"; };
+		FA08905F1BCAD2B9003413B0 /* Chemist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Chemist.json; sourceTree = "<group>"; };
+		FA0890611BCAD2CF003413B0 /* RoboticsExpert.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RoboticsExpert.json; sourceTree = "<group>"; };
+		FA0890631BCAD2E4003413B0 /* Fusion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fusion.json; sourceTree = "<group>"; };
+		FA0890651BCAD2F3003413B0 /* NerdRage!.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "NerdRage!.json"; sourceTree = "<group>"; };
+		FA0890681BCAD319003413B0 /* Gunslinger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Gunslinger.json; sourceTree = "<group>"; };
+		FA08906A1BCAD330003413B0 /* Commando.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Commando.json; sourceTree = "<group>"; };
+		FA08906C1BCAD34B003413B0 /* Sneak.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sneak.json; sourceTree = "<group>"; };
+		FA08906E1BCAD35B003413B0 /* MisterSandman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MisterSandman.json; sourceTree = "<group>"; };
+		FA0890701BCAD375003413B0 /* ActionBoy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ActionBoy.json; sourceTree = "<group>"; };
+		FA0890721BCAD387003413B0 /* Avoidance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Avoidance.json; sourceTree = "<group>"; };
+		FA0890741BCAD39B003413B0 /* Ninja.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ninja.json; sourceTree = "<group>"; };
+		FA0890761BCAD3AB003413B0 /* RapidReload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RapidReload.json; sourceTree = "<group>"; };
+		FA0890781BCAD3BE003413B0 /* Escape.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Escape.json; sourceTree = "<group>"; };
+		FA08907A1BCAD3D0003413B0 /* GunFu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GunFu.json; sourceTree = "<group>"; };
+		FA08907D1BCAD405003413B0 /* FortuneFinder.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FortuneFinder.json; sourceTree = "<group>"; };
+		FA08907F1BCAD41A003413B0 /* Scrounger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Scrounger.json; sourceTree = "<group>"; };
+		FA0890811BCAD430003413B0 /* BloodyMess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BloodyMess.json; sourceTree = "<group>"; };
+		FA0890831BCAD449003413B0 /* MysteriousStranger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MysteriousStranger.json; sourceTree = "<group>"; };
+		FA0890851BCAD46C003413B0 /* PotLuck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PotLuck.json; sourceTree = "<group>"; };
+		FA0890871BCAD47E003413B0 /* BetterCriticals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BetterCriticals.json; sourceTree = "<group>"; };
+		FA0890891BCAD490003413B0 /* KillShot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KillShot.json; sourceTree = "<group>"; };
+		FA08908B1BCAD4AD003413B0 /* GrimReaper'sSprint.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "GrimReaper'sSprint.json"; sourceTree = "<group>"; };
+		FA08908D1BCAD4C7003413B0 /* LuckOfTheIrish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LuckOfTheIrish.json; sourceTree = "<group>"; };
+		FA08908F1BCAD4DC003413B0 /* Bulletproof.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bulletproof.json; sourceTree = "<group>"; };
 		FA1D50731BC31D5700F850A8 /* Perks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Perks.json; sourceTree = "<group>"; };
 		FA1D50751BC401AF00F850A8 /* PerksLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksLoader.h; sourceTree = "<group>"; };
 		FA1D50761BC401AF00F850A8 /* PerksLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksLoader.m; sourceTree = "<group>"; };
@@ -210,11 +348,136 @@
 			name = Character;
 			sourceTree = "<group>";
 		};
+		FA088FFC1BCACB0B003413B0 /* Strength */ = {
+			isa = PBXGroup;
+			children = (
+				FA088FFF1BCACB72003413B0 /* IronFist.json */,
+				FA0890011BCACC2F003413B0 /* BigLeagues.json */,
+				FA0890031BCACCA0003413B0 /* Armorer.json */,
+				FA0890051BCACCC3003413B0 /* Weaponsmith.json */,
+				FA0890071BCACCE5003413B0 /* BigGuns.json */,
+				FA0890091BCACCF9003413B0 /* StrongBack.json */,
+				FA08900B1BCACD12003413B0 /* SizeMatters.json */,
+				FA08900D1BCACD27003413B0 /* Defender.json */,
+				FA08900F1BCACD3C003413B0 /* Slayer.json */,
+				FA0890131BCACDA9003413B0 /* Juggernaut.json */,
+			);
+			name = Strength;
+			sourceTree = "<group>";
+		};
+		FA0890151BCACDEB003413B0 /* Perception */ = {
+			isa = PBXGroup;
+			children = (
+				FA0890161BCACE15003413B0 /* Pickpocket.json */,
+				FA0890181BCACE33003413B0 /* Rifleman.json */,
+				FA08901A1BCACE48003413B0 /* Awareness.json */,
+				FA08901C1BCACE6B003413B0 /* Lockpick.json */,
+				FA08901E1BCACE83003413B0 /* DemolitionExpert.json */,
+				FA0890201BCACE9A003413B0 /* NightPerson.json */,
+				FA0890221BCACEB0003413B0 /* Resonance.json */,
+				FA0890241BCACEC5003413B0 /* Sniper.json */,
+				FA0890261BCACED7003413B0 /* Detection.json */,
+				FA0890281BCACEFB003413B0 /* ConcentratedFire.json */,
+			);
+			name = Perception;
+			sourceTree = "<group>";
+		};
+		FA08902A1BCACF20003413B0 /* Endurance */ = {
+			isa = PBXGroup;
+			children = (
+				FA08902B1BCACF36003413B0 /* Toughness.json */,
+				FA08902D1BCACF5B003413B0 /* LeadBelly.json */,
+				FA08902F1BCACFEF003413B0 /* LifeGiver.json */,
+				FA0890311BCAD007003413B0 /* ChemResistant.json */,
+				FA0890331BCAD01D003413B0 /* MarineBoy.json */,
+				FA0890351BCAD034003413B0 /* RadResistant.json */,
+				FA0890371BCAD051003413B0 /* AdamantiumSkeleton.json */,
+				FA0890391BCAD071003413B0 /* Cannibal.json */,
+				FA08903B1BCAD08A003413B0 /* BlastRadius.json */,
+				FA08903D1BCAD09F003413B0 /* SolarPowered.json */,
+			);
+			name = Endurance;
+			sourceTree = "<group>";
+		};
+		FA08903F1BCAD0B2003413B0 /* Charisma */ = {
+			isa = PBXGroup;
+			children = (
+				FA0890401BCAD0DE003413B0 /* CapCollector.json */,
+				FA0890421BCAD0FC003413B0 /* LadyKiller.json */,
+				FA0890441BCAD118003413B0 /* LoneWanderer.json */,
+				FA0890461BCAD132003413B0 /* AttackDog.json */,
+				FA0890481BCAD149003413B0 /* AnimalFriend.json */,
+				FA088FFA1BCA8E00003413B0 /* LocalLeader.json */,
+				FA08904A1BCAD16B003413B0 /* PartyBoy.json */,
+				FA08904C1BCAD17F003413B0 /* Inspirational.json */,
+				FA08904E1BCAD196003413B0 /* WastelandWhisperer.json */,
+				FA0890501BCAD1B8003413B0 /* Intimidation.json */,
+			);
+			name = Charisma;
+			sourceTree = "<group>";
+		};
+		FA0890521BCAD1CB003413B0 /* Intelligence */ = {
+			isa = PBXGroup;
+			children = (
+				FA0890531BCAD204003413B0 /* VANS.json */,
+				FA0890551BCAD252003413B0 /* Medic.json */,
+				FA0890571BCAD262003413B0 /* GunNut.json */,
+				FA0890591BCAD27B003413B0 /* Hacker.json */,
+				FA08905B1BCAD28A003413B0 /* Engineer.json */,
+				FA08905D1BCAD2A6003413B0 /* Science!.json */,
+				FA08905F1BCAD2B9003413B0 /* Chemist.json */,
+				FA0890611BCAD2CF003413B0 /* RoboticsExpert.json */,
+				FA0890631BCAD2E4003413B0 /* Fusion.json */,
+				FA0890651BCAD2F3003413B0 /* NerdRage!.json */,
+			);
+			name = Intelligence;
+			sourceTree = "<group>";
+		};
+		FA0890671BCAD301003413B0 /* Agility */ = {
+			isa = PBXGroup;
+			children = (
+				FA0890681BCAD319003413B0 /* Gunslinger.json */,
+				FA08906A1BCAD330003413B0 /* Commando.json */,
+				FA08906C1BCAD34B003413B0 /* Sneak.json */,
+				FA08906E1BCAD35B003413B0 /* MisterSandman.json */,
+				FA0890701BCAD375003413B0 /* ActionBoy.json */,
+				FA0890721BCAD387003413B0 /* Avoidance.json */,
+				FA0890741BCAD39B003413B0 /* Ninja.json */,
+				FA0890761BCAD3AB003413B0 /* RapidReload.json */,
+				FA0890781BCAD3BE003413B0 /* Escape.json */,
+				FA08907A1BCAD3D0003413B0 /* GunFu.json */,
+			);
+			name = Agility;
+			sourceTree = "<group>";
+		};
+		FA08907C1BCAD3E4003413B0 /* Luck */ = {
+			isa = PBXGroup;
+			children = (
+				FA08907D1BCAD405003413B0 /* FortuneFinder.json */,
+				FA08907F1BCAD41A003413B0 /* Scrounger.json */,
+				FA0890811BCAD430003413B0 /* BloodyMess.json */,
+				FA0890831BCAD449003413B0 /* MysteriousStranger.json */,
+				FA0890851BCAD46C003413B0 /* PotLuck.json */,
+				FA0890871BCAD47E003413B0 /* BetterCriticals.json */,
+				FA0890891BCAD490003413B0 /* KillShot.json */,
+				FA08908B1BCAD4AD003413B0 /* GrimReaper'sSprint.json */,
+				FA08908D1BCAD4C7003413B0 /* LuckOfTheIrish.json */,
+				FA08908F1BCAD4DC003413B0 /* Bulletproof.json */,
+			);
+			name = Luck;
+			sourceTree = "<group>";
+		};
 		FA1D50721BC31D4100F850A8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				FA1D50731BC31D5700F850A8 /* Perks.json */,
-				FA088FFA1BCA8E00003413B0 /* LocalLeader.json */,
+				FA088FFC1BCACB0B003413B0 /* Strength */,
+				FA0890151BCACDEB003413B0 /* Perception */,
+				FA08902A1BCACF20003413B0 /* Endurance */,
+				FA08903F1BCAD0B2003413B0 /* Charisma */,
+				FA0890521BCAD1CB003413B0 /* Intelligence */,
+				FA0890671BCAD301003413B0 /* Agility */,
+				FA08907C1BCAD3E4003413B0 /* Luck */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -440,13 +703,82 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA08905E1BCAD2A6003413B0 /* Science!.json in Resources */,
+				FA08907E1BCAD405003413B0 /* FortuneFinder.json in Resources */,
+				FA08907B1BCAD3D0003413B0 /* GunFu.json in Resources */,
 				FA088FFB1BCA8E00003413B0 /* LocalLeader.json in Resources */,
+				FA08900E1BCACD27003413B0 /* Defender.json in Resources */,
 				FADA2DC01BBDAFD00096BC9D /* LaunchScreen.storyboard in Resources */,
+				FA0890621BCAD2CF003413B0 /* RoboticsExpert.json in Resources */,
+				FA0890301BCACFEF003413B0 /* LifeGiver.json in Resources */,
+				FA0890561BCAD252003413B0 /* Medic.json in Resources */,
+				FA08901B1BCACE48003413B0 /* Awareness.json in Resources */,
+				FA0890231BCACEB0003413B0 /* Resonance.json in Resources */,
 				FA28658C1BC01E5C00D61C83 /* SPECIALFooterView.xib in Resources */,
+				FA0890451BCAD118003413B0 /* LoneWanderer.json in Resources */,
+				FA0890081BCACCE5003413B0 /* BigGuns.json in Resources */,
+				FA0890711BCAD375003413B0 /* ActionBoy.json in Resources */,
+				FA0890271BCACED7003413B0 /* Detection.json in Resources */,
+				FA0890001BCACB72003413B0 /* IronFist.json in Resources */,
+				FA0890291BCACEFB003413B0 /* ConcentratedFire.json in Resources */,
+				FA08901F1BCACE83003413B0 /* DemolitionExpert.json in Resources */,
+				FA0890841BCAD449003413B0 /* MysteriousStranger.json in Resources */,
+				FA0890361BCAD034003413B0 /* RadResistant.json in Resources */,
+				FA0890581BCAD262003413B0 /* GunNut.json in Resources */,
+				FA0890541BCAD204003413B0 /* VANS.json in Resources */,
+				FA08901D1BCACE6B003413B0 /* Lockpick.json in Resources */,
+				FA0890101BCACD3C003413B0 /* Slayer.json in Resources */,
+				FA0890731BCAD387003413B0 /* Avoidance.json in Resources */,
+				FA0890211BCACE9A003413B0 /* NightPerson.json in Resources */,
+				FA0890801BCAD41A003413B0 /* Scrounger.json in Resources */,
+				FA0890321BCAD007003413B0 /* ChemResistant.json in Resources */,
+				FA0890601BCAD2B9003413B0 /* Chemist.json in Resources */,
+				FA0890861BCAD46C003413B0 /* PotLuck.json in Resources */,
+				FA0890511BCAD1B8003413B0 /* Intimidation.json in Resources */,
 				FADA2DBD1BBDAFD00096BC9D /* Assets.xcassets in Resources */,
+				FA08905A1BCAD27B003413B0 /* Hacker.json in Resources */,
+				FA0890171BCACE15003413B0 /* Pickpocket.json in Resources */,
+				FA08903E1BCAD09F003413B0 /* SolarPowered.json in Resources */,
+				FA0890141BCACDA9003413B0 /* Juggernaut.json in Resources */,
+				FA0890251BCACEC5003413B0 /* Sniper.json in Resources */,
+				FA0890691BCAD319003413B0 /* Gunslinger.json in Resources */,
+				FA0890021BCACC2F003413B0 /* BigLeagues.json in Resources */,
+				FA0890881BCAD47E003413B0 /* BetterCriticals.json in Resources */,
 				FA1D50741BC31D5700F850A8 /* Perks.json in Resources */,
+				FA08905C1BCAD28A003413B0 /* Engineer.json in Resources */,
+				FA0890641BCAD2E4003413B0 /* Fusion.json in Resources */,
+				FA0890491BCAD149003413B0 /* AnimalFriend.json in Resources */,
+				FA08904B1BCAD16B003413B0 /* PartyBoy.json in Resources */,
+				FA0890381BCAD051003413B0 /* AdamantiumSkeleton.json in Resources */,
+				FA08900A1BCACCF9003413B0 /* StrongBack.json in Resources */,
+				FA08902E1BCACF5B003413B0 /* LeadBelly.json in Resources */,
+				FA08900C1BCACD12003413B0 /* SizeMatters.json in Resources */,
+				FA08902C1BCACF36003413B0 /* Toughness.json in Resources */,
+				FA08906F1BCAD35B003413B0 /* MisterSandman.json in Resources */,
+				FA0890061BCACCC3003413B0 /* Weaponsmith.json in Resources */,
 				FADA2DBB1BBDAFD00096BC9D /* Main.storyboard in Resources */,
+				FA08906D1BCAD34B003413B0 /* Sneak.json in Resources */,
+				FA08904F1BCAD196003413B0 /* WastelandWhisperer.json in Resources */,
+				FA08908E1BCAD4C7003413B0 /* LuckOfTheIrish.json in Resources */,
+				FA0890751BCAD39B003413B0 /* Ninja.json in Resources */,
+				FA0890901BCAD4DC003413B0 /* Bulletproof.json in Resources */,
+				FA08903C1BCAD08A003413B0 /* BlastRadius.json in Resources */,
+				FA08906B1BCAD330003413B0 /* Commando.json in Resources */,
+				FA08908C1BCAD4AD003413B0 /* GrimReaper'sSprint.json in Resources */,
+				FA0890411BCAD0DE003413B0 /* CapCollector.json in Resources */,
+				FA0890431BCAD0FC003413B0 /* LadyKiller.json in Resources */,
+				FA08903A1BCAD071003413B0 /* Cannibal.json in Resources */,
+				FA0890341BCAD01D003413B0 /* MarineBoy.json in Resources */,
+				FA08904D1BCAD17F003413B0 /* Inspirational.json in Resources */,
+				FA0890791BCAD3BE003413B0 /* Escape.json in Resources */,
+				FA0890041BCACCA0003413B0 /* Armorer.json in Resources */,
 				FA088FE91BC93278003413B0 /* Ressources.xcassets in Resources */,
+				FA08908A1BCAD490003413B0 /* KillShot.json in Resources */,
+				FA0890191BCACE33003413B0 /* Rifleman.json in Resources */,
+				FA0890471BCAD132003413B0 /* AttackDog.json in Resources */,
+				FA0890661BCAD2F3003413B0 /* NerdRage!.json in Resources */,
+				FA0890771BCAD3AB003413B0 /* RapidReload.json in Resources */,
+				FA0890821BCAD430003413B0 /* BloodyMess.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

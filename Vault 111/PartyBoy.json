@@ -1,0 +1,10 @@
+{"name": "Party Boy",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 7,
+    "specialType": "charisma",
+    "description": "TBD",
+}

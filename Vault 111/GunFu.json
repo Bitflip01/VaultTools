@@ -1,0 +1,10 @@
+{"name": "Gun Fu",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 10,
+    "specialType": "agility",
+    "description": "TBD",
+}

@@ -1,0 +1,17 @@
+{"name": "Iron Fist",
+    "ranks": [{"rankDescription": "Do 20% more unarmed damage",
+              "minLevel": 0},
+              {"rankDescription": "Do 40% more unarmed damage, with a chance to cripple limbs",
+              "minLevel": 0},
+              {"rankDescription": "Do 60% more unarmed damage, with a chance to stagger your opponent following a blow to the torso",
+              "minLevel": 0},
+              {"rankDescription": "Do 80% more unarmed damage, with a chance to knock down your opponent following a blow to the head",
+              "minLevel": 0},
+              {"rankDescription": "Do 100% more unarmed damage, with a chance to paralyze your opponent in V.A.T.S.",
+              "minLevel": 46}
+              ],
+    "maxRank": 5,
+    "minSpecial": 1,
+    "specialType": "strength",
+    "description": "Increased damage with fists and unarmed weapons.",
+}

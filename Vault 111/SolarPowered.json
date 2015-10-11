@@ -1,0 +1,10 @@
+{"name": "Solar Powered",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 10,
+    "specialType": "endurance",
+    "description": "TBD",
+}

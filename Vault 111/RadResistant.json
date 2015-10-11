@@ -1,0 +1,10 @@
+{"name": "Rad Resistant",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 6,
+    "specialType": "endurance",
+    "description": "TBD",
+}

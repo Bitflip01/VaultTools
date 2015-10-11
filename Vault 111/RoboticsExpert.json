@@ -1,0 +1,10 @@
+{"name": "Robotics Expert",
+    "ranks": [{"rankDescription": "TBD",
+              "minLevel": 0},
+              }
+              ],
+    "maxRank": 1,
+    "minSpecial": 8,
+    "specialType": "intelligence",
+    "description": "TBD",
+}
