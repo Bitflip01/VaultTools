@@ -36,6 +36,12 @@ typedef NS_ENUM(NSUInteger, PerksDetailViewControllerSection)
     self.navigationItem.title = self.perkDescription.name;
     Character *currentChar = [CharacterManager sharedCharacterManager].currentCharacter;
     self.perk = [currentChar perkForPerkDescription:self.perkDescription];
+    self.perkDescription.rank = [self.perk.rank integerValue];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
