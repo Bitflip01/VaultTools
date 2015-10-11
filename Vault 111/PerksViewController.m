@@ -73,6 +73,11 @@
     return cell;
 }
 
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+
+}
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return self.perks.count;

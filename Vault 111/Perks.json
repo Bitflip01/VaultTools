@@ -1,8 +1,8 @@
 [
  [{"name": "Iron Fist"}, {"name": "Big Leagues"}, {"name": "Armorer"}, {"name": "Weaponsmith"}, {"name": "Big Guns"}, {"name": "Strong Back"}, {"name": "Size Matters"},
-{"name": "Defender"}, {"name": "Unbreakable"}, {"name": "Juggernaut"}],
+{"name": "Defender"}, {"name": "Slayer"}, {"name": "Juggernaut"}],
  
- [{"name": "Pickpocket"}, {"name": "Rifleman"}, {"name": "Awareness"}, {"name": "Lockpick"}, {"name": "Demolition Expert"}, {"name": "Night Person"}, {"name": "Absorption"}, {"name": "Sniper"}, {"name": "Detection"}, {"name": "Concentrated Fire"}],
+ [{"name": "Pickpocket"}, {"name": "Rifleman"}, {"name": "Awareness"}, {"name": "Lockpick"}, {"name": "Demolition Expert"}, {"name": "Night Person"}, {"name": "Resonance"}, {"name": "Sniper"}, {"name": "Detection"}, {"name": "Concentrated Fire"}],
  
  [{"name": "Toughness"}, {"name": "Lead Belly"}, {"name": "Life Giver"}, {"name": "Chem Resistant"}, {"name": "Marine Boy"}, {"name": "Rad Resistant"}, {"name": "Adamantium Skeleton"}, {"name": "Cannibal"}, {"name": "Blast Radius"}, {"name": "Solar Powered"}],
  
@@ -16,5 +16,5 @@
  [{"name": "Gunslinger"}, {"name": "Commando"}, {"name": "Sneak"}, {"name": "Mister Sandman"}, {"name": "Action Boy"}, {"name": "Avoidance"}, {"name": "Ninja"},
   {"name": "Rapid Reload"}, {"name": "Escape"}, {"name": "Gun Fu"}],
  
- [{"name": "Fortune Finder"}, {"name": "Scrounger"}, {"name": "Bloody Mess"}, {"name": "Mysterious Stranger"}, {"name": "Pot Luck"}, {"name": "Better Criticals"}, {"name": "Kill Shot"}, {"name": "Grim Reaper's Sprint"}, {"name": "Luck of the Irish"}, {"name": "Bulletproof"}]
+ [{"name": "Fortune Finder"}, {"name": "Scrounger"}, {"name": "Bloody Mess"}, {"name": "Mysterious Stranger"}, {"name": "Pot Luck"}, {"name": "Better Criticals"}, {"name": "Kill Shot"}, {"name": "Grim Reaper's Sprint"}, {"name": "Luck Of The Irish"}, {"name": "Bulletproof"}]
 ]

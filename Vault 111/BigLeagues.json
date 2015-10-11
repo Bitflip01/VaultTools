@@ -1,7 +1,6 @@
 {"name": "Big Leagues",
     "ranks": [{"rankDescription": "TBD",
               "minLevel": 0},
-              }
               ],
     "maxRank": 1,
     "minSpecial": 2,
