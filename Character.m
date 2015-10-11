@@ -136,6 +136,10 @@
     {
         return NO;
     }
+    if ([self.perkPoints integerValue] == 0)
+    {
+        return NO;
+    }
     
     if (rank <= perk.maxRank)
     {
