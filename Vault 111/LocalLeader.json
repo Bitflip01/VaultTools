@@ -1,0 +1,9 @@
+{"name": "Local Leader",
+    "ranks": [{"rankDescription": "As the ruler everyone turns to, you are able to establish supply lines between your workshop settlements",
+                                   "minLevel": 0},
+                                   {"rankDescription": "You are now able to assign one named companion as the leader of each workshop settlement",
+                                   "minLevel": 0}],
+    "maxRank": 2,
+    "minSpecial": 7,
+    "specialType": "charisma",
+}

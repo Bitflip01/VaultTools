@@ -10,6 +10,7 @@
 #import "SPECIAL.h"
 #import "PerkRank.h"
 
+@class Perk;
 @interface PerkDescription : NSObject
 
 @property (nonatomic, assign, readwrite) NSInteger minLevel;
@@ -20,5 +21,8 @@
 @property (nonatomic, assign, readwrite) NSInteger maxRank;
 @property (nonatomic, assign, readwrite) SPECIALType specialType;
 @property (nullable, nonatomic, strong, readwrite) NSArray *ranks;
+
+- (instancetype)initWithPerk:(Perk *)perk;
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
 
 @end

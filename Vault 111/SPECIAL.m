@@ -38,6 +38,39 @@
     }
 }
 
++ (SPECIALType)specialTypeForName:(NSString *)name
+{
+    NSString *lcName = [name lowercaseString];
+    if ([lcName isEqualToString:@"strength"])
+    {
+        return SPECIALTypeStrength;
+    }
+    else if ([lcName isEqualToString:@"perception"])
+    {
+        return SPECIALTypePerception;
+    }
+    else if ([lcName isEqualToString:@"endurance"])
+    {
+        return SPECIALTypeEndurance;
+    }
+    else if ([lcName isEqualToString:@"charisma"])
+    {
+        return SPECIALTypeCharisma;
+    }
+    else if ([lcName isEqualToString:@"intelligence"])
+    {
+        return SPECIALTypeIntelligence;
+    }
+    else if ([lcName isEqualToString:@"agility"])
+    {
+        return SPECIALTypeAgility;
+    }
+    else
+    {
+        return SPECIALTypeLuck;
+    }
+}
+
 - (NSString *)name
 {
     return [SPECIAL nameForType:self.type];

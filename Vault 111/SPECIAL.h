@@ -22,6 +22,7 @@ typedef NS_ENUM(NSUInteger, SPECIALType)
 @interface SPECIAL : NSObject
 
 + (NSString *)nameForType:(SPECIALType)type;
++ (SPECIALType)specialTypeForName:(NSString *)name;
 
 - (instancetype)initWithType:(SPECIALType)type;
 

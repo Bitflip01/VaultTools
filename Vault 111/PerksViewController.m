@@ -27,40 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSArray *perks = [PerksLoader loadPerksFromJSON];
-    
-    NSMutableArray *mutablePerks = [NSMutableArray array];
-    for (int specialType = 0; specialType < perks.count; specialType++)
-    {
-        NSMutableArray *perkSection = [NSMutableArray array];
-        for (int perkId = 0; perkId < [perks[specialType] count]; perkId++)
-        {
-            NSDictionary *perkDict = perks[specialType][perkId];
-            PerkDescription *perk = [PerkDescription new];
-            perk.name = perkDict[@"name"];
             
-            // Ranks
-            NSArray *ranks = perkDict[@"ranks"];
-            NSMutableArray *mutableRanks = [NSMutableArray array];
-            for (NSDictionary *rankDict in ranks)
-            {
-                PerkRank *perkRank = [PerkRank new];
-                perkRank.rankDescription = rankDict[@"rankDescription"];
-                perkRank.minLevel = [rankDict[@"minLevel"] integerValue];
-                [mutableRanks addObject:perkRank];
-            }
-            
-            perk.ranks = [mutableRanks copy];
-            perk.minSpecial = perkId + 1;
-            perk.specialType = specialType;
-            perk.maxRank = [perkDict[@"maxRank"] integerValue];
-            [perkSection addObject:perk];
-        }
-        [mutablePerks addObject:perkSection];
-    }
-    
-    self.perks = [mutablePerks copy];
+    self.perks = [PerksLoader loadPerkDescriptionsFromJSON];
     self.pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinch:)];
     self.pinchGestureRecognizer.delegate = self;
     self.pinchGestureRecognizer.cancelsTouchesInView = YES;

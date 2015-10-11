@@ -17,6 +17,7 @@
 		FA088FF31BC959BD003413B0 /* CharacterLevelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FF21BC959BD003413B0 /* CharacterLevelCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA088FF61BCA5D23003413B0 /* CharacterNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FF51BCA5D23003413B0 /* CharacterNameCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA088FF91BCA8153003413B0 /* CharacterPerkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FF81BCA8153003413B0 /* CharacterPerkCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA088FFB1BCA8E00003413B0 /* LocalLeader.json in Resources */ = {isa = PBXBuildFile; fileRef = FA088FFA1BCA8E00003413B0 /* LocalLeader.json */; settings = {ASSET_TAGS = (); }; };
 		FA1D50741BC31D5700F850A8 /* Perks.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1D50731BC31D5700F850A8 /* Perks.json */; settings = {ASSET_TAGS = (); }; };
 		FA1D50771BC401AF00F850A8 /* PerksLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D50761BC401AF00F850A8 /* PerksLoader.m */; settings = {ASSET_TAGS = (); }; };
 		FA1D50801BC5039C00F850A8 /* PerkRank.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D507F1BC5039C00F850A8 /* PerkRank.m */; settings = {ASSET_TAGS = (); }; };
@@ -83,6 +84,7 @@
 		FA088FF51BCA5D23003413B0 /* CharacterNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterNameCell.m; sourceTree = "<group>"; };
 		FA088FF71BCA8153003413B0 /* CharacterPerkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterPerkCell.h; sourceTree = "<group>"; };
 		FA088FF81BCA8153003413B0 /* CharacterPerkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterPerkCell.m; sourceTree = "<group>"; };
+		FA088FFA1BCA8E00003413B0 /* LocalLeader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LocalLeader.json; sourceTree = "<group>"; };
 		FA1D50731BC31D5700F850A8 /* Perks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Perks.json; sourceTree = "<group>"; };
 		FA1D50751BC401AF00F850A8 /* PerksLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksLoader.h; sourceTree = "<group>"; };
 		FA1D50761BC401AF00F850A8 /* PerksLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksLoader.m; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				FA1D50731BC31D5700F850A8 /* Perks.json */,
+				FA088FFA1BCA8E00003413B0 /* LocalLeader.json */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA088FFB1BCA8E00003413B0 /* LocalLeader.json in Resources */,
 				FADA2DC01BBDAFD00096BC9D /* LaunchScreen.storyboard in Resources */,
 				FA28658C1BC01E5C00D61C83 /* SPECIALFooterView.xib in Resources */,
 				FADA2DBD1BBDAFD00096BC9D /* Assets.xcassets in Resources */,
