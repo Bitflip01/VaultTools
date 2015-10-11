@@ -12,6 +12,7 @@
 #import "CharacterNameCell.h"
 #import "PerksDetailViewController.h"
 #import "CharacterPerkCell.h"
+#import "PerksLoader.h"
 
 typedef NS_ENUM(NSUInteger, CharacterViewControllerSection)
 {
@@ -148,6 +149,29 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
     
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.section)
+    {
+        case CharacterViewControllerSectionPerks:
+            [self performSegueWithIdentifier:@"ShowPerksDetailViewControllerFromCharacterSeque"
+                                      sender:indexPath];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    PerksDetailViewController *perksDetailViewController = segue.destinationViewController;
+    NSIndexPath *indexPath = (NSIndexPath *)sender;
+    Perk *perk = self.perks[indexPath.row];
+    PerkDescription *perkDescription = [PerksLoader perkDescriptionForName:perk.name];
+    perksDetailViewController.perkDescription = perkDescription;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
