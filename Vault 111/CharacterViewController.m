@@ -126,6 +126,8 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
                 default:
                     break;
             }
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            
             break;
         }
         case CharacterViewControllerSectionPerks:
