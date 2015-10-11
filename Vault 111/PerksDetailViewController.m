@@ -194,6 +194,7 @@ typedef NS_ENUM(NSUInteger, PerksDetailViewControllerSection)
         if (self.perkDescription.rank == 0)
         {
             [curChar removePerksObject:self.perk];
+            [self.perk MR_deleteEntity];
             self.perk = nil;
         }
         else
