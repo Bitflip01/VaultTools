@@ -25,8 +25,8 @@
     self.intelligence = @(1);
     self.agility = @(1);
     self.luck = @(1);
-    self.perkPoints = @(10);
-    self.level = @(1);
+    self.perkPoints = @(0);
+    self.level = @(0);
 }
 
 - (void)setSpecial:(SPECIAL *)special
