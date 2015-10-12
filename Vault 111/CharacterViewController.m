@@ -13,6 +13,7 @@
 #import "PerksDetailViewController.h"
 #import "CharacterPerkCell.h"
 #import "PerksLoader.h"
+#import "CharacterSpecialCell.h"
 
 typedef NS_ENUM(NSUInteger, CharacterViewControllerSection)
 {
@@ -25,6 +26,7 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
 {
     CharacterOverviewRowName,
     CharacterOverviewRowLevel,
+    CharacterOverviewRowSpecial,
     CharacterOverviewRowCount
 };
 
@@ -111,6 +113,7 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
                         characterNameCell.characterNameTextField.text = curChar.name;
                     }
                     cell = characterNameCell;
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
                     break;
                 }
                 
@@ -121,13 +124,27 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
                     characterLevelCell.delegate = self;
                     characterLevelCell.levelLabel.text = [NSString stringWithFormat:@"%ld", [curChar.level integerValue]];
                     cell = characterLevelCell;
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                    break;
+                }
+                case CharacterOverviewRowSpecial:
+                {
+                    CharacterSpecialCell *characterSpecialCell = (CharacterSpecialCell *)[tableView dequeueReusableCellWithIdentifier:@"CharacterSpecialCell" forIndexPath:indexPath];
+                    characterSpecialCell.strengthLabel.text = [NSString stringWithFormat:@"%ld", [curChar.strength integerValue]];
+                    characterSpecialCell.perceptionLabel.text = [NSString stringWithFormat:@"%ld", [curChar.perception integerValue]];
+                    characterSpecialCell.enduranceLabel.text = [NSString stringWithFormat:@"%ld", [curChar.endurance integerValue]];
+                    characterSpecialCell.charismaLabel.text = [NSString stringWithFormat:@"%ld", [curChar.charisma integerValue]];
+                    characterSpecialCell.intelligenceLabel.text = [NSString stringWithFormat:@"%ld", [curChar.intelligence integerValue]];
+                    characterSpecialCell.agilityLabel.text = [NSString stringWithFormat:@"%ld", [curChar.agility integerValue]];
+                    characterSpecialCell.luckLabel.text = [NSString stringWithFormat:@"%ld", [curChar.luck integerValue]];
+                    cell = characterSpecialCell;
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
                     break;
                 }
                     
                 default:
                     break;
             }
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             
             break;
         }
@@ -167,11 +184,14 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    PerksDetailViewController *perksDetailViewController = segue.destinationViewController;
     NSIndexPath *indexPath = (NSIndexPath *)sender;
-    Perk *perk = self.perks[indexPath.row];
-    PerkDescription *perkDescription = [PerksLoader perkDescriptionForName:perk.name];
-    perksDetailViewController.perkDescription = perkDescription;
+    if (indexPath.section == CharacterViewControllerSectionPerks)
+    {
+        PerksDetailViewController *perksDetailViewController = segue.destinationViewController;
+        Perk *perk = self.perks[indexPath.row];
+        PerkDescription *perkDescription = [PerksLoader perkDescriptionForName:perk.name];
+        perksDetailViewController.perkDescription = perkDescription;
+    }
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
