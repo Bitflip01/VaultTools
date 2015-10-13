@@ -39,18 +39,13 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
     
     self.SPECIALArray = [NSMutableArray array];
     
-    for (NSInteger specialType = 0; specialType < SPECIALCellCount; specialType++)
-    {
-        SPECIAL *special = [[SPECIAL alloc] initWithType:specialType];
-        special.value = [[CharacterManager sharedCharacterManager].currentCharacter specialValueForType:specialType];
-        [self.SPECIALArray addObject:special];
-    }
     self.tableView.rowHeight = 55;
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self createSpecialArray];
     [self.tableView reloadData];
 }
 
@@ -61,6 +56,17 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
 }
 
 #pragma mark - Table view data source
+
+- (void)createSpecialArray
+{
+    [self.SPECIALArray removeAllObjects];
+    for (NSInteger specialType = 0; specialType < SPECIALCellCount; specialType++)
+    {
+        SPECIAL *special = [[SPECIAL alloc] initWithType:specialType];
+        special.value = [[CharacterManager sharedCharacterManager].currentCharacter specialValueForType:specialType];
+        [self.SPECIALArray addObject:special];
+    }
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -112,16 +118,17 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
 
 - (BOOL)canIncreaseSpecial
 {
-    return [[CharacterManager sharedCharacterManager].currentCharacter.specialPoints integerValue] > 0 ||
-           [[CharacterManager sharedCharacterManager].currentCharacter.perkPoints integerValue] > 0;
+    NSInteger specialPoints = [[CharacterManager sharedCharacterManager].currentCharacter.specialPoints integerValue];
+    NSInteger perkPoints = [[CharacterManager sharedCharacterManager].currentCharacter.perkPoints integerValue];
+    return specialPoints > 0 || perkPoints > 0;
 }
 
 #pragma mark SPECIALTableViewCellDelegate
 
 - (void)cell:(SPECIALTableViewCell *)cell changedSpecial:(SPECIAL *)special
 {
-    [self.tableView reloadData];
     [[CharacterManager sharedCharacterManager].currentCharacter setSpecial:special];
+    [self.tableView reloadData];
 }
 
 /*

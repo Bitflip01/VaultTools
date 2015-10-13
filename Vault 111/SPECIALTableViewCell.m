@@ -41,6 +41,7 @@
 {
     _special = special;
     self.specialNameLabel.text = special.name;
+    [self updateBar];
 }
 
 - (void)awakeFromNib
