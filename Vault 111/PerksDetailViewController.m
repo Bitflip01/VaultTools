@@ -41,6 +41,8 @@ typedef NS_ENUM(NSUInteger, PerksDetailViewControllerSection)
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    [super viewDidAppear:animated];
+    
     Character *currentChar = [CharacterManager sharedCharacterManager].currentCharacter;
     self.perk = [currentChar perkForPerkDescription:self.perkDescription];
     self.perkDescription.rank = [self.perk.rank integerValue];
