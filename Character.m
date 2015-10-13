@@ -32,44 +32,69 @@
 
 - (void)setSpecial:(SPECIAL *)special
 {
+    NSInteger diff = 0;
+    NSInteger old = 0;
+    
     switch (special.type)
     {
         case SPECIALTypeStrength:
+            old = [self.strength integerValue];
             self.strength = @(special.value);
             break;
         case SPECIALTypePerception:
+            old = [self.perception integerValue];
             self.perception = @(special.value);
             break;
         case SPECIALTypeEndurance:
+            old = [self.endurance integerValue];
             self.endurance = @(special.value);
             break;
         case SPECIALTypeCharisma:
+            old = [self.charisma integerValue];
             self.charisma = @(special.value);
             break;
         case SPECIALTypeIntelligence:
+            old = [self.intelligence integerValue];
             self.intelligence = @(special.value);
             break;
         case SPECIALTypeAgility:
+            old = [self.agility integerValue];
             self.agility = @(special.value);
             break;
         case SPECIALTypeLuck:
+            old = [self.luck integerValue];
             self.luck = @(special.value);
             break;
     }
-    [self updateSpecialPoints];
+    diff = special.value - old;
+
+    if (([self specialSum] > START_SPECIAL_POINTS + 7 && diff > 0) ||
+        ([self specialSum] >= START_SPECIAL_POINTS + 7 && diff < 0))
+    {
+        self.perkPoints = @([self.perkPoints integerValue] - diff);
+    }
+    else
+    {
+        self.specialPoints = @([self.specialPoints integerValue] - diff);
+    }
     
     [self save];
 }
 
+- (NSInteger)specialSum
+{
+    return [self.strength integerValue] +
+    [self.perception integerValue] +
+    [self.endurance integerValue] +
+    [self.charisma integerValue] +
+    [self.intelligence integerValue] +
+    [self.agility integerValue] +
+    [self.luck integerValue];
+}
+
 - (void)updateSpecialPoints
 {
-    NSInteger sum = [self.strength integerValue] +
-                    [self.perception integerValue] +
-                    [self.endurance integerValue] +
-                    [self.charisma integerValue] +
-                    [self.intelligence integerValue] +
-                    [self.agility integerValue] +
-                    [self.luck integerValue];
+    NSInteger sum = [self specialSum];
     
     self.specialPoints = @(MAX(0, (START_SPECIAL_POINTS + 7) - sum));
 }
