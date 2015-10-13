@@ -14,6 +14,7 @@
 + (CharacterManager *)sharedCharacterManager;
 - (void)loadLastCharacter;
 - (void)loadLastCharacterOrCreateNew;
+- (void)createNewCharacter;
 - (NSArray *)allCharacters;
 
 @property (nonatomic, strong, readwrite) Character *currentCharacter;

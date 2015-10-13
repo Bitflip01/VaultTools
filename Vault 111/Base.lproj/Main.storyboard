@@ -306,13 +306,13 @@
         <scene sceneID="cGk-pK-POS">
             <objects>
                 <tableViewController id="ofO-oQ-njR" customClass="LoadCharacterViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hn2-Iw-EeB">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Hn2-Iw-EeB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoadCharacterCell" rowHeight="59" id="u7F-HO-aEU" customClass="LoadCharacterCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="59"/>
+                                <rect key="frame" x="0.0" y="113.5" width="600" height="59"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u7F-HO-aEU" id="X9L-Qw-aj4">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="58.5"/>
@@ -333,6 +333,26 @@
                                 <connections>
                                     <outlet property="characterNameLabel" destination="bxF-gF-K0I" id="QnC-gz-tVR"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewCharacterCell" rowHeight="71" id="3WA-ud-KZF" customClass="NewCharacterCell">
+                                <rect key="frame" x="0.0" y="172.5" width="600" height="71"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3WA-ud-KZF" id="hhE-dM-eRX">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="70.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Character" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnI-qk-Eno">
+                                            <rect key="frame" x="242.5" y="25.5" width="115" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="CnI-qk-Eno" firstAttribute="centerX" secondItem="hhE-dM-eRX" secondAttribute="centerX" id="GV6-GM-8Dv"/>
+                                        <constraint firstItem="CnI-qk-Eno" firstAttribute="centerY" secondItem="hhE-dM-eRX" secondAttribute="centerY" id="T50-Pf-4JK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>

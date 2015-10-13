@@ -27,6 +27,12 @@
     return sharedCharacterManager;
 }
 
+- (void)createNewCharacter
+{
+    self.currentCharacter = [Character MR_createEntity];
+    [self.currentCharacter setupDefault];
+}
+
 - (void)loadLastCharacter
 {
     self.currentCharacter = [[Character MR_findAllSortedBy:@"lastUsed" ascending:NO] firstObject];
@@ -37,8 +43,7 @@
     [self loadLastCharacter];
     if (!self.currentCharacter)
     {
-        self.currentCharacter = [Character MR_createEntity];
-        [self.currentCharacter setupDefault];        
+        [self createNewCharacter];
     }
 }
 

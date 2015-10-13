@@ -17,6 +17,7 @@
 {
     self.specialPoints = @(START_SPECIAL_POINTS);
     self.dateCreated = [NSDate date];
+    self.name = @"New Character";
     self.lastUsed = [NSDate date];
     self.strength = @(1);
     self.perception = @(1);
