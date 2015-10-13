@@ -10,8 +10,6 @@
 
 @interface CharacterManager ()
 
-@property (nonatomic, strong, readwrite) Character *currentCharacter;
-
 @end
 
 @implementation CharacterManager
@@ -42,6 +40,11 @@
         self.currentCharacter = [Character MR_createEntity];
         [self.currentCharacter setupDefault];        
     }
+}
+
+- (NSArray *)allCharacters
+{
+    return [Character MR_findAllSortedBy:@"lastUsed" ascending:NO];
 }
 
 

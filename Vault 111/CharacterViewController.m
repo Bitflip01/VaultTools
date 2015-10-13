@@ -184,13 +184,16 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSIndexPath *indexPath = (NSIndexPath *)sender;
-    if (indexPath.section == CharacterViewControllerSectionPerks)
+    if ([sender isKindOfClass:[NSIndexPath class]])
     {
-        PerksDetailViewController *perksDetailViewController = segue.destinationViewController;
-        Perk *perk = self.perks[indexPath.row];
-        PerkDescription *perkDescription = [PerksLoader perkDescriptionForName:perk.name];
-        perksDetailViewController.perkDescription = perkDescription;
+        NSIndexPath *indexPath = (NSIndexPath *)sender;
+        if (indexPath.section == CharacterViewControllerSectionPerks)
+        {
+            PerksDetailViewController *perksDetailViewController = segue.destinationViewController;
+            Perk *perk = self.perks[indexPath.row];
+            PerkDescription *perkDescription = [PerksLoader perkDescriptionForName:perk.name];
+            perksDetailViewController.perkDescription = perkDescription;
+        }
     }
 }
 
