@@ -10,6 +10,7 @@
 #import "LoadCharacterCell.h"
 #import "CharacterManager.h"
 #import "NewCharacterCell.h"
+#import "Perk.h"
 
 typedef NS_ENUM(NSUInteger, LoadCharacterViewControllerSection)
 {
@@ -19,7 +20,7 @@ typedef NS_ENUM(NSUInteger, LoadCharacterViewControllerSection)
 
 @interface LoadCharacterViewController ()
 
-@property (nonatomic, strong, readwrite) NSArray *allCharacters;
+@property (nonatomic, strong, readwrite) NSMutableArray *allCharacters;
 
 @end
 
@@ -29,7 +30,7 @@ typedef NS_ENUM(NSUInteger, LoadCharacterViewControllerSection)
 {
     [super viewDidLoad];
     
-    self.allCharacters = [[CharacterManager sharedCharacterManager] allCharacters];
+    self.allCharacters = [[[CharacterManager sharedCharacterManager] allCharacters] mutableCopy];
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,10 +106,44 @@ typedef NS_ENUM(NSUInteger, LoadCharacterViewControllerSection)
     }
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return indexPath.section != LoadCharacterViewControllerSectionNewCharacter && indexPath.row > 0;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        Character *character = self.allCharacters[indexPath.row];
+        for (Perk *perk in character.perks)
+        {
+            [perk MR_deleteEntity];
+        }
+        [character MR_deleteEntity];
+        [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+        [self.allCharacters removeObjectAtIndex:indexPath.row];
+        
+        [tableView deleteRowsAtIndexPaths:@[indexPath]
+                         withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+
 - (IBAction)cancelTapped:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)editTapped:(id)sender
+{
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneTapped:)];
+    [self.tableView setEditing:YES animated:YES];
+}
+
+- (void)doneTapped:(id)sender
+{
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(editTapped:)];
+    [self.tableView setEditing:NO animated:YES];
+}
 
 @end

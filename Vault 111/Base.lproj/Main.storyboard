@@ -366,6 +366,11 @@
                                 <action selector="cancelTapped:" destination="ofO-oQ-njR" id="ya4-o6-Txt"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="edit" id="f4N-cR-4KR">
+                            <connections>
+                                <action selector="editTapped:" destination="ofO-oQ-njR" id="3L3-lF-pzE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pVx-Yq-mg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
