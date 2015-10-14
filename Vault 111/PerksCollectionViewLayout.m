@@ -39,7 +39,7 @@
     for (int section = 0; section < numberOfSections; section++)
     {
         NSUInteger numberOfItems = [self.collectionView numberOfItemsInSection:section]; // 3
-        yOffset = self.verticalInset;
+        yOffset = -50;
         
         for (int item = 0; item < numberOfItems; item++)
         {
@@ -51,29 +51,31 @@
             itemSize.width = self.itemWidth;
             itemSize.height = self.itemHeight;
             
-            
             attributes.frame = CGRectIntegral(CGRectMake(xOffset, yOffset, itemSize.width, itemSize.height));
             NSString *key = [self layoutKeyForIndexPath:indexPath];
             self.layoutAttributes[key] = attributes; // 7
             
             yOffset += self.verticalInset;
             yOffset += self.itemHeight;
-            
         }
         
-        xOffset += self.itemWidth + 30;
+        xOffset += self.itemWidth + [self horizontalSpacing];
     }
-    
-    yOffset += self.itemHeight; // 10
     
     self.contentSize = [self collectionViewContentSize];
 }
 
+- (CGFloat)horizontalSpacing
+{
+    return self.itemWidth * 0.2;
+}
+
 - (CGSize)collectionViewContentSize
 {
-    NSUInteger numberOfItems = [self.collectionView numberOfItemsInSection:0];
-    CGFloat heigth = numberOfItems * (self.itemHeight + self.verticalInset);
-    CGFloat width = numberOfItems * (self.itemWidth + self.horizontalInset);
+    NSUInteger numberOfColumns = [self.collectionView numberOfSections];
+    NSUInteger numberOfRows = [self.collectionView numberOfItemsInSection:0];
+    CGFloat heigth = numberOfRows * (self.itemHeight + self.verticalInset);
+    CGFloat width = (numberOfColumns) * (self.itemWidth + [self horizontalSpacing]) + self.horizontalInset;
     CGSize contentSize = CGSizeMake(width, heigth);
     
     return contentSize;
