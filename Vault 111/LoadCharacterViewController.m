@@ -71,6 +71,17 @@ typedef NS_ENUM(NSUInteger, LoadCharacterViewControllerSection)
             LoadCharacterCell *loadCharacterCell = [tableView dequeueReusableCellWithIdentifier:@"LoadCharacterCell" forIndexPath:indexPath];
             Character *character = self.allCharacters[indexPath.row];
             loadCharacterCell.characterNameLabel.text = character.name;
+            
+            // First row is always the current character, show checkmark there
+            if (indexPath.row == 0)
+            {
+                loadCharacterCell.accessoryType = UITableViewCellAccessoryCheckmark;
+            }
+            else
+            {
+                loadCharacterCell.accessoryType = UITableViewCellAccessoryNone;
+            }
+            
             cell = loadCharacterCell;
             break;
         }
