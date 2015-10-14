@@ -3,6 +3,8 @@
 
 target 'Vault 111' do
 
+pod "MagicalRecord"
+
 end
 
 target 'Vault 111Tests' do

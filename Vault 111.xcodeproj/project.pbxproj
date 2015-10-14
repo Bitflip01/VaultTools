@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7896D7940503BCA878A48928 /* libPods-Vault 111.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A618D283EF2E7B3685CCDBD0 /* libPods-Vault 111.a */; };
+		AB4FCC3C65504A76EA950F1C /* Pods_Vault_111.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBAE380CEBF6AEF7511F8E5 /* Pods_Vault_111.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FA088FDD1BC6F0B8003413B0 /* PerksDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FDC1BC6F0B8003413B0 /* PerksDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FA088FE01BC7D1DA003413B0 /* PerkDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FDF1BC7D1DA003413B0 /* PerkDescriptionCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA088FE31BC7D204003413B0 /* RankTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FE21BC7D204003413B0 /* RankTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -142,7 +142,7 @@
 /* Begin PBXFileReference section */
 		034F01D2603CAE04A8AB447E /* Pods-Vault 111.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vault 111.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vault 111/Pods-Vault 111.debug.xcconfig"; sourceTree = "<group>"; };
 		527DB0D67E60E80738767AE0 /* Pods-Vault 111.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vault 111.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vault 111/Pods-Vault 111.release.xcconfig"; sourceTree = "<group>"; };
-		A618D283EF2E7B3685CCDBD0 /* libPods-Vault 111.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vault 111.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBAE380CEBF6AEF7511F8E5 /* Pods_Vault_111.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vault_111.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA088FDB1BC6F0B8003413B0 /* PerksDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksDetailViewController.h; sourceTree = "<group>"; };
 		FA088FDC1BC6F0B8003413B0 /* PerksDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksDetailViewController.m; sourceTree = "<group>"; };
 		FA088FDE1BC7D1DA003413B0 /* PerkDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerkDescriptionCell.h; sourceTree = "<group>"; };
@@ -301,7 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA28659A1BC1B9EB00D61C83 /* QuartzCore.framework in Frameworks */,
-				7896D7940503BCA878A48928 /* libPods-Vault 111.a in Frameworks */,
+				AB4FCC3C65504A76EA950F1C /* Pods_Vault_111.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */,
-				A618D283EF2E7B3685CCDBD0 /* libPods-Vault 111.a */,
+				CEBAE380CEBF6AEF7511F8E5 /* Pods_Vault_111.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -653,6 +653,7 @@
 				FADA2DA71BBDAFD00096BC9D /* Frameworks */,
 				FADA2DA81BBDAFD00096BC9D /* Resources */,
 				E4556EB7C6D30DAF4D212605 /* Copy Pods Resources */,
+				0EE0A47A28CF9C5D91800A87 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -842,6 +843,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0EE0A47A28CF9C5D91800A87 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vault 111/Pods-Vault 111-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4032EBBCB69A410AAD3E0053 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

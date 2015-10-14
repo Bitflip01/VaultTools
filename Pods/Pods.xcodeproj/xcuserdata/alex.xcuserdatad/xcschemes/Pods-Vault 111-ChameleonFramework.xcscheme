@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BABE98E9520283F907133ABC"
-               BuildableName = "MagicalRecord.framework"
-               BlueprintName = "Pods-Vault 111-MagicalRecord"
+               BlueprintIdentifier = "A068F90BDEFF0E9011F5ADEF"
+               BuildableName = "ChameleonFramework.framework"
+               BlueprintName = "Pods-Vault 111-ChameleonFramework"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

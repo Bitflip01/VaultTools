@@ -3,6 +3,9 @@
 
 target 'Vault 111' do
 
+use_frameworks!
+
+pod 'ChameleonFramework'
 pod "MagicalRecord"
 
 end

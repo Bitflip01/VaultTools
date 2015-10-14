@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A650C3E89511C91857CE9A6"
-               BuildableName = "libPods-Vault 111.a"
+               BlueprintIdentifier = "3203032DB9DB5C19872B8CAF"
+               BuildableName = "Pods_Vault_111.framework"
                BlueprintName = "Pods-Vault 111"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
