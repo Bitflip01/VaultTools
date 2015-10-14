@@ -257,7 +257,8 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
                                                            style:UIAlertActionStyleCancel
                                                          handler:^(UIAlertAction * _Nonnull action)
     {
-        
+        NSIndexPath *resetIndexPath = [NSIndexPath indexPathForRow:0 inSection:CharacterViewControllerSectionReset];
+        [self.tableView deselectRowAtIndexPath:resetIndexPath animated:YES];
     }];
     [alertController addAction:cancelAction];
     
