@@ -14,11 +14,13 @@
 #import "CharacterPerkCell.h"
 #import "PerksLoader.h"
 #import "CharacterSpecialCell.h"
+#import "CharacterResetCell.h"
 
 typedef NS_ENUM(NSUInteger, CharacterViewControllerSection)
 {
     CharacterViewControllerSectionOverview,
     CharacterViewControllerSectionPerks,
+    CharacterViewControllerSectionReset,
     CharacterViewControllerSectionCount
 };
 
@@ -85,6 +87,9 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
             
         case CharacterViewControllerSectionPerks:
             return self.perks.count;
+            
+        case CharacterViewControllerSectionReset:
+            return 1;
             
         default:
             return 0;
@@ -156,6 +161,13 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
             characterPerkCell.perkNameLabel.text = perk.name;
             
             cell = characterPerkCell;
+            break;
+        }
+        case CharacterViewControllerSectionReset:
+        {
+            CharacterResetCell *characterResetCell = (CharacterResetCell *)[tableView dequeueReusableCellWithIdentifier:@"CharacterResetCell" forIndexPath:indexPath];
+            cell = characterResetCell;
+            break;
         }
             
             
@@ -176,7 +188,11 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
             [self performSegueWithIdentifier:@"ShowPerksDetailViewControllerFromCharacterSeque"
                                       sender:indexPath];
             break;
-            
+        
+        case CharacterViewControllerSectionReset:
+            [self resetTapped];
+            break;
+        
         default:
             break;
     }
@@ -230,6 +246,33 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     [self.nameTextField resignFirstResponder];
+}
+
+- (void)resetTapped
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Reset Character"
+                                                                             message:@"Are you sure you want to reset your character? This will reset SPECIAL stats, perks and level."
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel"
+                                                           style:UIAlertActionStyleCancel
+                                                         handler:^(UIAlertAction * _Nonnull action)
+    {
+        
+    }];
+    [alertController addAction:cancelAction];
+    
+    UIAlertAction *resetAction = [UIAlertAction actionWithTitle:@"Reset"
+                                                          style:UIAlertActionStyleDestructive
+                                                        handler:^(UIAlertAction * _Nonnull action)
+    {
+        [[CharacterManager sharedCharacterManager].currentCharacter reset];
+        [[CharacterManager sharedCharacterManager].currentCharacter save];
+        self.perks = @[];
+        [self.tableView reloadData];
+    }];
+    [alertController addAction:resetAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 #pragma mark CharacterLevelCellDelegate

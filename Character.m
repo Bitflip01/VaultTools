@@ -15,9 +15,14 @@
 
 - (void)setupDefault
 {
+    [self setupDefaultWithName:@"New Character"];
+}
+
+- (void)setupDefaultWithName:(NSString *)name
+{
     self.specialPoints = @(START_SPECIAL_POINTS);
     self.dateCreated = [NSDate date];
-    self.name = @"New Character";
+    self.name = name;
     self.lastUsed = [NSDate date];
     self.strength = @(1);
     self.perception = @(1);
@@ -112,6 +117,17 @@
 - (void)save
 {
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+}
+
+- (void)reset
+{
+    for (Perk *perk in self.perks)
+    {
+        [perk MR_deleteEntity];
+    }
+    [self removePerks:self.perks];
+    
+    [self setupDefaultWithName:self.name];
 }
 
 - (NSInteger)specialValueForType:(SPECIALType)type

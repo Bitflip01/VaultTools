@@ -281,6 +281,26 @@
                                     <outlet property="perkNameLabel" destination="sSD-MY-oze" id="YiG-fC-k7N"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterResetCell" rowHeight="60" id="8RD-LY-Amj" customClass="CharacterResetCell">
+                                <rect key="frame" x="0.0" y="364.5" width="600" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8RD-LY-Amj" id="Pde-cU-HGA">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LZ-Sn-M4G">
+                                            <rect key="frame" x="278.5" y="19.5" width="43.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.90738075657894723" green="0.0" blue="0.047286184210526314" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2LZ-Sn-M4G" firstAttribute="centerX" secondItem="Pde-cU-HGA" secondAttribute="centerX" id="9bG-rY-fZI"/>
+                                        <constraint firstItem="2LZ-Sn-M4G" firstAttribute="centerY" secondItem="Pde-cU-HGA" secondAttribute="centerY" id="Euq-By-IOp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="rWP-ce-mqk" id="4IZ-Af-swS"/>
