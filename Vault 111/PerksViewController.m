@@ -17,7 +17,7 @@
 
 @interface PerksViewController ()<UIGestureRecognizerDelegate>
 
-@property (nonatomic, strong, readwrite) NSArray *perks;
+@property (nonatomic, strong, readwrite) NSArray *perkDescriptions;
 @property (nonatomic, strong, readwrite) UIPinchGestureRecognizer *pinchGestureRecognizer;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
@@ -28,8 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-            
-    self.perks = [PerksLoader loadPerkDescriptionsFromJSON];
+    
+    self.perkDescriptions = [PerksLoader loadPerkDescriptionsFromJSON];
     self.pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinch:)];
     self.pinchGestureRecognizer.delegate = self;
     self.pinchGestureRecognizer.cancelsTouchesInView = YES;
@@ -52,7 +52,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return [self.perks[section] count] + 1;
+    return [self.perkDescriptions[section] count] + 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -70,7 +70,7 @@
     else
     {
         PerkCollectionViewCell *perkCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PerkCollectionViewCell" forIndexPath:indexPath];
-        PerkDescription *perk = self.perks[indexPath.section][indexPath.row - 1];
+        PerkDescription *perk = self.perkDescriptions[indexPath.section][indexPath.row - 1];
         perkCell.perk = perk;
         PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
         perkCell.perkTitleLabel.font = [UIFont systemFontOfSize:12 * (layout.itemWidth/80.0)];
@@ -90,7 +90,7 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return self.perks.count;
+    return self.perkDescriptions.count;
 }
 
 #pragma mark -
@@ -108,7 +108,7 @@
 {
     PerksDetailViewController *perksDetailViewController = segue.destinationViewController;
     NSIndexPath *indexPath = (NSIndexPath *)sender;
-    PerkDescription *perkDescription = self.perks[indexPath.section][indexPath.row - 1];
+    PerkDescription *perkDescription = self.perkDescriptions[indexPath.section][indexPath.row - 1];
     perksDetailViewController.perkDescription = perkDescription;
 }
 

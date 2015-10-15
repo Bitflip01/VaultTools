@@ -96,7 +96,6 @@
         previousStar = star;
         [self.stars addObject:star];
     }
-//    [self setNeedsLayout];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
