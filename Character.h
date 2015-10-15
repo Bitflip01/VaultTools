@@ -28,6 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSInteger)specialValueForType:(SPECIALType)type;
 - (void)reset;
 
+- (NSInteger)health;
+- (NSInteger)carryWeight;
+- (NSInteger)actionPoints;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -108,9 +108,15 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
     SPECIALFooterView *footerView = [[[NSBundle mainBundle] loadNibNamed:@"SPECIALFooterView" owner:self options:nil] objectAtIndex:0];
+    Character *curChar = [CharacterManager sharedCharacterManager].currentCharacter;
     footerView.remainingPointslabel.text = [NSString stringWithFormat:@"%ld Points Remaining",
-                                            [[CharacterManager sharedCharacterManager].currentCharacter.specialPoints integerValue] +
-                                            [[CharacterManager sharedCharacterManager].currentCharacter.perkPoints integerValue]];
+                                            [curChar.specialPoints integerValue] +
+                                            [curChar.perkPoints integerValue]];
+    
+    footerView.hpLabel.text = [NSString stringWithFormat:@"HP: %ld", [curChar health]];
+    footerView.apLabel.text = [NSString stringWithFormat:@"AP: %ld", [curChar actionPoints]];
+    footerView.carryWeightLabel.text = [NSString stringWithFormat:@"Carry Weight: %ld", [curChar carryWeight]];
+    
     return footerView;
 }
 

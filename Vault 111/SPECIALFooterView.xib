@@ -8,27 +8,54 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPECIALFooterView">
-            <rect key="frame" x="0.0" y="0.0" width="403" height="108"/>
+            <rect key="frame" x="0.0" y="0.0" width="403" height="120"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 Points Remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6w-sX-Bi3">
-                    <rect key="frame" x="21" y="16" width="154" height="21"/>
+                    <rect key="frame" x="21" y="10" width="153.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HP: 80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mw-4q-9WE">
+                    <rect key="frame" x="21" y="37" width="47" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AP: 60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22W-1j-Rt4">
+                    <rect key="frame" x="21" y="61" width="46" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carry Weight: 200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsi-9X-19N">
+                    <rect key="frame" x="21" y="85" width="125.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.18998533487319946" green="0.35768887400627136" blue="0.43821841478347778" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="Gsi-9X-19N" firstAttribute="top" secondItem="22W-1j-Rt4" secondAttribute="bottom" constant="6" id="8hV-yN-6qg"/>
+                <constraint firstItem="22W-1j-Rt4" firstAttribute="leading" secondItem="2Mw-4q-9WE" secondAttribute="leading" id="NQ7-eP-ri5"/>
+                <constraint firstItem="2Mw-4q-9WE" firstAttribute="top" secondItem="n6w-sX-Bi3" secondAttribute="bottom" constant="6" id="RVp-QE-K7R"/>
+                <constraint firstItem="22W-1j-Rt4" firstAttribute="top" secondItem="2Mw-4q-9WE" secondAttribute="bottom" constant="6" id="RkG-qw-pDz"/>
+                <constraint firstItem="2Mw-4q-9WE" firstAttribute="leading" secondItem="n6w-sX-Bi3" secondAttribute="leading" id="lQv-JP-bfZ"/>
+                <constraint firstItem="Gsi-9X-19N" firstAttribute="leading" secondItem="22W-1j-Rt4" secondAttribute="leading" id="pJM-Uc-i0V"/>
                 <constraint firstItem="n6w-sX-Bi3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="uHb-Xf-T0H"/>
-                <constraint firstItem="n6w-sX-Bi3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="zJe-Nf-U7o"/>
+                <constraint firstItem="n6w-sX-Bi3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="zJe-Nf-U7o"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="apLabel" destination="22W-1j-Rt4" id="Mul-49-sev"/>
+                <outlet property="carryWeightLabel" destination="Gsi-9X-19N" id="7YP-Nl-mmr"/>
+                <outlet property="hpLabel" destination="2Mw-4q-9WE" id="9uw-lw-M5T"/>
                 <outlet property="remainingPointslabel" destination="n6w-sX-Bi3" id="hQE-nN-bDd"/>
             </connections>
-            <point key="canvasLocation" x="139.5" y="481"/>
+            <point key="canvasLocation" x="139.5" y="487"/>
         </view>
     </objects>
 </document>

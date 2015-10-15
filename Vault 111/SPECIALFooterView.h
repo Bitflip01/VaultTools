@@ -10,5 +10,8 @@
 
 @interface SPECIALFooterView : UIView
 @property (weak, nonatomic) IBOutlet UILabel *remainingPointslabel;
+@property (weak, nonatomic) IBOutlet UILabel *hpLabel;
+@property (weak, nonatomic) IBOutlet UILabel *apLabel;
+@property (weak, nonatomic) IBOutlet UILabel *carryWeightLabel;
 
 @end

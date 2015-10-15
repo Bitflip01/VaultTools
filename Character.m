@@ -209,4 +209,19 @@
     return YES;
 }
 
+- (NSInteger)health
+{
+    return 80 + [self.endurance integerValue] * 5;
+}
+
+- (NSInteger)carryWeight
+{
+    return 180 + [self.strength integerValue] * 20;
+}
+
+- (NSInteger)actionPoints
+{
+    return 60 + [self.agility integerValue] * 10;
+}
+
 @end
