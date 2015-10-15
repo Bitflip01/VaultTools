@@ -36,6 +36,7 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
 
 @property (nonatomic, strong, readwrite) UITextField *nameTextField;
 @property (nonatomic, strong, readwrite) NSArray *perks;
+@property (nonatomic, strong, readwrite) NSArray *perkDescriptions;
 
 @end
 
@@ -62,7 +63,20 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
         Perk *perk2 = obj2;
         return [perk1.name compare:perk2.name];
     }];
+    
+    self.perkDescriptions = [self generatePerkDescriptions];
+    
     [self.tableView reloadData];
+}
+
+- (NSArray *)generatePerkDescriptions
+{
+    NSMutableArray *mutablePerkDescriptions = [NSMutableArray array];
+    for (Perk *perk in self.perks)
+    {
+        [mutablePerkDescriptions addObject:[PerksLoader perkDescriptionForName:perk.name]];
+    }
+    return [mutablePerkDescriptions copy];
 }
 
 - (void)didReceiveMemoryWarning
@@ -157,8 +171,11 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
         {
             CharacterPerkCell *characterPerkCell = (CharacterPerkCell *)[tableView dequeueReusableCellWithIdentifier:@"CharacterPerkCell"
                                                                                                         forIndexPath:indexPath];
+            PerkDescription *perkDescription = self.perkDescriptions[indexPath.row];
             Perk *perk = self.perks[indexPath.row];
-            characterPerkCell.perkNameLabel.text = perk.name;
+            characterPerkCell.perkNameLabel.text = perkDescription.name;
+            characterPerkCell.maxRank = perkDescription.maxRank;
+            characterPerkCell.rank = [perk.rank integerValue];
             
             cell = characterPerkCell;
             break;
@@ -206,8 +223,7 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
         if (indexPath.section == CharacterViewControllerSectionPerks)
         {
             PerksDetailViewController *perksDetailViewController = segue.destinationViewController;
-            Perk *perk = self.perks[indexPath.row];
-            PerkDescription *perkDescription = [PerksLoader perkDescriptionForName:perk.name];
+            PerkDescription *perkDescription = self.perkDescriptions[indexPath.row];
             perksDetailViewController.perkDescription = perkDescription;
         }
     }

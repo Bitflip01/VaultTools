@@ -10,5 +10,7 @@
 
 @interface CharacterPerkCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *perkNameLabel;
+@property (nonatomic, assign, readwrite) NSInteger maxRank;
+@property (nonatomic, assign, readwrite) NSInteger rank;
 
 @end
