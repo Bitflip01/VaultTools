@@ -578,7 +578,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="97"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDh-gG-Le0">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDh-gG-Le0">
                                                     <rect key="frame" x="33" y="47" width="25" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.17257410287857056" green="0.21834245324134827" blue="0.44677489995956421" alpha="1" colorSpace="calibratedRGB"/>
@@ -651,9 +651,16 @@
                             <constraint firstItem="ceu-ds-ASI" firstAttribute="top" secondItem="j6v-De-hgq" secondAttribute="bottom" id="uBb-e9-mg9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Perks" id="tco-em-gJf"/>
+                    <navigationItem key="navigationItem" title="Perks" id="tco-em-gJf">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="7wT-4Q-chr">
+                            <connections>
+                                <action selector="zoomButtonTapped:" destination="OQe-8z-9Da" id="lhv-qk-3w2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="ceu-ds-ASI" id="9Tl-xY-IOB"/>
+                        <outlet property="zoomButton" destination="7wT-4Q-chr" id="3TF-0r-lzZ"/>
                         <segue destination="ytD-yK-mqI" kind="show" identifier="ShowPerksDetailViewControllerSeque" id="vwW-Rj-HsY"/>
                     </connections>
                 </viewController>
@@ -870,6 +877,6 @@
         <image name="star_deselected" width="106" height="101"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a0H-Ld-Et2"/>
+        <segue reference="vwW-Rj-HsY"/>
     </inferredMetricsTieBreakers>
 </document>

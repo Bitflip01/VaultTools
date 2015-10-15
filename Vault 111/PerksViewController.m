@@ -20,6 +20,9 @@
 @property (nonatomic, strong, readwrite) NSArray *perkDescriptions;
 @property (nonatomic, strong, readwrite) UIPinchGestureRecognizer *pinchGestureRecognizer;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *zoomButton;
+@property (nonatomic, assign, readwrite) BOOL zoomedOut;
+@property (nonatomic, readwrite, assign) CGFloat itemWidth;
 
 @end
 
@@ -29,6 +32,7 @@
 {
     [super viewDidLoad];
     
+    self.itemWidth = 80;
     self.perkDescriptions = [PerksLoader loadPerkDescriptionsFromJSON];
     self.pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinch:)];
     self.pinchGestureRecognizer.delegate = self;
@@ -72,8 +76,7 @@
         PerkCollectionViewCell *perkCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PerkCollectionViewCell" forIndexPath:indexPath];
         PerkDescription *perk = self.perkDescriptions[indexPath.section][indexPath.row - 1];
         perkCell.perk = perk;
-        PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
-        perkCell.perkTitleLabel.font = [UIFont systemFontOfSize:12 * (layout.itemWidth/80.0)];
+        perkCell.perkTitleLabel.font = [UIFont systemFontOfSize:12 * (self.itemWidth/80.0)];
         if ([[CharacterManager sharedCharacterManager].currentCharacter hasEnoughSpecialPointsForPerk:perk])
         {
             perkCell.backgroundColor = [UIColor flatGreenColor];
@@ -119,6 +122,7 @@
     CGFloat itemWidth = MAX(30, MIN(100, layout.itemWidth * pinchRecogniser.scale));
     layout.itemWidth = itemWidth;
     layout.itemHeight = itemWidth;
+    self.itemWidth = itemWidth;
     [self.collectionView.collectionViewLayout invalidateLayout];
     [self.collectionView reloadData];
 }
@@ -126,6 +130,27 @@
 -(BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
 {
     return YES;
+}
+
+- (IBAction)zoomButtonTapped:(id)sender
+{
+    if (self.zoomedOut)
+    {
+        // Zoom back in
+       self.itemWidth = 100;
+    }
+    else
+    {
+        // Zoom out
+        self.itemWidth = 40;
+    }
+    self.zoomedOut = !self.zoomedOut;
+    
+    PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
+    layout.itemWidth = self.itemWidth;
+    layout.itemHeight = self.itemWidth;
+    [self.collectionView.collectionViewLayout invalidateLayout];
+    [self.collectionView reloadData];
 }
 
 #pragma mark -
