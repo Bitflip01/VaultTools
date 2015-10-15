@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB4FCC3C65504A76EA950F1C /* Pods_Vault_111.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBAE380CEBF6AEF7511F8E5 /* Pods_Vault_111.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AB4FCC3C65504A76EA950F1C /* Pods_Vault_111.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBAE380CEBF6AEF7511F8E5 /* Pods_Vault_111.framework */; };
 		FA088FDD1BC6F0B8003413B0 /* PerksDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FDC1BC6F0B8003413B0 /* PerksDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FA088FE01BC7D1DA003413B0 /* PerkDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FDF1BC7D1DA003413B0 /* PerkDescriptionCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA088FE31BC7D204003413B0 /* RankTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FE21BC7D204003413B0 /* RankTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
