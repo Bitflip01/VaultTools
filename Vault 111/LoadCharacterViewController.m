@@ -140,6 +140,19 @@ typedef NS_ENUM(NSUInteger, LoadCharacterViewControllerSection)
     }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.section)
+    {
+        case LoadCharacterViewControllerSectionCharacters:
+            return 60;
+
+        case LoadCharacterViewControllerSectionNewCharacter:
+            return 70;
+    }
+    return 60;
+}
+
 - (IBAction)cancelTapped:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
