@@ -28,6 +28,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSInteger)specialValueForType:(SPECIALType)type;
 - (void)reset;
 
+/**
+ * Validates perks to remove invalid ones and return the corresponding perk points.
+ */
+- (void)validatePerks;
+
 - (NSInteger)health;
 - (NSInteger)carryWeight;
 - (NSInteger)actionPoints;

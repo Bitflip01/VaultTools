@@ -13,6 +13,7 @@
 
 + (NSArray *)loadPerksFromJSON;
 + (NSArray *)loadPerkDescriptionsFromJSON;
++ (NSDictionary *)loadPerksDictionaryFromJSON;
 + (PerkDescription *)perkDescriptionForName:(NSString *)name;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "Character.h"
+#import "PerksLoader.h"
+#import "PerkDescription.h"
 
 #define START_SPECIAL_POINTS 21
 
@@ -33,6 +35,31 @@
     self.luck = @(1);
     self.perkPoints = @(0);
     self.level = @(0);
+}
+
+- (void)validatePerks
+{
+    NSDictionary *perkDict = [PerksLoader loadPerksDictionaryFromJSON];
+    
+    for (Perk *perk in [self.perks copy])
+    {
+        if (!perkDict[perk.name])
+        {
+            [self removePerksObject:perk];
+            self.perkPoints = @([self.perkPoints integerValue] + [perk.rank integerValue]);
+        }
+        else
+        {
+            PerkDescription *perkDescription = perkDict[perk.name];
+            NSInteger rank = [perk.rank integerValue];
+            if (rank > perkDescription.maxRank)
+            {
+                NSInteger diff = rank - perkDescription.maxRank;
+                perk.rank = @(perkDescription.maxRank);
+                self.perkPoints = @([self.perkPoints integerValue] + diff);
+            }
+        }
+    }
 }
 
 - (void)setSpecial:(SPECIAL *)special

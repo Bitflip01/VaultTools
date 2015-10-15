@@ -41,6 +41,25 @@
     return [mutablePerks copy];
 }
 
++ (NSDictionary *)loadPerksDictionaryFromJSON
+{
+    NSArray *rawPerksArray = [PerksLoader loadPerksFromJSON];
+    
+    NSMutableDictionary *mutablePerks = [NSMutableDictionary dictionary];
+    for (int specialType = 0; specialType < rawPerksArray.count; specialType++)
+    {
+        for (int perkId = 0; perkId < [rawPerksArray[specialType] count]; perkId++)
+        {
+            NSDictionary *perkDict = rawPerksArray[specialType][perkId];
+            NSString *perkName = perkDict[@"name"];
+            
+            PerkDescription *perkDescription = [PerksLoader perkDescriptionForName:perkName];
+            mutablePerks[perkName] = perkDescription;
+        }
+    }
+    return [mutablePerks copy];
+}
+
 + (PerkDescription *)perkDescriptionForName:(NSString *)name
 {
     NSString *strippedName = [name stringByReplacingOccurrencesOfString:@" " withString:@""];

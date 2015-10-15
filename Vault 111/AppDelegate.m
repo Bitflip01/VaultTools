@@ -21,6 +21,8 @@
     [MagicalRecord setupAutoMigratingCoreDataStack];
     [[CharacterManager sharedCharacterManager] loadLastCharacterOrCreateNew];
     
+    [[CharacterManager sharedCharacterManager].currentCharacter validatePerks];
+    
     return YES;
 }
 
