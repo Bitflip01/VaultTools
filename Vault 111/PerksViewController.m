@@ -76,11 +76,11 @@
         perkCell.perkTitleLabel.font = [UIFont systemFontOfSize:12 * (layout.itemWidth/80.0)];
         if ([[CharacterManager sharedCharacterManager].currentCharacter hasEnoughSpecialPointsForPerk:perk])
         {
-            perkCell.backgroundColor = [UIColor whiteColor];
+            perkCell.backgroundColor = [UIColor flatGreenColor];
         }
         else
         {
-            perkCell.backgroundColor = [UIColor grayColor];
+            perkCell.backgroundColor = [UIColor flatGrayColorDark];
         }
         cell = perkCell;
     }
