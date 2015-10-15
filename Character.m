@@ -9,6 +9,7 @@
 #import "Character.h"
 #import "PerksLoader.h"
 #import "PerkDescription.h"
+#import "PerkRank.h"
 
 #define START_SPECIAL_POINTS 21
 
@@ -46,6 +47,7 @@
         if (!perkDict[perk.name])
         {
             [self removePerksObject:perk];
+            [perk MR_deleteEntity];
             self.perkPoints = @([self.perkPoints integerValue] + [perk.rank integerValue]);
         }
         else
@@ -58,8 +60,25 @@
                 perk.rank = @(perkDescription.maxRank);
                 self.perkPoints = @([self.perkPoints integerValue] + diff);
             }
+            for (int rankIndex = 0; rankIndex < [perk.rank integerValue] && rankIndex < perkDescription.ranks.count; rankIndex++)
+            {
+                PerkRank *perkRank = perkDescription.ranks[rankIndex];
+                if ([self.level integerValue] < perkRank.minLevel)
+                {
+                    NSInteger diff = rank - rankIndex;
+                    perk.rank = @(rankIndex);
+                    self.perkPoints = @([self.perkPoints integerValue] + diff);
+                }
+            }
+            // Remove perk if rank is 0
+            if (perk.rank == 0)
+            {
+                [self removePerksObject:perk];
+                [perk MR_deleteEntity];
+            }
         }
     }
+    [self save];
 }
 
 - (void)setSpecial:(SPECIAL *)special
