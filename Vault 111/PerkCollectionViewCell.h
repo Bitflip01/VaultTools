@@ -13,5 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *perkTitleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *perkImageView;
 @property (nonatomic, strong, readwrite) PerkDescription *perk;
+@property (nonatomic, assign, readwrite) NSInteger maxRank;
+@property (nonatomic, assign, readwrite) NSInteger rank;
 
 @end
