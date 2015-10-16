@@ -13,4 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *apLabel;
 @property (weak, nonatomic) IBOutlet UILabel *carryWeightLabel;
 
+@property (nonatomic, assign, readwrite) NSInteger hp;
+@property (nonatomic, assign, readwrite) NSInteger ap;
+@property (nonatomic, assign, readwrite) NSInteger carryWeight;
+
 @end

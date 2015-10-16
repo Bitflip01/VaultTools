@@ -165,9 +165,10 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
                 case CharacterOverviewRowStats:
                 {
                     CharacterStatsCell *characterStatsCell = (CharacterStatsCell *)[tableView dequeueReusableCellWithIdentifier:@"CharacterStatsCell" forIndexPath:indexPath];
-                    characterStatsCell.hpLabel.text = [NSString stringWithFormat:@"HP: %ld", [curChar health]];
-                    characterStatsCell.apLabel.text = [NSString stringWithFormat:@"AP: %ld", [curChar actionPoints]];
-                    characterStatsCell.carryWeightLabel.text = [NSString stringWithFormat:@"Carry Weight: %ld", [curChar carryWeight]];
+                                                            
+                    characterStatsCell.hp = [curChar health];
+                    characterStatsCell.ap = [curChar actionPoints];
+                    characterStatsCell.carryWeight = [curChar carryWeight];
                     cell = characterStatsCell;
                     cell.selectionStyle = UITableViewCellSelectionStyleNone;
                     break;
