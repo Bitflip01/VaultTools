@@ -135,6 +135,10 @@ typedef NS_ENUM(NSUInteger, LoadCharacterViewControllerSection)
         }
         for (StatsSnapshot *snapshot in character.snapshots)
         {
+            for (Perk *perk in snapshot.perks)
+            {
+                [perk MR_deleteEntity];
+            }
             [snapshot MR_deleteEntity];
         }
         [character MR_deleteEntity];

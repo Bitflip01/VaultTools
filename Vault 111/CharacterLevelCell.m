@@ -11,6 +11,7 @@
 @interface CharacterLevelCell ()
 
 @property (weak, nonatomic) IBOutlet UIButton *levelUpButton;
+@property (weak, nonatomic) IBOutlet UIButton *levelDownButton;
 
 
 @end

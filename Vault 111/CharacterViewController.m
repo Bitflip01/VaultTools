@@ -275,6 +275,8 @@ static NSString *const LevelDownAlertShown = @"levelDownAlertShown";
         {
             switch (indexPath.row)
             {
+                case CharacterOverviewRowLevel:
+                    return 75;
                 case CharacterOverviewRowStats:
                     return 75;
                     
