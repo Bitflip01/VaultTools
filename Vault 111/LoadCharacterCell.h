@@ -10,5 +10,6 @@
 
 @interface LoadCharacterCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *characterNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
 
 @end
