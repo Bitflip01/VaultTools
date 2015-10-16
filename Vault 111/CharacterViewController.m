@@ -258,9 +258,15 @@ static NSString *const LevelDownAlertShown = @"levelDownAlertShown";
     {
         case CharacterViewControllerSectionOverview:
             return @"Overview";
-            break;
+            
         case CharacterViewControllerSectionPerks:
-            return @"Perks";
+        {
+            if ([self tableView:tableView numberOfRowsInSection:section] > 0)
+            {
+                return @"Perks";
+            }
+            break;
+        }
         default:
             break;
     }
