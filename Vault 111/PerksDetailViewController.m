@@ -186,7 +186,7 @@ typedef NS_ENUM(NSUInteger, PerksDetailViewControllerSection)
         [curChar addPerksObject:self.perk];
     }
     curChar.perkPoints = @([curChar.perkPoints integerValue] - 1);
-    [curChar save];
+    [CharacterManager save];
     [self.tableView reloadData];
 }
 
@@ -208,7 +208,7 @@ typedef NS_ENUM(NSUInteger, PerksDetailViewControllerSection)
         }
     }
     curChar.perkPoints = @([curChar.perkPoints integerValue] + 1);
-    [curChar save];
+    [CharacterManager save];
     [self.tableView reloadData];
 }
 

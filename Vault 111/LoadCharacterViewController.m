@@ -11,6 +11,7 @@
 #import "CharacterManager.h"
 #import "NewCharacterCell.h"
 #import "Perk.h"
+#import "StatsSnapshot.h"
 
 typedef NS_ENUM(NSUInteger, LoadCharacterViewControllerSection)
 {
@@ -131,6 +132,10 @@ typedef NS_ENUM(NSUInteger, LoadCharacterViewControllerSection)
         for (Perk *perk in character.perks)
         {
             [perk MR_deleteEntity];
+        }
+        for (StatsSnapshot *snapshot in character.snapshots)
+        {
+            [snapshot MR_deleteEntity];
         }
         [character MR_deleteEntity];
         [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];

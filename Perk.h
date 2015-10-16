@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Perk : NSManagedObject
 
-- (void)save;
 - (void)setupWithPerkDescription:(PerkDescription *)perkDescription;
 
 @end

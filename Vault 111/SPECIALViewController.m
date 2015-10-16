@@ -134,6 +134,7 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
 - (void)cell:(SPECIALTableViewCell *)cell changedSpecial:(SPECIAL *)special
 {
     [[CharacterManager sharedCharacterManager].currentCharacter setSpecial:special];
+    [CharacterManager save];
     [self.tableView reloadData];
 }
 

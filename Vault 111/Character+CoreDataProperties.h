@@ -2,7 +2,7 @@
 //  Character+CoreDataProperties.h
 //  
 //
-//  Created by Alexander Heemann on 03/10/15.
+//  Created by Alexander Heemann on 16/10/15.
 //
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -10,7 +10,6 @@
 //
 
 #import "Character.h"
-#import "Perk.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,18 +17,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSNumber *agility;
 @property (nullable, nonatomic, retain) NSNumber *charisma;
+@property (nullable, nonatomic, retain) NSDate *dateCreated;
 @property (nullable, nonatomic, retain) NSNumber *endurance;
 @property (nullable, nonatomic, retain) NSNumber *intelligence;
+@property (nullable, nonatomic, retain) NSDate *lastUsed;
 @property (nullable, nonatomic, retain) NSNumber *level;
 @property (nullable, nonatomic, retain) NSNumber *luck;
 @property (nullable, nonatomic, retain) NSString *name;
 @property (nullable, nonatomic, retain) NSNumber *perception;
-@property (nullable, nonatomic, retain) NSNumber *strength;
-@property (nullable, nonatomic, retain) NSDate *dateCreated;
-@property (nullable, nonatomic, retain) NSDate *lastUsed;
-@property (nullable, nonatomic, retain) NSNumber *specialPoints;
 @property (nullable, nonatomic, retain) NSNumber *perkPoints;
+@property (nullable, nonatomic, retain) NSNumber *specialPoints;
+@property (nullable, nonatomic, retain) NSNumber *strength;
 @property (nullable, nonatomic, retain) NSSet<Perk *> *perks;
+@property (nullable, nonatomic, retain) NSSet<StatsSnapshot *> *snapshots;
 
 @end
 
@@ -39,6 +39,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removePerksObject:(Perk *)value;
 - (void)addPerks:(NSSet<Perk *> *)values;
 - (void)removePerks:(NSSet<Perk *> *)values;
+
+- (void)addSnapshotsObject:(StatsSnapshot *)value;
+- (void)removeSnapshotsObject:(StatsSnapshot *)value;
+- (void)addSnapshots:(NSSet<StatsSnapshot *> *)values;
+- (void)removeSnapshots:(NSSet<StatsSnapshot *> *)values;
 
 @end
 

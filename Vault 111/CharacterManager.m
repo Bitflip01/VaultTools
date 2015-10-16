@@ -27,11 +27,15 @@
     return sharedCharacterManager;
 }
 
++ (void)save
+{
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+}
+
 - (void)createNewCharacter
 {
     self.currentCharacter = [Character MR_createEntity];
     [self.currentCharacter setupDefault];
-    [self.currentCharacter save];
 }
 
 - (void)loadLastCharacter

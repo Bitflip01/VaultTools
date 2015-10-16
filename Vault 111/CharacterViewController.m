@@ -58,7 +58,12 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
+    [self reloadPerks];
+    [self.tableView reloadData];
+}
+
+- (void)reloadPerks
+{
     // Sort perks in alphabetic order
     self.perks = [[[CharacterManager sharedCharacterManager].currentCharacter.perks allObjects] sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         Perk *perk1 = obj1;
@@ -67,8 +72,7 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
     }];
     
     self.perkDescriptions = [self generatePerkDescriptions];
-    
-    [self.tableView reloadData];
+
 }
 
 - (NSArray *)generatePerkDescriptions
@@ -323,11 +327,19 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
 - (void)characterLevelCellDidTapLevelUp:(CharacterLevelCell *)cell
 {
     Character *curChar = [CharacterManager sharedCharacterManager].currentCharacter;
-    NSInteger oldLevel = [curChar.level integerValue];
-    curChar.level = @(oldLevel + 1);
-    NSInteger oldPerkPoints = [curChar.perkPoints integerValue];
-    curChar.perkPoints = @(oldPerkPoints + 1);
+    [curChar levelUp];
     
+    [CharacterManager save];
+    [self.tableView reloadData];
+}
+
+- (void)characterLevelCellDidTapLevelDown:(CharacterLevelCell *)cell
+{
+    Character *curChar = [CharacterManager sharedCharacterManager].currentCharacter;
+    [curChar levelDown];
+    
+    [CharacterManager save];
+    [self reloadPerks];
     [self.tableView reloadData];
 }
 

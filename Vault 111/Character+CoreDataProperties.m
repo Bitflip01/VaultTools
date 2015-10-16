@@ -2,7 +2,7 @@
 //  Character+CoreDataProperties.m
 //  
 //
-//  Created by Alexander Heemann on 03/10/15.
+//  Created by Alexander Heemann on 16/10/15.
 //
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,17 +15,18 @@
 
 @dynamic agility;
 @dynamic charisma;
+@dynamic dateCreated;
 @dynamic endurance;
 @dynamic intelligence;
+@dynamic lastUsed;
 @dynamic level;
 @dynamic luck;
 @dynamic name;
 @dynamic perception;
-@dynamic strength;
-@dynamic dateCreated;
-@dynamic lastUsed;
-@dynamic specialPoints;
 @dynamic perkPoints;
+@dynamic specialPoints;
+@dynamic strength;
 @dynamic perks;
+@dynamic snapshots;
 
 @end

@@ -22,6 +22,7 @@
     [[CharacterManager sharedCharacterManager] loadLastCharacterOrCreateNew];
     
     [[CharacterManager sharedCharacterManager].currentCharacter validatePerks];
+    [CharacterManager save];
     [self setupAppearance];
     
     return YES;

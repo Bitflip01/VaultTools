@@ -10,6 +10,7 @@
 #import "PerksLoader.h"
 #import "PerkDescription.h"
 #import "PerkRank.h"
+#import "StatsSnapshot.h"
 
 #define START_SPECIAL_POINTS 21
 
@@ -78,7 +79,6 @@
             }
         }
     }
-    [self save];
 }
 
 - (void)setSpecial:(SPECIAL *)special
@@ -128,8 +128,6 @@
     {
         self.specialPoints = @([self.specialPoints integerValue] - diff);
     }
-    
-    [self save];
 }
 
 - (NSInteger)specialSum
@@ -174,6 +172,122 @@
     [self removePerks:self.perks];
     
     [self setupDefaultWithName:self.name];
+}
+
+- (void)createSnapshot
+{
+    StatsSnapshot *snapshot = [StatsSnapshot MR_createEntity];
+    snapshot.level = @([self.level integerValue]);
+    snapshot.strength = @([self.strength integerValue]);
+    snapshot.perception = @([self.perception integerValue]);
+    snapshot.endurance = @([self.endurance integerValue]);
+    snapshot.charisma = @([self.charisma integerValue]);
+    snapshot.intelligence = @([self.intelligence integerValue]);
+    snapshot.agility = @([self.agility integerValue]);
+    snapshot.luck = @([self.luck integerValue]);
+    snapshot.specialPoints = @([self.specialPoints integerValue]);
+    snapshot.perkPoints = @([self.perkPoints integerValue]);
+    
+    for (Perk *perk in self.perks)
+    {
+        Perk *newPerk = [Perk MR_createEntity];
+        newPerk.name = [perk.name copy];
+        newPerk.rank = @([perk.rank integerValue]);
+        [snapshot addPerksObject:newPerk];
+    }
+    
+    [self addSnapshotsObject:snapshot];
+}
+
+- (void)levelUp
+{
+    [self createSnapshot];
+    
+    NSInteger oldLevel = [self.level integerValue];
+    self.level = @(oldLevel + 1);
+    NSInteger oldPerkPoints = [self.perkPoints integerValue];
+    self.perkPoints = @(oldPerkPoints + 1);
+}
+
+- (void)levelDown
+{
+    if ([self.level integerValue] > 0)
+    {
+        self.level = @([self.level integerValue] - 1);
+        StatsSnapshot *snapshot = [self findSnapshotForLevel:[self.level integerValue]];
+        if (snapshot)
+        {
+            self.strength = @([snapshot.strength integerValue]);
+            self.perception = @([snapshot.perception integerValue]);
+            self.endurance = @([snapshot.endurance integerValue]);
+            self.charisma = @([snapshot.charisma integerValue]);
+            self.intelligence = @([snapshot.intelligence integerValue]);
+            self.agility = @([snapshot.agility integerValue]);
+            self.luck = @([snapshot.luck integerValue]);
+            self.perkPoints = @([snapshot.perkPoints integerValue]);
+            self.specialPoints = @([snapshot.specialPoints integerValue]);
+            
+//            for (Perk *perk in [self.perks copy])
+//            {
+//                // Compare snapshot and current state and remove perks that are not in the snapshot
+//                NSSet *snapshotPerks = [snapshot.perks objectsPassingTest:^BOOL(Perk * _Nonnull obj, BOOL * _Nonnull stop) {
+//                    if ([obj.name isEqualToString:perk.name])
+//                    {
+//                        *stop = YES;
+//                        return YES;
+//                    }
+//                    return NO;
+//                }];
+//                if (snapshotPerks.count == 0)
+//                {
+//                    [self removePerksObject:perk];
+//                    [perk MR_deleteEntity];
+//                }
+//                else
+//                {
+//                    Perk *snapshotPerk = [snapshotPerks anyObject];
+//                    if ([perk.rank integerValue] != [snapshotPerk.rank integerValue])
+//                    {
+//                        perk.rank = @([snapshotPerk.rank integerValue]);
+//                    }
+//                }
+//            }
+            [self removeAllPerks];
+            for (Perk *perk in [snapshot.perks copy])
+            {
+                Perk *newPerk = [Perk MR_createEntity];
+                newPerk.name = [perk.name copy];
+                newPerk.rank = @([perk.rank integerValue]);
+                [self addPerksObject:newPerk];
+                
+                [perk MR_deleteEntity];
+            }
+
+            [snapshot MR_deleteEntity];
+            [self removeSnapshotsObject:snapshot];
+        }
+    }
+}
+
+- (void)removeAllPerks
+{
+    for (Perk *perk in [self.perks copy])
+    {
+        [self removePerksObject:perk];
+        [perk MR_deleteEntity];
+    }
+}
+
+- (StatsSnapshot *)findSnapshotForLevel:(NSInteger)level
+{
+    return [[self.snapshots objectsPassingTest:^BOOL(StatsSnapshot * _Nonnull obj, BOOL * _Nonnull stop) {
+        if ([obj.level integerValue] == level)
+        {
+            *stop = YES;
+            return YES;
+        }
+        return NO;
+    }] anyObject];
 }
 
 - (NSInteger)specialValueForType:(SPECIALType)type

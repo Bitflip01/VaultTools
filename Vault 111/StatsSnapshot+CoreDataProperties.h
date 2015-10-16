@@ -25,7 +25,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSNumber *luck;
 @property (nullable, nonatomic, retain) NSNumber *specialPoints;
 @property (nullable, nonatomic, retain) NSNumber *perkPoints;
-@property (nullable, nonatomic, retain) Perk *perks;
+@property (nullable, nonatomic, retain) NSSet<Perk *> *perks;
+
+@end
+
+@interface StatsSnapshot (CoreDataGeneratedAccessors)
+
+- (void)addPerksObject:(Perk *)value;
+- (void)removePerksObject:(Perk *)value;
+- (void)addPerks:(NSSet<Perk *> *)values;
+- (void)removePerks:(NSSet<Perk *> *)values;
 
 @end
 

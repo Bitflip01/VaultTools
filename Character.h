@@ -12,6 +12,8 @@
 #import "Perk.h"
 #import "PerkDescription.h"
 
+@class StatsSnapshot;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Character : NSManagedObject
@@ -27,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (Perk *)perkForPerkDescription:(PerkDescription *)perkDescription;
 - (NSInteger)specialValueForType:(SPECIALType)type;
 - (void)reset;
+- (void)levelUp;
+- (void)levelDown;
 
 /**
  * Validates perks to remove invalid ones and return the corresponding perk points.

@@ -99,11 +99,21 @@
                                                 <action selector="levelUpButtonTapped:" destination="6zZ-CQ-kEk" eventType="touchUpInside" id="HZ1-MW-q5u"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rf-4N-keI">
+                                            <rect key="frame" x="376" y="16" width="83" height="30"/>
+                                            <state key="normal" title="Level Down!">
+                                                <color key="titleColor" red="0.59489071370000002" green="0.74986636640000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="levelDownButtonTapped:" destination="6zZ-CQ-kEk" eventType="touchUpInside" id="1oe-sh-mJF"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="LsN-Dh-nBx" firstAttribute="centerY" secondItem="wor-zw-TEd" secondAttribute="centerY" id="7kE-go-fRv"/>
                                         <constraint firstItem="X4v-io-oF8" firstAttribute="centerY" secondItem="wor-zw-TEd" secondAttribute="centerY" id="Amx-f1-uVO"/>
                                         <constraint firstItem="Rhf-5w-GRw" firstAttribute="centerY" secondItem="LsN-Dh-nBx" secondAttribute="centerY" id="Bsq-Rv-5zl"/>
+                                        <constraint firstItem="LsN-Dh-nBx" firstAttribute="leading" secondItem="6Rf-4N-keI" secondAttribute="trailing" constant="10" id="KjW-vt-t8E"/>
                                         <constraint firstItem="LsN-Dh-nBx" firstAttribute="trailing" secondItem="wor-zw-TEd" secondAttribute="trailingMargin" multiplier="0.9" id="LsN-wl-iR9"/>
                                         <constraint firstItem="Rhf-5w-GRw" firstAttribute="centerY" secondItem="X4v-io-oF8" secondAttribute="centerY" id="TH2-9x-HCp"/>
                                         <constraint firstItem="Rhf-5w-GRw" firstAttribute="leading" secondItem="X4v-io-oF8" secondAttribute="trailing" constant="5" id="Uo0-6x-4mw"/>
@@ -111,6 +121,7 @@
                                         <constraint firstItem="LsN-Dh-nBx" firstAttribute="leading" secondItem="X4v-io-oF8" secondAttribute="trailing" constant="54.5" id="b0o-xL-LgP"/>
                                         <constraint firstItem="X4v-io-oF8" firstAttribute="centerY" secondItem="LsN-Dh-nBx" secondAttribute="centerY" id="dDL-A0-gLY"/>
                                         <constraint firstItem="LsN-Dh-nBx" firstAttribute="leading" secondItem="Rhf-5w-GRw" secondAttribute="trailing" constant="21" id="fVE-zu-V6d"/>
+                                        <constraint firstItem="6Rf-4N-keI" firstAttribute="centerY" secondItem="LsN-Dh-nBx" secondAttribute="centerY" id="hca-EY-SxG"/>
                                         <constraint firstItem="LsN-Dh-nBx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Rhf-5w-GRw" secondAttribute="trailing" constant="2" id="icl-Il-d5X"/>
                                         <constraint firstItem="Rhf-5w-GRw" firstAttribute="leading" secondItem="X4v-io-oF8" secondAttribute="trailing" constant="23" id="u4r-q9-bQg"/>
                                         <constraint firstItem="X4v-io-oF8" firstAttribute="leading" secondItem="wor-zw-TEd" secondAttribute="trailingMargin" multiplier="0.1" priority="999" id="unc-sN-WbZ"/>

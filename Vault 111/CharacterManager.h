@@ -12,6 +12,7 @@
 @interface CharacterManager : NSObject
 
 + (CharacterManager *)sharedCharacterManager;
++ (void)save;
 - (void)loadLastCharacter;
 - (void)loadLastCharacterOrCreateNew;
 - (void)createNewCharacter;

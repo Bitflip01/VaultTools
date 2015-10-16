@@ -12,6 +12,7 @@
 @protocol CharacterLevelCellDelegate <NSObject>
 
 - (void)characterLevelCellDidTapLevelUp:(CharacterLevelCell *)cell;
+- (void)characterLevelCellDidTapLevelDown:(CharacterLevelCell *)cell;
 
 @end
 

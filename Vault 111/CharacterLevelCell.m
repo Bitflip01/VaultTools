@@ -33,4 +33,9 @@
     [self.delegate characterLevelCellDidTapLevelUp:self];
 }
 
+- (IBAction)levelDownButtonTapped:(id)sender
+{
+    [self.delegate characterLevelCellDidTapLevelDown:self];
+}
+
 @end

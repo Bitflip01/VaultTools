@@ -18,9 +18,4 @@
     self.minSpecial = @(perkDescription.minSpecial);
 }
 
-- (void)save
-{
-    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
-}
-
 @end
