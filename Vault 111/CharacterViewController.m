@@ -15,6 +15,7 @@
 #import "PerksLoader.h"
 #import "CharacterSpecialCell.h"
 #import "CharacterResetCell.h"
+#import "CharacterStatsCell.h"
 
 typedef NS_ENUM(NSUInteger, CharacterViewControllerSection)
 {
@@ -29,6 +30,7 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
     CharacterOverviewRowName,
     CharacterOverviewRowLevel,
     CharacterOverviewRowSpecial,
+    CharacterOverviewRowStats,
     CharacterOverviewRowCount
 };
 
@@ -160,6 +162,15 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
                     cell.selectionStyle = UITableViewCellSelectionStyleNone;
                     break;
                 }
+                case CharacterOverviewRowStats:
+                {
+                    CharacterStatsCell *characterStatsCell = (CharacterStatsCell *)[tableView dequeueReusableCellWithIdentifier:@"CharacterStatsCell" forIndexPath:indexPath];
+                    characterStatsCell.hpLabel.text = [NSString stringWithFormat:@"HP: %ld", [curChar health]];
+                    characterStatsCell.apLabel.text = [NSString stringWithFormat:@"AP: %ld", [curChar actionPoints]];
+                    characterStatsCell.carryWeightLabel.text = [NSString stringWithFormat:@"Carry Weight: %ld", [curChar carryWeight]];
+                    cell = characterStatsCell;
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                }
                     
                 default:
                     break;
@@ -249,7 +260,16 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
     switch (indexPath.section)
     {
         case CharacterViewControllerSectionOverview:
-            return 60;
+        {
+            switch (indexPath.row)
+            {
+                case CharacterOverviewRowStats:
+                    return 75;
+                    
+                default:
+                    return 60;
+            }
+        }
         
         case CharacterViewControllerSectionPerks:
             return 60;

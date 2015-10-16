@@ -120,6 +120,7 @@
 		FADA2DE81BBDB2FA0096BC9D /* SPECIALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DE71BBDB2FA0096BC9D /* SPECIALViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FADA2DEB1BBDB41B0096BC9D /* SPECIALTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DEA1BBDB41B0096BC9D /* SPECIALTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DED1BBDB6A20096BC9D /* SPECIAL.m */; settings = {ASSET_TAGS = (); }; };
+		FAE9779E1BD10B7700F5526E /* CharacterStatsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE9779D1BD10B7700F5526E /* CharacterStatsCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -293,6 +294,8 @@
 		FADA2DEA1BBDB41B0096BC9D /* SPECIALTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIALTableViewCell.m; sourceTree = "<group>"; };
 		FADA2DEC1BBDB6A20096BC9D /* SPECIAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPECIAL.h; sourceTree = "<group>"; };
 		FADA2DED1BBDB6A20096BC9D /* SPECIAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIAL.m; sourceTree = "<group>"; };
+		FAE9779C1BD10B7700F5526E /* CharacterStatsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterStatsCell.h; sourceTree = "<group>"; };
+		FAE9779D1BD10B7700F5526E /* CharacterStatsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterStatsCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +372,8 @@
 				FA08909B1BCAFBB6003413B0 /* CharacterSpecialCell.m */,
 				FA0890A71BCD6C27003413B0 /* CharacterResetCell.h */,
 				FA0890A81BCD6C27003413B0 /* CharacterResetCell.m */,
+				FAE9779C1BD10B7700F5526E /* CharacterStatsCell.h */,
+				FAE9779D1BD10B7700F5526E /* CharacterStatsCell.m */,
 			);
 			name = Character;
 			sourceTree = "<group>";
@@ -924,6 +929,7 @@
 				FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */,
 				FA0890A91BCD6C27003413B0 /* CharacterResetCell.m in Sources */,
 				FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */,
+				FAE9779E1BD10B7700F5526E /* CharacterStatsCell.m in Sources */,
 				FA0890961BCAF2AF003413B0 /* SpecialCollectionViewCell.m in Sources */,
 				FA2865921BC058E700D61C83 /* PerksCollectionViewLayout.m in Sources */,
 				FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */,
