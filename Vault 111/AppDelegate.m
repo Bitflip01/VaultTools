@@ -22,8 +22,17 @@
     [[CharacterManager sharedCharacterManager] loadLastCharacterOrCreateNew];
     
     [[CharacterManager sharedCharacterManager].currentCharacter validatePerks];
+    [self setupAppearance];
     
     return YES;
+}
+
+- (void)setupAppearance
+{
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor flatWhiteColor] }
+                                             forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor flatGreenColor] }
+                                             forState:UIControlStateSelected];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
