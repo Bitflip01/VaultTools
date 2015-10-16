@@ -578,8 +578,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="97"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDh-gG-Le0">
-                                                    <rect key="frame" x="33" y="47" width="25" height="14.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="2" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nDh-gG-Le0">
+                                                    <rect key="frame" x="32.5" y="41.5" width="25" height="14.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="25" id="7sY-Hf-KEc"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.17257410287857056" green="0.21834245324134827" blue="0.44677489995956421" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -589,25 +592,24 @@
                                         </view>
                                         <color key="backgroundColor" red="0.23018704354763031" green="0.77713233232498169" blue="0.3158949613571167" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="nDh-gG-Le0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lhz-rw-zYc" secondAttribute="leadingMargin" id="4Zq-nj-lMq"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="nDh-gG-Le0" secondAttribute="bottom" constant="25" id="6JB-9b-UPz"/>
-                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="nDh-gG-Le0" secondAttribute="trailing" id="9Oj-ca-QBj"/>
-                                            <constraint firstItem="nDh-gG-Le0" firstAttribute="leading" secondItem="lhz-rw-zYc" secondAttribute="leadingMargin" constant="20.5" id="HVY-Aa-QhO"/>
+                                            <constraint firstItem="nDh-gG-Le0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lhz-rw-zYc" secondAttribute="leading" id="4Zq-nj-lMq"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nDh-gG-Le0" secondAttribute="trailing" id="9Oj-ca-QBj"/>
                                             <constraint firstItem="nDh-gG-Le0" firstAttribute="centerX" secondItem="lhz-rw-zYc" secondAttribute="centerX" id="JPp-eB-CoB"/>
-                                            <constraint firstItem="nDh-gG-Le0" firstAttribute="top" secondItem="lhz-rw-zYc" secondAttribute="topMargin" constant="35.5" id="OUT-CT-jJq"/>
-                                            <constraint firstItem="nDh-gG-Le0" firstAttribute="centerY" secondItem="lhz-rw-zYc" secondAttribute="centerY" constant="5" id="SHT-JQ-2HF"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="nDh-gG-Le0" secondAttribute="trailing" constant="20" id="qIX-jV-HMG"/>
+                                            <constraint firstItem="nDh-gG-Le0" firstAttribute="centerY" secondItem="lhz-rw-zYc" secondAttribute="centerY" id="SHT-JQ-2HF"/>
+                                            <constraint firstItem="nDh-gG-Le0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lhz-rw-zYc" secondAttribute="leadingMargin" id="oyG-1z-NnX"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="nDh-gG-Le0" secondAttribute="trailing" id="zZe-BU-SDN"/>
                                         </constraints>
                                         <size key="customSize" width="90" height="97"/>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="6JB-9b-UPz"/>
-                                                <exclude reference="HVY-Aa-QhO"/>
-                                                <exclude reference="OUT-CT-jJq"/>
-                                                <exclude reference="qIX-jV-HMG"/>
+                                                <exclude reference="4Zq-nj-lMq"/>
+                                                <exclude reference="9Oj-ca-QBj"/>
+                                                <exclude reference="oyG-1z-NnX"/>
+                                                <exclude reference="zZe-BU-SDN"/>
                                             </mask>
                                         </variation>
                                         <connections>
+                                            <outlet property="minWidthConstraint" destination="7sY-Hf-KEc" id="UMC-v6-6cR"/>
                                             <outlet property="perkTitleLabel" destination="nDh-gG-Le0" id="OhL-Ja-3Ob"/>
                                         </connections>
                                     </collectionViewCell>

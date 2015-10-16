@@ -16,4 +16,6 @@
 @property (nonatomic, assign, readwrite) NSInteger maxRank;
 @property (nonatomic, assign, readwrite) NSInteger rank;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *minWidthConstraint;
+
 @end

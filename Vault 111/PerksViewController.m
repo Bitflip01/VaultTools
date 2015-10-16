@@ -77,6 +77,9 @@
         PerkDescription *perk = self.perkDescriptions[indexPath.section][indexPath.row - 1];
         perkCell.perk = perk;
         perkCell.perkTitleLabel.font = [UIFont systemFontOfSize:12 * (self.itemWidth/80.0)];
+        
+        perkCell.minWidthConstraint.constant = self.itemWidth;
+        
         if ([[CharacterManager sharedCharacterManager].currentCharacter hasEnoughSpecialPointsForPerk:perk])
         {
             perkCell.backgroundColor = [UIColor flatGreenColor];
@@ -137,7 +140,7 @@
     if (self.zoomedOut)
     {
         // Zoom back in
-       self.itemWidth = 100;
+       self.itemWidth = 80;
     }
     else
     {
