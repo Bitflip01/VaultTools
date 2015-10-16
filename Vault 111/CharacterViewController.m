@@ -34,6 +34,8 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
     CharacterOverviewRowCount
 };
 
+static NSString *const LevelDownAlertShown = @"levelDownAlertShown";
+
 @interface CharacterViewController () <CharacterLevelCellDelegate, UITextFieldDelegate>
 
 @property (nonatomic, strong, readwrite) UITextField *nameTextField;
@@ -322,6 +324,30 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
+- (void)showAlertForLevelDownWithCompletionHandler:(void (^ __nullable)(UIAlertAction *action))handler
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Level Down"
+                                                                             message:@"Decreasing the level will reset your character's perks and stats to the state they were at that level."
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel"
+                                                           style:UIAlertActionStyleCancel
+                                                         handler:^(UIAlertAction * _Nonnull action)
+                                   {
+
+                                   }];
+    [alertController addAction:cancelAction];
+    
+    UIAlertAction *resetAction = [UIAlertAction actionWithTitle:@"OK"
+                                                          style:UIAlertActionStyleDestructive
+                                                        handler:^(UIAlertAction * _Nonnull action)
+                                  {
+                                      handler(action);
+                                  }];
+    [alertController addAction:resetAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
 #pragma mark CharacterLevelCellDelegate
 
 - (void)characterLevelCellDidTapLevelUp:(CharacterLevelCell *)cell
@@ -334,6 +360,22 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
 }
 
 - (void)characterLevelCellDidTapLevelDown:(CharacterLevelCell *)cell
+{
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:LevelDownAlertShown] boolValue])
+    {
+        [self levelDown];
+    }
+    else
+    {
+        [self showAlertForLevelDownWithCompletionHandler:^(UIAlertAction *action) {
+            [self levelDown];
+            [[NSUserDefaults standardUserDefaults] setObject:@(YES) forKey:LevelDownAlertShown];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }];
+    }
+}
+
+- (void)levelDown
 {
     Character *curChar = [CharacterManager sharedCharacterManager].currentCharacter;
     [curChar levelDown];
