@@ -190,6 +190,10 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
             characterPerkCell.maxRank = perkDescription.maxRank;
             characterPerkCell.rank = [perk.rank integerValue];
             
+            UIView *backgroundView = [[UIView alloc] init];
+            backgroundView.backgroundColor = [UIColor flatGrayColor];
+            characterPerkCell.selectedBackgroundView = backgroundView;
+            
             cell = characterPerkCell;
             break;
         }
