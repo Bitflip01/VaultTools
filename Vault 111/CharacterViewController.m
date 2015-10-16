@@ -170,6 +170,7 @@ typedef NS_ENUM(NSUInteger, CharacterOverviewRow)
                     characterStatsCell.carryWeightLabel.text = [NSString stringWithFormat:@"Carry Weight: %ld", [curChar carryWeight]];
                     cell = characterStatsCell;
                     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                    break;
                 }
                     
                 default:
