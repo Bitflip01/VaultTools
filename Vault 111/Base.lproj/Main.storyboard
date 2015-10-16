@@ -495,7 +495,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wrq-2d-DI2" userLabel="Bar Container View">
                                             <rect key="frame" x="13" y="13" width="420" height="43.5"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbI-P6-uIF" userLabel="Bar View">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbI-P6-uIF" userLabel="Bar View" customClass="SPECIALBarView">
                                                     <rect key="frame" x="0.0" y="0.0" width="420" height="43.5"/>
                                                     <color key="backgroundColor" red="0.18198148906230927" green="0.69426733255386353" blue="0.53024792671203613" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
@@ -583,7 +583,7 @@
         <scene sceneID="oDe-2d-odj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dbT-Vc-kcI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="SPECIAL" id="E13-Jj-2NQ"/>
+                    <tabBarItem key="tabBarItem" title="SPECIAL" image="special_tabbar_icon" id="E13-Jj-2NQ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h2H-UX-I6O">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -869,7 +869,7 @@
         <scene sceneID="0wv-h3-PNh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8ns-lN-gby" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Perks" id="jf9-Ro-gf0"/>
+                    <tabBarItem key="tabBarItem" title="Perks" image="perks_tabbar_icon" id="jf9-Ro-gf0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wSx-52-Xay">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -940,6 +940,8 @@
     </scenes>
     <resources>
         <image name="character_tabbar_icon" width="30" height="30"/>
+        <image name="perks_tabbar_icon" width="30" height="30"/>
+        <image name="special_tabbar_icon" width="30" height="30"/>
         <image name="star_deselected" width="106" height="101"/>
     </resources>
     <inferredMetricsTieBreakers>
