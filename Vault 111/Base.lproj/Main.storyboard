@@ -893,7 +893,7 @@
         <scene sceneID="FzU-OW-YHA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aaq-oc-92M" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Character" id="1kf-yN-gug"/>
+                    <tabBarItem key="tabBarItem" title="Character" image="character_tabbar_icon" id="1kf-yN-gug"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dyh-ss-dH8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -938,6 +938,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="character_tabbar_icon" width="30" height="30"/>
         <image name="star_deselected" width="106" height="101"/>
     </resources>
     <inferredMetricsTieBreakers>
