@@ -15,6 +15,7 @@
         <attribute name="specialPoints" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="strength" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="perks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Perk" syncable="YES"/>
+        <relationship name="snapshots" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StatsSnapshot" syncable="YES"/>
     </entity>
     <entity name="Perk" representedClassName="Perk" syncable="YES">
         <attribute name="minLevel" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
@@ -23,8 +24,22 @@
         <attribute name="rank" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="specialType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
+    <entity name="StatsSnapshot" representedClassName="StatsSnapshot" syncable="YES">
+        <attribute name="agility" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="charisma" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="endurance" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="intelligence" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="luck" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="perception" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="perkPoints" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="specialPoints" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="strength" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="perks" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Perk" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Character" positionX="-63" positionY="-18" width="128" height="255"/>
+        <element name="Character" positionX="-63" positionY="-18" width="128" height="270"/>
         <element name="Perk" positionX="-54" positionY="45" width="128" height="120"/>
+        <element name="StatsSnapshot" positionX="-54" positionY="99" width="128" height="210"/>
     </elements>
 </model>
