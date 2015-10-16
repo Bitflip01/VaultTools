@@ -101,7 +101,6 @@
 		FA28657C1BBF29EF00D61C83 /* Perk+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865771BBF29EF00D61C83 /* Perk+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		FA28657D1BBF29EF00D61C83 /* Perk.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865791BBF29EF00D61C83 /* Perk.m */; settings = {ASSET_TAGS = (); }; };
 		FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA28657F1BBF2A5900D61C83 /* CharacterManager.m */; settings = {ASSET_TAGS = (); }; };
-		FA2865871BBFDB4100D61C83 /* Character+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865861BBFDB4100D61C83 /* Character+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		FA28658A1BC01E4900D61C83 /* SPECIALFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865891BC01E4900D61C83 /* SPECIALFooterView.m */; settings = {ASSET_TAGS = (); }; };
 		FA28658C1BC01E5C00D61C83 /* SPECIALFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA28658B1BC01E5C00D61C83 /* SPECIALFooterView.xib */; settings = {ASSET_TAGS = (); }; };
 		FA28658F1BC0540E00D61C83 /* PerksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA28658E1BC0540E00D61C83 /* PerksViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -122,8 +121,9 @@
 		FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DED1BBDB6A20096BC9D /* SPECIAL.m */; settings = {ASSET_TAGS = (); }; };
 		FAE9779E1BD10B7700F5526E /* CharacterStatsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE9779D1BD10B7700F5526E /* CharacterStatsCell.m */; settings = {ASSET_TAGS = (); }; };
 		FAE977A11BD12C0E00F5526E /* SPECIALBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977A01BD12C0E00F5526E /* SPECIALBarView.m */; settings = {ASSET_TAGS = (); }; };
-		FAE977A61BD155BE00F5526E /* StatsSnapshot+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977A31BD155BE00F5526E /* StatsSnapshot+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		FAE977A71BD155BE00F5526E /* StatsSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977A51BD155BE00F5526E /* StatsSnapshot.m */; settings = {ASSET_TAGS = (); }; };
+		FAE977AF1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977AC1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		FAE977B01BD156E500F5526E /* Character+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977AE1BD156E500F5526E /* Character+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,8 +262,6 @@
 		FA28657E1BBF2A5900D61C83 /* CharacterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterManager.h; sourceTree = "<group>"; };
 		FA28657F1BBF2A5900D61C83 /* CharacterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterManager.m; sourceTree = "<group>"; };
 		FA2865811BBFC30500D61C83 /* Vault111-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vault111-Prefix.pch"; sourceTree = "<group>"; };
-		FA2865851BBFDB4100D61C83 /* Character+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Character+CoreDataProperties.h"; sourceTree = "<group>"; };
-		FA2865861BBFDB4100D61C83 /* Character+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Character+CoreDataProperties.m"; sourceTree = "<group>"; };
 		FA2865881BC01E4900D61C83 /* SPECIALFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPECIALFooterView.h; sourceTree = "<group>"; };
 		FA2865891BC01E4900D61C83 /* SPECIALFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIALFooterView.m; sourceTree = "<group>"; };
 		FA28658B1BC01E5C00D61C83 /* SPECIALFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPECIALFooterView.xib; sourceTree = "<group>"; };
@@ -301,10 +299,12 @@
 		FAE9779D1BD10B7700F5526E /* CharacterStatsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterStatsCell.m; sourceTree = "<group>"; };
 		FAE9779F1BD12C0E00F5526E /* SPECIALBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPECIALBarView.h; sourceTree = "<group>"; };
 		FAE977A01BD12C0E00F5526E /* SPECIALBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIALBarView.m; sourceTree = "<group>"; };
-		FAE977A21BD155BE00F5526E /* StatsSnapshot+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StatsSnapshot+CoreDataProperties.h"; sourceTree = "<group>"; };
-		FAE977A31BD155BE00F5526E /* StatsSnapshot+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StatsSnapshot+CoreDataProperties.m"; sourceTree = "<group>"; };
 		FAE977A41BD155BE00F5526E /* StatsSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsSnapshot.h; sourceTree = "<group>"; };
 		FAE977A51BD155BE00F5526E /* StatsSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsSnapshot.m; sourceTree = "<group>"; };
+		FAE977AB1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StatsSnapshot+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FAE977AC1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StatsSnapshot+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FAE977AD1BD156E500F5526E /* Character+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Character+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FAE977AE1BD156E500F5526E /* Character+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Character+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -639,12 +639,12 @@
 		FADA2DEF1BBDB6A80096BC9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FAE977A21BD155BE00F5526E /* StatsSnapshot+CoreDataProperties.h */,
-				FAE977A31BD155BE00F5526E /* StatsSnapshot+CoreDataProperties.m */,
+				FAE977AB1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.h */,
+				FAE977AC1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m */,
+				FAE977AD1BD156E500F5526E /* Character+CoreDataProperties.h */,
+				FAE977AE1BD156E500F5526E /* Character+CoreDataProperties.m */,
 				FAE977A41BD155BE00F5526E /* StatsSnapshot.h */,
 				FAE977A51BD155BE00F5526E /* StatsSnapshot.m */,
-				FA2865851BBFDB4100D61C83 /* Character+CoreDataProperties.h */,
-				FA2865861BBFDB4100D61C83 /* Character+CoreDataProperties.m */,
 				FA2865741BBF29EF00D61C83 /* Character.h */,
 				FA2865751BBF29EF00D61C83 /* Character.m */,
 				FA2865761BBF29EF00D61C83 /* Perk+CoreDataProperties.h */,
@@ -927,12 +927,12 @@
 				FA088FDD1BC6F0B8003413B0 /* PerksDetailViewController.m in Sources */,
 				FA0890A31BCD0F28003413B0 /* LoadCharacterCell.m in Sources */,
 				FA2865981BC19E9E00D61C83 /* PerkDescription.m in Sources */,
-				FA2865871BBFDB4100D61C83 /* Character+CoreDataProperties.m in Sources */,
 				FADA2DEB1BBDB41B0096BC9D /* SPECIALTableViewCell.m in Sources */,
 				FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */,
 				FADA2DE81BBDB2FA0096BC9D /* SPECIALViewController.m in Sources */,
 				FA088FE71BC7FA7B003413B0 /* TakePerkTableViewCell.m in Sources */,
 				FA0890A01BCB99CE003413B0 /* LoadCharacterViewController.m in Sources */,
+				FAE977B01BD156E500F5526E /* Character+CoreDataProperties.m in Sources */,
 				FA0890991BCAF903003413B0 /* VATabBarController.m in Sources */,
 				FA28658A1BC01E4900D61C83 /* SPECIALFooterView.m in Sources */,
 				FA088FE01BC7D1DA003413B0 /* PerkDescriptionCell.m in Sources */,
@@ -943,7 +943,7 @@
 				FA28658F1BC0540E00D61C83 /* PerksViewController.m in Sources */,
 				FA088FF61BCA5D23003413B0 /* CharacterNameCell.m in Sources */,
 				FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */,
-				FAE977A61BD155BE00F5526E /* StatsSnapshot+CoreDataProperties.m in Sources */,
+				FAE977AF1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m in Sources */,
 				FA0890A91BCD6C27003413B0 /* CharacterResetCell.m in Sources */,
 				FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */,
 				FAE9779E1BD10B7700F5526E /* CharacterStatsCell.m in Sources */,

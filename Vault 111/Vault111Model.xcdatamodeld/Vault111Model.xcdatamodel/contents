@@ -14,8 +14,8 @@
         <attribute name="perkPoints" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="specialPoints" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="strength" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <relationship name="perks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Perk" syncable="YES"/>
-        <relationship name="snapshots" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StatsSnapshot" syncable="YES"/>
+        <relationship name="perks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Perk" syncable="YES"/>
+        <relationship name="snapshots" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="StatsSnapshot" syncable="YES"/>
     </entity>
     <entity name="Perk" representedClassName="Perk" syncable="YES">
         <attribute name="minLevel" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
@@ -35,7 +35,7 @@
         <attribute name="perkPoints" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="specialPoints" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="strength" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <relationship name="perks" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Perk" syncable="YES"/>
+        <relationship name="perks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Perk" syncable="YES"/>
     </entity>
     <elements>
         <element name="Character" positionX="-63" positionY="-18" width="128" height="270"/>
