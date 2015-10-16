@@ -31,6 +31,7 @@
 {
     self.currentCharacter = [Character MR_createEntity];
     [self.currentCharacter setupDefault];
+    [self.currentCharacter save];
 }
 
 - (void)loadLastCharacter
