@@ -113,9 +113,9 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
                                             [curChar.specialPoints integerValue] +
                                             [curChar.perkPoints integerValue]];
     
-    footerView.hpLabel.text = [NSString stringWithFormat:@"HP: %ld", [curChar health]];
-    footerView.apLabel.text = [NSString stringWithFormat:@"AP: %ld", [curChar actionPoints]];
-    footerView.carryWeightLabel.text = [NSString stringWithFormat:@"Carry Weight: %ld", [curChar carryWeight]];
+    footerView.hp = [curChar health];
+    footerView.ap = [curChar actionPoints];
+    footerView.carryWeight = [curChar carryWeight];
     
     return footerView;
 }

@@ -30,7 +30,7 @@
      initWithAttributedString: hpStringNormal];
     
     [hpString addAttribute:NSForegroundColorAttributeName
-                     value:[UIColor flatRedColor]
+                     value:[UIColor flatWatermelonColor]
                      range:NSMakeRange(4, hpString.length - 4)];
     self.hpLabel.attributedText = hpString;
 }
