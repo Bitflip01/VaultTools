@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *zoomButton;
 @property (nonatomic, assign, readwrite) BOOL zoomedOut;
 @property (nonatomic, readwrite, assign) CGFloat itemWidth;
+@property (nonatomic, readwrite, assign) CGFloat originalItemWidth;
 
 @end
 
@@ -33,6 +34,7 @@
     [super viewDidLoad];
     
     self.itemWidth = 80;
+    self.originalItemWidth = self.itemWidth;
     self.perkDescriptions = [PerksLoader loadPerkDescriptionsFromJSON];
     self.pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinch:)];
     self.pinchGestureRecognizer.delegate = self;
@@ -122,12 +124,16 @@
 {
     PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
     
-    CGFloat itemWidth = MAX(30, MIN(100, layout.itemWidth * pinchRecogniser.scale));
-    layout.itemWidth = itemWidth;
-    layout.itemHeight = itemWidth;
-    self.itemWidth = itemWidth;
+    self.itemWidth = MAX(30, MIN(100, self.originalItemWidth * pinchRecogniser.scale));
+    layout.itemWidth = self.itemWidth;
+    layout.itemHeight = self.itemWidth;
     [self.collectionView.collectionViewLayout invalidateLayout];
     [self.collectionView reloadData];
+    
+    if (pinchRecogniser.state == UIGestureRecognizerStateEnded)
+    {
+        self.originalItemWidth = self.itemWidth;
+    }
 }
 
 -(BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
@@ -140,14 +146,17 @@
     if (self.zoomedOut)
     {
         // Zoom back in
-       self.itemWidth = 80;
+        self.itemWidth = 80;
+        self.zoomButton.image = [UIImage imageNamed:@"zoom_out_button"];
     }
     else
     {
         // Zoom out
         self.itemWidth = 40;
+        self.zoomButton.image = [UIImage imageNamed:@"zoom_button"];
     }
     self.zoomedOut = !self.zoomedOut;
+    self.originalItemWidth = self.itemWidth;
     
     PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
     layout.itemWidth = self.itemWidth;
