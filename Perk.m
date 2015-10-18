@@ -18,4 +18,11 @@
     self.minSpecial = @(perkDescription.minSpecial);
 }
 
+- (BOOL)isEqualToPerk:(Perk *)rhs
+{
+    return ([self.name isEqualToString:rhs.name] &&
+            [self.rank integerValue] == [rhs.rank integerValue]);
+    return NO;
+}
+
 @end
