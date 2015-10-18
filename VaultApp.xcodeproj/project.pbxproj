@@ -108,6 +108,8 @@
 		FA2865951BC0692B00D61C83 /* PerkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865941BC0692B00D61C83 /* PerkCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA2865981BC19E9E00D61C83 /* PerkDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865971BC19E9E00D61C83 /* PerkDescription.m */; settings = {ASSET_TAGS = (); }; };
 		FA28659A1BC1B9EB00D61C83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */; };
+		FAD9F2D01BD3CA0A0049805C /* CharacterHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FAD9F2D31BD3CA8D0049805C /* SnapshotHistoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9F2D21BD3CA8D0049805C /* SnapshotHistoryHelper.m */; settings = {ASSET_TAGS = (); }; };
 		FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DAE1BBDAFD00096BC9D /* main.m */; };
 		FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */; };
 		FADA2DBB1BBDAFD00096BC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DB91BBDAFD00096BC9D /* Main.storyboard */; };
@@ -274,6 +276,10 @@
 		FA2865961BC19E9E00D61C83 /* PerkDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerkDescription.h; sourceTree = "<group>"; };
 		FA2865971BC19E9E00D61C83 /* PerkDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerkDescription.m; sourceTree = "<group>"; };
 		FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FAD9F2CE1BD3CA0A0049805C /* CharacterHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterHistoryViewController.h; sourceTree = "<group>"; };
+		FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterHistoryViewController.m; sourceTree = "<group>"; };
+		FAD9F2D11BD3CA8D0049805C /* SnapshotHistoryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapshotHistoryHelper.h; sourceTree = "<group>"; };
+		FAD9F2D21BD3CA8D0049805C /* SnapshotHistoryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapshotHistoryHelper.m; sourceTree = "<group>"; };
 		FADA2DAA1BBDAFD00096BC9D /* VaultApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaultApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA2DAE1BBDAFD00096BC9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -561,6 +567,17 @@
 			name = Perks;
 			sourceTree = "<group>";
 		};
+		FAD9F2CA1BD3C9BF0049805C /* History */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9F2CE1BD3CA0A0049805C /* CharacterHistoryViewController.h */,
+				FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */,
+				FAD9F2D11BD3CA8D0049805C /* SnapshotHistoryHelper.h */,
+				FAD9F2D21BD3CA8D0049805C /* SnapshotHistoryHelper.m */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
 		FADA2DA11BBDAFD00096BC9D = {
 			isa = PBXGroup;
 			children = (
@@ -587,6 +604,7 @@
 		FADA2DAC1BBDAFD00096BC9D /* Vault 111 */ = {
 			isa = PBXGroup;
 			children = (
+				FAD9F2CA1BD3C9BF0049805C /* History */,
 				FA1D50721BC31D4100F850A8 /* Data */,
 				FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */,
 				FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */,
@@ -931,6 +949,7 @@
 				FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */,
 				FADA2DE81BBDB2FA0096BC9D /* SPECIALViewController.m in Sources */,
 				FA088FE71BC7FA7B003413B0 /* TakePerkTableViewCell.m in Sources */,
+				FAD9F2D01BD3CA0A0049805C /* CharacterHistoryViewController.m in Sources */,
 				FA0890A01BCB99CE003413B0 /* LoadCharacterViewController.m in Sources */,
 				FAE977B01BD156E500F5526E /* Character+CoreDataProperties.m in Sources */,
 				FA0890991BCAF903003413B0 /* VATabBarController.m in Sources */,
@@ -943,6 +962,7 @@
 				FA28658F1BC0540E00D61C83 /* PerksViewController.m in Sources */,
 				FA088FF61BCA5D23003413B0 /* CharacterNameCell.m in Sources */,
 				FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */,
+				FAD9F2D31BD3CA8D0049805C /* SnapshotHistoryHelper.m in Sources */,
 				FAE977AF1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m in Sources */,
 				FA0890A91BCD6C27003413B0 /* CharacterResetCell.m in Sources */,
 				FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */,
