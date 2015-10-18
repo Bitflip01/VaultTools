@@ -1,0 +1,1244 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB4FCC3C65504A76EA950F1C /* Pods_Vault_111.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBAE380CEBF6AEF7511F8E5 /* Pods_Vault_111.framework */; };
+		FA088FDD1BC6F0B8003413B0 /* PerksDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FDC1BC6F0B8003413B0 /* PerksDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FA088FE01BC7D1DA003413B0 /* PerkDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FDF1BC7D1DA003413B0 /* PerkDescriptionCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA088FE31BC7D204003413B0 /* RankTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FE21BC7D204003413B0 /* RankTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA088FE71BC7FA7B003413B0 /* TakePerkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FE61BC7FA7B003413B0 /* TakePerkTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA088FE91BC93278003413B0 /* Ressources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA088FE81BC93278003413B0 /* Ressources.xcassets */; settings = {ASSET_TAGS = (); }; };
+		FA088FF01BC95947003413B0 /* CharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FEF1BC95947003413B0 /* CharacterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FA088FF31BC959BD003413B0 /* CharacterLevelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FF21BC959BD003413B0 /* CharacterLevelCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA088FF61BCA5D23003413B0 /* CharacterNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FF51BCA5D23003413B0 /* CharacterNameCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA088FF91BCA8153003413B0 /* CharacterPerkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA088FF81BCA8153003413B0 /* CharacterPerkCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA088FFB1BCA8E00003413B0 /* LocalLeader.json in Resources */ = {isa = PBXBuildFile; fileRef = FA088FFA1BCA8E00003413B0 /* LocalLeader.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890001BCACB72003413B0 /* IronFist.json in Resources */ = {isa = PBXBuildFile; fileRef = FA088FFF1BCACB72003413B0 /* IronFist.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890021BCACC2F003413B0 /* BigLeagues.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890011BCACC2F003413B0 /* BigLeagues.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890041BCACCA0003413B0 /* Armorer.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890031BCACCA0003413B0 /* Armorer.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890061BCACCC3003413B0 /* Weaponsmith.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890051BCACCC3003413B0 /* Weaponsmith.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890081BCACCE5003413B0 /* BigGuns.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890071BCACCE5003413B0 /* BigGuns.json */; settings = {ASSET_TAGS = (); }; };
+		FA08900A1BCACCF9003413B0 /* StrongBack.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890091BCACCF9003413B0 /* StrongBack.json */; settings = {ASSET_TAGS = (); }; };
+		FA08900C1BCACD12003413B0 /* SizeMatters.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08900B1BCACD12003413B0 /* SizeMatters.json */; settings = {ASSET_TAGS = (); }; };
+		FA08900E1BCACD27003413B0 /* Defender.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08900D1BCACD27003413B0 /* Defender.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890101BCACD3C003413B0 /* Slayer.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08900F1BCACD3C003413B0 /* Slayer.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890141BCACDA9003413B0 /* Juggernaut.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890131BCACDA9003413B0 /* Juggernaut.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890171BCACE15003413B0 /* Pickpocket.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890161BCACE15003413B0 /* Pickpocket.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890191BCACE33003413B0 /* Rifleman.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890181BCACE33003413B0 /* Rifleman.json */; settings = {ASSET_TAGS = (); }; };
+		FA08901B1BCACE48003413B0 /* Awareness.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08901A1BCACE48003413B0 /* Awareness.json */; settings = {ASSET_TAGS = (); }; };
+		FA08901D1BCACE6B003413B0 /* Lockpick.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08901C1BCACE6B003413B0 /* Lockpick.json */; settings = {ASSET_TAGS = (); }; };
+		FA08901F1BCACE83003413B0 /* DemolitionExpert.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08901E1BCACE83003413B0 /* DemolitionExpert.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890211BCACE9A003413B0 /* NightPerson.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890201BCACE9A003413B0 /* NightPerson.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890231BCACEB0003413B0 /* Resonance.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890221BCACEB0003413B0 /* Resonance.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890251BCACEC5003413B0 /* Sniper.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890241BCACEC5003413B0 /* Sniper.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890271BCACED7003413B0 /* Detection.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890261BCACED7003413B0 /* Detection.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890291BCACEFB003413B0 /* ConcentratedFire.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890281BCACEFB003413B0 /* ConcentratedFire.json */; settings = {ASSET_TAGS = (); }; };
+		FA08902C1BCACF36003413B0 /* Toughness.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08902B1BCACF36003413B0 /* Toughness.json */; settings = {ASSET_TAGS = (); }; };
+		FA08902E1BCACF5B003413B0 /* LeadBelly.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08902D1BCACF5B003413B0 /* LeadBelly.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890301BCACFEF003413B0 /* LifeGiver.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08902F1BCACFEF003413B0 /* LifeGiver.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890321BCAD007003413B0 /* ChemResistant.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890311BCAD007003413B0 /* ChemResistant.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890341BCAD01D003413B0 /* MarineBoy.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890331BCAD01D003413B0 /* MarineBoy.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890361BCAD034003413B0 /* RadResistant.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890351BCAD034003413B0 /* RadResistant.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890381BCAD051003413B0 /* AdamantiumSkeleton.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890371BCAD051003413B0 /* AdamantiumSkeleton.json */; settings = {ASSET_TAGS = (); }; };
+		FA08903A1BCAD071003413B0 /* Cannibal.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890391BCAD071003413B0 /* Cannibal.json */; settings = {ASSET_TAGS = (); }; };
+		FA08903C1BCAD08A003413B0 /* BlastRadius.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08903B1BCAD08A003413B0 /* BlastRadius.json */; settings = {ASSET_TAGS = (); }; };
+		FA08903E1BCAD09F003413B0 /* SolarPowered.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08903D1BCAD09F003413B0 /* SolarPowered.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890411BCAD0DE003413B0 /* CapCollector.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890401BCAD0DE003413B0 /* CapCollector.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890431BCAD0FC003413B0 /* LadyKiller.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890421BCAD0FC003413B0 /* LadyKiller.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890451BCAD118003413B0 /* LoneWanderer.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890441BCAD118003413B0 /* LoneWanderer.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890471BCAD132003413B0 /* AttackDog.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890461BCAD132003413B0 /* AttackDog.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890491BCAD149003413B0 /* AnimalFriend.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890481BCAD149003413B0 /* AnimalFriend.json */; settings = {ASSET_TAGS = (); }; };
+		FA08904B1BCAD16B003413B0 /* PartyBoy.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08904A1BCAD16B003413B0 /* PartyBoy.json */; settings = {ASSET_TAGS = (); }; };
+		FA08904D1BCAD17F003413B0 /* Inspirational.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08904C1BCAD17F003413B0 /* Inspirational.json */; settings = {ASSET_TAGS = (); }; };
+		FA08904F1BCAD196003413B0 /* WastelandWhisperer.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08904E1BCAD196003413B0 /* WastelandWhisperer.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890511BCAD1B8003413B0 /* Intimidation.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890501BCAD1B8003413B0 /* Intimidation.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890541BCAD204003413B0 /* VANS.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890531BCAD204003413B0 /* VANS.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890561BCAD252003413B0 /* Medic.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890551BCAD252003413B0 /* Medic.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890581BCAD262003413B0 /* GunNut.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890571BCAD262003413B0 /* GunNut.json */; settings = {ASSET_TAGS = (); }; };
+		FA08905A1BCAD27B003413B0 /* Hacker.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890591BCAD27B003413B0 /* Hacker.json */; settings = {ASSET_TAGS = (); }; };
+		FA08905C1BCAD28A003413B0 /* Engineer.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08905B1BCAD28A003413B0 /* Engineer.json */; settings = {ASSET_TAGS = (); }; };
+		FA08905E1BCAD2A6003413B0 /* Science!.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08905D1BCAD2A6003413B0 /* Science!.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890601BCAD2B9003413B0 /* Chemist.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08905F1BCAD2B9003413B0 /* Chemist.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890621BCAD2CF003413B0 /* RoboticsExpert.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890611BCAD2CF003413B0 /* RoboticsExpert.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890641BCAD2E4003413B0 /* Fusion.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890631BCAD2E4003413B0 /* Fusion.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890661BCAD2F3003413B0 /* NerdRage!.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890651BCAD2F3003413B0 /* NerdRage!.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890691BCAD319003413B0 /* Gunslinger.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890681BCAD319003413B0 /* Gunslinger.json */; settings = {ASSET_TAGS = (); }; };
+		FA08906B1BCAD330003413B0 /* Commando.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08906A1BCAD330003413B0 /* Commando.json */; settings = {ASSET_TAGS = (); }; };
+		FA08906D1BCAD34B003413B0 /* Sneak.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08906C1BCAD34B003413B0 /* Sneak.json */; settings = {ASSET_TAGS = (); }; };
+		FA08906F1BCAD35B003413B0 /* MisterSandman.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08906E1BCAD35B003413B0 /* MisterSandman.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890711BCAD375003413B0 /* ActionBoy.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890701BCAD375003413B0 /* ActionBoy.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890731BCAD387003413B0 /* Avoidance.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890721BCAD387003413B0 /* Avoidance.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890751BCAD39B003413B0 /* Ninja.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890741BCAD39B003413B0 /* Ninja.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890771BCAD3AB003413B0 /* RapidReload.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890761BCAD3AB003413B0 /* RapidReload.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890791BCAD3BE003413B0 /* Escape.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890781BCAD3BE003413B0 /* Escape.json */; settings = {ASSET_TAGS = (); }; };
+		FA08907B1BCAD3D0003413B0 /* GunFu.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08907A1BCAD3D0003413B0 /* GunFu.json */; settings = {ASSET_TAGS = (); }; };
+		FA08907E1BCAD405003413B0 /* FortuneFinder.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08907D1BCAD405003413B0 /* FortuneFinder.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890801BCAD41A003413B0 /* Scrounger.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08907F1BCAD41A003413B0 /* Scrounger.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890821BCAD430003413B0 /* BloodyMess.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890811BCAD430003413B0 /* BloodyMess.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890841BCAD449003413B0 /* MysteriousStranger.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890831BCAD449003413B0 /* MysteriousStranger.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890861BCAD46C003413B0 /* PotLuck.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890851BCAD46C003413B0 /* PotLuck.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890881BCAD47E003413B0 /* BetterCriticals.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890871BCAD47E003413B0 /* BetterCriticals.json */; settings = {ASSET_TAGS = (); }; };
+		FA08908A1BCAD490003413B0 /* KillShot.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0890891BCAD490003413B0 /* KillShot.json */; settings = {ASSET_TAGS = (); }; };
+		FA08908C1BCAD4AD003413B0 /* GrimReaper'sSprint.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08908B1BCAD4AD003413B0 /* GrimReaper'sSprint.json */; settings = {ASSET_TAGS = (); }; };
+		FA08908E1BCAD4C7003413B0 /* LuckOfTheIrish.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08908D1BCAD4C7003413B0 /* LuckOfTheIrish.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890901BCAD4DC003413B0 /* Bulletproof.json in Resources */ = {isa = PBXBuildFile; fileRef = FA08908F1BCAD4DC003413B0 /* Bulletproof.json */; settings = {ASSET_TAGS = (); }; };
+		FA0890961BCAF2AF003413B0 /* SpecialCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0890951BCAF2AF003413B0 /* SpecialCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA0890991BCAF903003413B0 /* VATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0890981BCAF903003413B0 /* VATabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		FA08909C1BCAFBB6003413B0 /* CharacterSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA08909B1BCAFBB6003413B0 /* CharacterSpecialCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA0890A01BCB99CE003413B0 /* LoadCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA08909F1BCB99CE003413B0 /* LoadCharacterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FA0890A31BCD0F28003413B0 /* LoadCharacterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0890A21BCD0F28003413B0 /* LoadCharacterCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA0890A61BCD4415003413B0 /* NewCharacterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0890A51BCD4415003413B0 /* NewCharacterCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA0890A91BCD6C27003413B0 /* CharacterResetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0890A81BCD6C27003413B0 /* CharacterResetCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA1D50741BC31D5700F850A8 /* Perks.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1D50731BC31D5700F850A8 /* Perks.json */; settings = {ASSET_TAGS = (); }; };
+		FA1D50771BC401AF00F850A8 /* PerksLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D50761BC401AF00F850A8 /* PerksLoader.m */; settings = {ASSET_TAGS = (); }; };
+		FA1D50801BC5039C00F850A8 /* PerkRank.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D507F1BC5039C00F850A8 /* PerkRank.m */; settings = {ASSET_TAGS = (); }; };
+		FA28657B1BBF29EF00D61C83 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865751BBF29EF00D61C83 /* Character.m */; settings = {ASSET_TAGS = (); }; };
+		FA28657C1BBF29EF00D61C83 /* Perk+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865771BBF29EF00D61C83 /* Perk+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		FA28657D1BBF29EF00D61C83 /* Perk.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865791BBF29EF00D61C83 /* Perk.m */; settings = {ASSET_TAGS = (); }; };
+		FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA28657F1BBF2A5900D61C83 /* CharacterManager.m */; settings = {ASSET_TAGS = (); }; };
+		FA28658A1BC01E4900D61C83 /* SPECIALFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865891BC01E4900D61C83 /* SPECIALFooterView.m */; settings = {ASSET_TAGS = (); }; };
+		FA28658C1BC01E5C00D61C83 /* SPECIALFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA28658B1BC01E5C00D61C83 /* SPECIALFooterView.xib */; settings = {ASSET_TAGS = (); }; };
+		FA28658F1BC0540E00D61C83 /* PerksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA28658E1BC0540E00D61C83 /* PerksViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FA2865921BC058E700D61C83 /* PerksCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865911BC058E700D61C83 /* PerksCollectionViewLayout.m */; settings = {ASSET_TAGS = (); }; };
+		FA2865951BC0692B00D61C83 /* PerkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865941BC0692B00D61C83 /* PerkCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		FA2865981BC19E9E00D61C83 /* PerkDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865971BC19E9E00D61C83 /* PerkDescription.m */; settings = {ASSET_TAGS = (); }; };
+		FA28659A1BC1B9EB00D61C83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */; };
+		FAD9F2D01BD3CA0A0049805C /* CharacterHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FAD9F2D31BD3CA8D0049805C /* SnapshotHistoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9F2D21BD3CA8D0049805C /* SnapshotHistoryHelper.m */; settings = {ASSET_TAGS = (); }; };
+		FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DAE1BBDAFD00096BC9D /* main.m */; };
+		FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */; };
+		FADA2DBB1BBDAFD00096BC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DB91BBDAFD00096BC9D /* Main.storyboard */; };
+		FADA2DBD1BBDAFD00096BC9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DBC1BBDAFD00096BC9D /* Assets.xcassets */; };
+		FADA2DC01BBDAFD00096BC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADA2DBE1BBDAFD00096BC9D /* LaunchScreen.storyboard */; };
+		FADA2DCB1BBDAFD00096BC9D /* Vault_111Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DCA1BBDAFD00096BC9D /* Vault_111Tests.m */; };
+		FADA2DD61BBDAFD10096BC9D /* Vault_111UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DD51BBDAFD10096BC9D /* Vault_111UITests.m */; };
+		FADA2DE51BBDB0550096BC9D /* Vault111Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DE31BBDB0550096BC9D /* Vault111Model.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		FADA2DE81BBDB2FA0096BC9D /* SPECIALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DE71BBDB2FA0096BC9D /* SPECIALViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FADA2DEB1BBDB41B0096BC9D /* SPECIALTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DEA1BBDB41B0096BC9D /* SPECIALTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DED1BBDB6A20096BC9D /* SPECIAL.m */; settings = {ASSET_TAGS = (); }; };
+		FAE9779E1BD10B7700F5526E /* CharacterStatsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE9779D1BD10B7700F5526E /* CharacterStatsCell.m */; settings = {ASSET_TAGS = (); }; };
+		FAE977A11BD12C0E00F5526E /* SPECIALBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977A01BD12C0E00F5526E /* SPECIALBarView.m */; settings = {ASSET_TAGS = (); }; };
+		FAE977A71BD155BE00F5526E /* StatsSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977A51BD155BE00F5526E /* StatsSnapshot.m */; settings = {ASSET_TAGS = (); }; };
+		FAE977AF1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977AC1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		FAE977B01BD156E500F5526E /* Character+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977AE1BD156E500F5526E /* Character+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADA2DC71BBDAFD00096BC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADA2DA21BBDAFD00096BC9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADA2DA91BBDAFD00096BC9D;
+			remoteInfo = "Vault 111";
+		};
+		FADA2DD21BBDAFD10096BC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADA2DA21BBDAFD00096BC9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADA2DA91BBDAFD00096BC9D;
+			remoteInfo = "Vault 111";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		034F01D2603CAE04A8AB447E /* Pods-Vault 111.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vault 111.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vault 111/Pods-Vault 111.debug.xcconfig"; sourceTree = "<group>"; };
+		527DB0D67E60E80738767AE0 /* Pods-Vault 111.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vault 111.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vault 111/Pods-Vault 111.release.xcconfig"; sourceTree = "<group>"; };
+		CEBAE380CEBF6AEF7511F8E5 /* Pods_Vault_111.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vault_111.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA088FDB1BC6F0B8003413B0 /* PerksDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksDetailViewController.h; sourceTree = "<group>"; };
+		FA088FDC1BC6F0B8003413B0 /* PerksDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksDetailViewController.m; sourceTree = "<group>"; };
+		FA088FDE1BC7D1DA003413B0 /* PerkDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerkDescriptionCell.h; sourceTree = "<group>"; };
+		FA088FDF1BC7D1DA003413B0 /* PerkDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerkDescriptionCell.m; sourceTree = "<group>"; };
+		FA088FE11BC7D204003413B0 /* RankTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankTableViewCell.h; sourceTree = "<group>"; };
+		FA088FE21BC7D204003413B0 /* RankTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankTableViewCell.m; sourceTree = "<group>"; };
+		FA088FE51BC7FA7B003413B0 /* TakePerkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePerkTableViewCell.h; sourceTree = "<group>"; };
+		FA088FE61BC7FA7B003413B0 /* TakePerkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePerkTableViewCell.m; sourceTree = "<group>"; };
+		FA088FE81BC93278003413B0 /* Ressources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Ressources.xcassets; sourceTree = "<group>"; };
+		FA088FEE1BC95947003413B0 /* CharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterViewController.h; sourceTree = "<group>"; };
+		FA088FEF1BC95947003413B0 /* CharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterViewController.m; sourceTree = "<group>"; };
+		FA088FF11BC959BD003413B0 /* CharacterLevelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterLevelCell.h; sourceTree = "<group>"; };
+		FA088FF21BC959BD003413B0 /* CharacterLevelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterLevelCell.m; sourceTree = "<group>"; };
+		FA088FF41BCA5D23003413B0 /* CharacterNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterNameCell.h; sourceTree = "<group>"; };
+		FA088FF51BCA5D23003413B0 /* CharacterNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterNameCell.m; sourceTree = "<group>"; };
+		FA088FF71BCA8153003413B0 /* CharacterPerkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterPerkCell.h; sourceTree = "<group>"; };
+		FA088FF81BCA8153003413B0 /* CharacterPerkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterPerkCell.m; sourceTree = "<group>"; };
+		FA088FFA1BCA8E00003413B0 /* LocalLeader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LocalLeader.json; sourceTree = "<group>"; };
+		FA088FFF1BCACB72003413B0 /* IronFist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IronFist.json; sourceTree = "<group>"; };
+		FA0890011BCACC2F003413B0 /* BigLeagues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BigLeagues.json; sourceTree = "<group>"; };
+		FA0890031BCACCA0003413B0 /* Armorer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Armorer.json; sourceTree = "<group>"; };
+		FA0890051BCACCC3003413B0 /* Weaponsmith.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Weaponsmith.json; sourceTree = "<group>"; };
+		FA0890071BCACCE5003413B0 /* BigGuns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BigGuns.json; sourceTree = "<group>"; };
+		FA0890091BCACCF9003413B0 /* StrongBack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StrongBack.json; sourceTree = "<group>"; };
+		FA08900B1BCACD12003413B0 /* SizeMatters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SizeMatters.json; sourceTree = "<group>"; };
+		FA08900D1BCACD27003413B0 /* Defender.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Defender.json; sourceTree = "<group>"; };
+		FA08900F1BCACD3C003413B0 /* Slayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Slayer.json; sourceTree = "<group>"; };
+		FA0890131BCACDA9003413B0 /* Juggernaut.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Juggernaut.json; sourceTree = "<group>"; };
+		FA0890161BCACE15003413B0 /* Pickpocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pickpocket.json; sourceTree = "<group>"; };
+		FA0890181BCACE33003413B0 /* Rifleman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rifleman.json; sourceTree = "<group>"; };
+		FA08901A1BCACE48003413B0 /* Awareness.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awareness.json; sourceTree = "<group>"; };
+		FA08901C1BCACE6B003413B0 /* Lockpick.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lockpick.json; sourceTree = "<group>"; };
+		FA08901E1BCACE83003413B0 /* DemolitionExpert.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemolitionExpert.json; sourceTree = "<group>"; };
+		FA0890201BCACE9A003413B0 /* NightPerson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NightPerson.json; sourceTree = "<group>"; };
+		FA0890221BCACEB0003413B0 /* Resonance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Resonance.json; sourceTree = "<group>"; };
+		FA0890241BCACEC5003413B0 /* Sniper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sniper.json; sourceTree = "<group>"; };
+		FA0890261BCACED7003413B0 /* Detection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Detection.json; sourceTree = "<group>"; };
+		FA0890281BCACEFB003413B0 /* ConcentratedFire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ConcentratedFire.json; sourceTree = "<group>"; };
+		FA08902B1BCACF36003413B0 /* Toughness.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Toughness.json; sourceTree = "<group>"; };
+		FA08902D1BCACF5B003413B0 /* LeadBelly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LeadBelly.json; sourceTree = "<group>"; };
+		FA08902F1BCACFEF003413B0 /* LifeGiver.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LifeGiver.json; sourceTree = "<group>"; };
+		FA0890311BCAD007003413B0 /* ChemResistant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChemResistant.json; sourceTree = "<group>"; };
+		FA0890331BCAD01D003413B0 /* MarineBoy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MarineBoy.json; sourceTree = "<group>"; };
+		FA0890351BCAD034003413B0 /* RadResistant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RadResistant.json; sourceTree = "<group>"; };
+		FA0890371BCAD051003413B0 /* AdamantiumSkeleton.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AdamantiumSkeleton.json; sourceTree = "<group>"; };
+		FA0890391BCAD071003413B0 /* Cannibal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cannibal.json; sourceTree = "<group>"; };
+		FA08903B1BCAD08A003413B0 /* BlastRadius.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlastRadius.json; sourceTree = "<group>"; };
+		FA08903D1BCAD09F003413B0 /* SolarPowered.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SolarPowered.json; sourceTree = "<group>"; };
+		FA0890401BCAD0DE003413B0 /* CapCollector.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CapCollector.json; sourceTree = "<group>"; };
+		FA0890421BCAD0FC003413B0 /* LadyKiller.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LadyKiller.json; sourceTree = "<group>"; };
+		FA0890441BCAD118003413B0 /* LoneWanderer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoneWanderer.json; sourceTree = "<group>"; };
+		FA0890461BCAD132003413B0 /* AttackDog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AttackDog.json; sourceTree = "<group>"; };
+		FA0890481BCAD149003413B0 /* AnimalFriend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimalFriend.json; sourceTree = "<group>"; };
+		FA08904A1BCAD16B003413B0 /* PartyBoy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PartyBoy.json; sourceTree = "<group>"; };
+		FA08904C1BCAD17F003413B0 /* Inspirational.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Inspirational.json; sourceTree = "<group>"; };
+		FA08904E1BCAD196003413B0 /* WastelandWhisperer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WastelandWhisperer.json; sourceTree = "<group>"; };
+		FA0890501BCAD1B8003413B0 /* Intimidation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Intimidation.json; sourceTree = "<group>"; };
+		FA0890531BCAD204003413B0 /* VANS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VANS.json; sourceTree = "<group>"; };
+		FA0890551BCAD252003413B0 /* Medic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Medic.json; sourceTree = "<group>"; };
+		FA0890571BCAD262003413B0 /* GunNut.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GunNut.json; sourceTree = "<group>"; };
+		FA0890591BCAD27B003413B0 /* Hacker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hacker.json; sourceTree = "<group>"; };
+		FA08905B1BCAD28A003413B0 /* Engineer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Engineer.json; sourceTree = "<group>"; };
+		FA08905D1BCAD2A6003413B0 /* Science!.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Science!.json"; sourceTree = "<group>"; };
+		FA08905F1BCAD2B9003413B0 /* Chemist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Chemist.json; sourceTree = "<group>"; };
+		FA0890611BCAD2CF003413B0 /* RoboticsExpert.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RoboticsExpert.json; sourceTree = "<group>"; };
+		FA0890631BCAD2E4003413B0 /* Fusion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fusion.json; sourceTree = "<group>"; };
+		FA0890651BCAD2F3003413B0 /* NerdRage!.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "NerdRage!.json"; sourceTree = "<group>"; };
+		FA0890681BCAD319003413B0 /* Gunslinger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Gunslinger.json; sourceTree = "<group>"; };
+		FA08906A1BCAD330003413B0 /* Commando.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Commando.json; sourceTree = "<group>"; };
+		FA08906C1BCAD34B003413B0 /* Sneak.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sneak.json; sourceTree = "<group>"; };
+		FA08906E1BCAD35B003413B0 /* MisterSandman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MisterSandman.json; sourceTree = "<group>"; };
+		FA0890701BCAD375003413B0 /* ActionBoy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ActionBoy.json; sourceTree = "<group>"; };
+		FA0890721BCAD387003413B0 /* Avoidance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Avoidance.json; sourceTree = "<group>"; };
+		FA0890741BCAD39B003413B0 /* Ninja.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ninja.json; sourceTree = "<group>"; };
+		FA0890761BCAD3AB003413B0 /* RapidReload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RapidReload.json; sourceTree = "<group>"; };
+		FA0890781BCAD3BE003413B0 /* Escape.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Escape.json; sourceTree = "<group>"; };
+		FA08907A1BCAD3D0003413B0 /* GunFu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GunFu.json; sourceTree = "<group>"; };
+		FA08907D1BCAD405003413B0 /* FortuneFinder.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FortuneFinder.json; sourceTree = "<group>"; };
+		FA08907F1BCAD41A003413B0 /* Scrounger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Scrounger.json; sourceTree = "<group>"; };
+		FA0890811BCAD430003413B0 /* BloodyMess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BloodyMess.json; sourceTree = "<group>"; };
+		FA0890831BCAD449003413B0 /* MysteriousStranger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MysteriousStranger.json; sourceTree = "<group>"; };
+		FA0890851BCAD46C003413B0 /* PotLuck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PotLuck.json; sourceTree = "<group>"; };
+		FA0890871BCAD47E003413B0 /* BetterCriticals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BetterCriticals.json; sourceTree = "<group>"; };
+		FA0890891BCAD490003413B0 /* KillShot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KillShot.json; sourceTree = "<group>"; };
+		FA08908B1BCAD4AD003413B0 /* GrimReaper'sSprint.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "GrimReaper'sSprint.json"; sourceTree = "<group>"; };
+		FA08908D1BCAD4C7003413B0 /* LuckOfTheIrish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LuckOfTheIrish.json; sourceTree = "<group>"; };
+		FA08908F1BCAD4DC003413B0 /* Bulletproof.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bulletproof.json; sourceTree = "<group>"; };
+		FA0890941BCAF2AF003413B0 /* SpecialCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialCollectionViewCell.h; sourceTree = "<group>"; };
+		FA0890951BCAF2AF003413B0 /* SpecialCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialCollectionViewCell.m; sourceTree = "<group>"; };
+		FA0890971BCAF903003413B0 /* VATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VATabBarController.h; sourceTree = "<group>"; };
+		FA0890981BCAF903003413B0 /* VATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VATabBarController.m; sourceTree = "<group>"; };
+		FA08909A1BCAFBB6003413B0 /* CharacterSpecialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterSpecialCell.h; sourceTree = "<group>"; };
+		FA08909B1BCAFBB6003413B0 /* CharacterSpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterSpecialCell.m; sourceTree = "<group>"; };
+		FA08909E1BCB99CE003413B0 /* LoadCharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadCharacterViewController.h; sourceTree = "<group>"; };
+		FA08909F1BCB99CE003413B0 /* LoadCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadCharacterViewController.m; sourceTree = "<group>"; };
+		FA0890A11BCD0F28003413B0 /* LoadCharacterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadCharacterCell.h; sourceTree = "<group>"; };
+		FA0890A21BCD0F28003413B0 /* LoadCharacterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadCharacterCell.m; sourceTree = "<group>"; };
+		FA0890A41BCD4415003413B0 /* NewCharacterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCharacterCell.h; sourceTree = "<group>"; };
+		FA0890A51BCD4415003413B0 /* NewCharacterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCharacterCell.m; sourceTree = "<group>"; };
+		FA0890A71BCD6C27003413B0 /* CharacterResetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterResetCell.h; sourceTree = "<group>"; };
+		FA0890A81BCD6C27003413B0 /* CharacterResetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterResetCell.m; sourceTree = "<group>"; };
+		FA1D50731BC31D5700F850A8 /* Perks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Perks.json; sourceTree = "<group>"; };
+		FA1D50751BC401AF00F850A8 /* PerksLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksLoader.h; sourceTree = "<group>"; };
+		FA1D50761BC401AF00F850A8 /* PerksLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksLoader.m; sourceTree = "<group>"; };
+		FA1D507E1BC5039C00F850A8 /* PerkRank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerkRank.h; sourceTree = "<group>"; };
+		FA1D507F1BC5039C00F850A8 /* PerkRank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerkRank.m; sourceTree = "<group>"; };
+		FA2865741BBF29EF00D61C83 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Character.h; path = ../Character.h; sourceTree = "<group>"; };
+		FA2865751BBF29EF00D61C83 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Character.m; path = ../Character.m; sourceTree = "<group>"; };
+		FA2865761BBF29EF00D61C83 /* Perk+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Perk+CoreDataProperties.h"; path = "../Perk+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FA2865771BBF29EF00D61C83 /* Perk+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Perk+CoreDataProperties.m"; path = "../Perk+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FA2865781BBF29EF00D61C83 /* Perk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Perk.h; path = ../Perk.h; sourceTree = "<group>"; };
+		FA2865791BBF29EF00D61C83 /* Perk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Perk.m; path = ../Perk.m; sourceTree = "<group>"; };
+		FA28657E1BBF2A5900D61C83 /* CharacterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterManager.h; sourceTree = "<group>"; };
+		FA28657F1BBF2A5900D61C83 /* CharacterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterManager.m; sourceTree = "<group>"; };
+		FA2865811BBFC30500D61C83 /* Vault111-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vault111-Prefix.pch"; sourceTree = "<group>"; };
+		FA2865881BC01E4900D61C83 /* SPECIALFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPECIALFooterView.h; sourceTree = "<group>"; };
+		FA2865891BC01E4900D61C83 /* SPECIALFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIALFooterView.m; sourceTree = "<group>"; };
+		FA28658B1BC01E5C00D61C83 /* SPECIALFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPECIALFooterView.xib; sourceTree = "<group>"; };
+		FA28658D1BC0540E00D61C83 /* PerksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksViewController.h; sourceTree = "<group>"; };
+		FA28658E1BC0540E00D61C83 /* PerksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksViewController.m; sourceTree = "<group>"; };
+		FA2865901BC058E700D61C83 /* PerksCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerksCollectionViewLayout.h; sourceTree = "<group>"; };
+		FA2865911BC058E700D61C83 /* PerksCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerksCollectionViewLayout.m; sourceTree = "<group>"; };
+		FA2865931BC0692B00D61C83 /* PerkCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerkCollectionViewCell.h; sourceTree = "<group>"; };
+		FA2865941BC0692B00D61C83 /* PerkCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerkCollectionViewCell.m; sourceTree = "<group>"; };
+		FA2865961BC19E9E00D61C83 /* PerkDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerkDescription.h; sourceTree = "<group>"; };
+		FA2865971BC19E9E00D61C83 /* PerkDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerkDescription.m; sourceTree = "<group>"; };
+		FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FAD9F2CE1BD3CA0A0049805C /* CharacterHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterHistoryViewController.h; sourceTree = "<group>"; };
+		FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterHistoryViewController.m; sourceTree = "<group>"; };
+		FAD9F2D11BD3CA8D0049805C /* SnapshotHistoryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapshotHistoryHelper.h; sourceTree = "<group>"; };
+		FAD9F2D21BD3CA8D0049805C /* SnapshotHistoryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapshotHistoryHelper.m; sourceTree = "<group>"; };
+		FADA2DAA1BBDAFD00096BC9D /* Vault Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vault Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADA2DAE1BBDAFD00096BC9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FADA2DBA1BBDAFD00096BC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FADA2DBC1BBDAFD00096BC9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FADA2DBF1BBDAFD00096BC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FADA2DC11BBDAFD00096BC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADA2DC61BBDAFD00096BC9D /* Vault Tools.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vault Tools.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADA2DCA1BBDAFD00096BC9D /* Vault_111Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vault_111Tests.m; sourceTree = "<group>"; };
+		FADA2DCC1BBDAFD00096BC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADA2DD11BBDAFD10096BC9D /* Vault Tools.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vault Tools.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADA2DD51BBDAFD10096BC9D /* Vault_111UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vault_111UITests.m; sourceTree = "<group>"; };
+		FADA2DD71BBDAFD10096BC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADA2DE41BBDB0550096BC9D /* Vault111Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vault111Model.xcdatamodel; sourceTree = "<group>"; };
+		FADA2DE61BBDB2FA0096BC9D /* SPECIALViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPECIALViewController.h; sourceTree = "<group>"; };
+		FADA2DE71BBDB2FA0096BC9D /* SPECIALViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIALViewController.m; sourceTree = "<group>"; };
+		FADA2DE91BBDB41B0096BC9D /* SPECIALTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPECIALTableViewCell.h; sourceTree = "<group>"; };
+		FADA2DEA1BBDB41B0096BC9D /* SPECIALTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIALTableViewCell.m; sourceTree = "<group>"; };
+		FADA2DEC1BBDB6A20096BC9D /* SPECIAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPECIAL.h; sourceTree = "<group>"; };
+		FADA2DED1BBDB6A20096BC9D /* SPECIAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIAL.m; sourceTree = "<group>"; };
+		FAE9779C1BD10B7700F5526E /* CharacterStatsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterStatsCell.h; sourceTree = "<group>"; };
+		FAE9779D1BD10B7700F5526E /* CharacterStatsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterStatsCell.m; sourceTree = "<group>"; };
+		FAE9779F1BD12C0E00F5526E /* SPECIALBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPECIALBarView.h; sourceTree = "<group>"; };
+		FAE977A01BD12C0E00F5526E /* SPECIALBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIALBarView.m; sourceTree = "<group>"; };
+		FAE977A41BD155BE00F5526E /* StatsSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsSnapshot.h; sourceTree = "<group>"; };
+		FAE977A51BD155BE00F5526E /* StatsSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsSnapshot.m; sourceTree = "<group>"; };
+		FAE977AB1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StatsSnapshot+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FAE977AC1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StatsSnapshot+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FAE977AD1BD156E500F5526E /* Character+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Character+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FAE977AE1BD156E500F5526E /* Character+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Character+CoreDataProperties.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADA2DA71BBDAFD00096BC9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA28659A1BC1B9EB00D61C83 /* QuartzCore.framework in Frameworks */,
+				AB4FCC3C65504A76EA950F1C /* Pods_Vault_111.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DC31BBDAFD00096BC9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DCE1BBDAFD10096BC9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62894EB1B2960D8E62ED97F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				034F01D2603CAE04A8AB447E /* Pods-Vault 111.debug.xcconfig */,
+				527DB0D67E60E80738767AE0 /* Pods-Vault 111.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F45FFF813241D83DB925BB2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */,
+				CEBAE380CEBF6AEF7511F8E5 /* Pods_Vault_111.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA088FE41BC7D2F3003413B0 /* SPECIAL */ = {
+			isa = PBXGroup;
+			children = (
+				FADA2DE61BBDB2FA0096BC9D /* SPECIALViewController.h */,
+				FADA2DE71BBDB2FA0096BC9D /* SPECIALViewController.m */,
+				FAE9779F1BD12C0E00F5526E /* SPECIALBarView.h */,
+				FAE977A01BD12C0E00F5526E /* SPECIALBarView.m */,
+				FADA2DE91BBDB41B0096BC9D /* SPECIALTableViewCell.h */,
+				FADA2DEA1BBDB41B0096BC9D /* SPECIALTableViewCell.m */,
+				FA2865881BC01E4900D61C83 /* SPECIALFooterView.h */,
+				FA2865891BC01E4900D61C83 /* SPECIALFooterView.m */,
+				FA28658B1BC01E5C00D61C83 /* SPECIALFooterView.xib */,
+			);
+			name = SPECIAL;
+			sourceTree = "<group>";
+		};
+		FA088FEA1BC936D9003413B0 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				FA088FEE1BC95947003413B0 /* CharacterViewController.h */,
+				FA088FEF1BC95947003413B0 /* CharacterViewController.m */,
+				FA088FF11BC959BD003413B0 /* CharacterLevelCell.h */,
+				FA088FF21BC959BD003413B0 /* CharacterLevelCell.m */,
+				FA088FF41BCA5D23003413B0 /* CharacterNameCell.h */,
+				FA088FF51BCA5D23003413B0 /* CharacterNameCell.m */,
+				FA088FF71BCA8153003413B0 /* CharacterPerkCell.h */,
+				FA088FF81BCA8153003413B0 /* CharacterPerkCell.m */,
+				FA08909A1BCAFBB6003413B0 /* CharacterSpecialCell.h */,
+				FA08909B1BCAFBB6003413B0 /* CharacterSpecialCell.m */,
+				FA0890A71BCD6C27003413B0 /* CharacterResetCell.h */,
+				FA0890A81BCD6C27003413B0 /* CharacterResetCell.m */,
+				FAE9779C1BD10B7700F5526E /* CharacterStatsCell.h */,
+				FAE9779D1BD10B7700F5526E /* CharacterStatsCell.m */,
+			);
+			name = Character;
+			sourceTree = "<group>";
+		};
+		FA088FFC1BCACB0B003413B0 /* Strength */ = {
+			isa = PBXGroup;
+			children = (
+				FA088FFF1BCACB72003413B0 /* IronFist.json */,
+				FA0890011BCACC2F003413B0 /* BigLeagues.json */,
+				FA0890031BCACCA0003413B0 /* Armorer.json */,
+				FA0890051BCACCC3003413B0 /* Weaponsmith.json */,
+				FA0890071BCACCE5003413B0 /* BigGuns.json */,
+				FA0890091BCACCF9003413B0 /* StrongBack.json */,
+				FA08900B1BCACD12003413B0 /* SizeMatters.json */,
+				FA08900D1BCACD27003413B0 /* Defender.json */,
+				FA08900F1BCACD3C003413B0 /* Slayer.json */,
+				FA0890131BCACDA9003413B0 /* Juggernaut.json */,
+			);
+			name = Strength;
+			sourceTree = "<group>";
+		};
+		FA0890151BCACDEB003413B0 /* Perception */ = {
+			isa = PBXGroup;
+			children = (
+				FA0890161BCACE15003413B0 /* Pickpocket.json */,
+				FA0890181BCACE33003413B0 /* Rifleman.json */,
+				FA08901A1BCACE48003413B0 /* Awareness.json */,
+				FA08901C1BCACE6B003413B0 /* Lockpick.json */,
+				FA08901E1BCACE83003413B0 /* DemolitionExpert.json */,
+				FA0890201BCACE9A003413B0 /* NightPerson.json */,
+				FA0890221BCACEB0003413B0 /* Resonance.json */,
+				FA0890241BCACEC5003413B0 /* Sniper.json */,
+				FA0890261BCACED7003413B0 /* Detection.json */,
+				FA0890281BCACEFB003413B0 /* ConcentratedFire.json */,
+			);
+			name = Perception;
+			sourceTree = "<group>";
+		};
+		FA08902A1BCACF20003413B0 /* Endurance */ = {
+			isa = PBXGroup;
+			children = (
+				FA08902B1BCACF36003413B0 /* Toughness.json */,
+				FA08902D1BCACF5B003413B0 /* LeadBelly.json */,
+				FA08902F1BCACFEF003413B0 /* LifeGiver.json */,
+				FA0890311BCAD007003413B0 /* ChemResistant.json */,
+				FA0890331BCAD01D003413B0 /* MarineBoy.json */,
+				FA0890351BCAD034003413B0 /* RadResistant.json */,
+				FA0890371BCAD051003413B0 /* AdamantiumSkeleton.json */,
+				FA0890391BCAD071003413B0 /* Cannibal.json */,
+				FA08903B1BCAD08A003413B0 /* BlastRadius.json */,
+				FA08903D1BCAD09F003413B0 /* SolarPowered.json */,
+			);
+			name = Endurance;
+			sourceTree = "<group>";
+		};
+		FA08903F1BCAD0B2003413B0 /* Charisma */ = {
+			isa = PBXGroup;
+			children = (
+				FA0890401BCAD0DE003413B0 /* CapCollector.json */,
+				FA0890421BCAD0FC003413B0 /* LadyKiller.json */,
+				FA0890441BCAD118003413B0 /* LoneWanderer.json */,
+				FA0890461BCAD132003413B0 /* AttackDog.json */,
+				FA0890481BCAD149003413B0 /* AnimalFriend.json */,
+				FA088FFA1BCA8E00003413B0 /* LocalLeader.json */,
+				FA08904A1BCAD16B003413B0 /* PartyBoy.json */,
+				FA08904C1BCAD17F003413B0 /* Inspirational.json */,
+				FA08904E1BCAD196003413B0 /* WastelandWhisperer.json */,
+				FA0890501BCAD1B8003413B0 /* Intimidation.json */,
+			);
+			name = Charisma;
+			sourceTree = "<group>";
+		};
+		FA0890521BCAD1CB003413B0 /* Intelligence */ = {
+			isa = PBXGroup;
+			children = (
+				FA0890531BCAD204003413B0 /* VANS.json */,
+				FA0890551BCAD252003413B0 /* Medic.json */,
+				FA0890571BCAD262003413B0 /* GunNut.json */,
+				FA0890591BCAD27B003413B0 /* Hacker.json */,
+				FA08905B1BCAD28A003413B0 /* Engineer.json */,
+				FA08905D1BCAD2A6003413B0 /* Science!.json */,
+				FA08905F1BCAD2B9003413B0 /* Chemist.json */,
+				FA0890611BCAD2CF003413B0 /* RoboticsExpert.json */,
+				FA0890631BCAD2E4003413B0 /* Fusion.json */,
+				FA0890651BCAD2F3003413B0 /* NerdRage!.json */,
+			);
+			name = Intelligence;
+			sourceTree = "<group>";
+		};
+		FA0890671BCAD301003413B0 /* Agility */ = {
+			isa = PBXGroup;
+			children = (
+				FA0890681BCAD319003413B0 /* Gunslinger.json */,
+				FA08906A1BCAD330003413B0 /* Commando.json */,
+				FA08906C1BCAD34B003413B0 /* Sneak.json */,
+				FA08906E1BCAD35B003413B0 /* MisterSandman.json */,
+				FA0890701BCAD375003413B0 /* ActionBoy.json */,
+				FA0890721BCAD387003413B0 /* Avoidance.json */,
+				FA0890741BCAD39B003413B0 /* Ninja.json */,
+				FA0890761BCAD3AB003413B0 /* RapidReload.json */,
+				FA0890781BCAD3BE003413B0 /* Escape.json */,
+				FA08907A1BCAD3D0003413B0 /* GunFu.json */,
+			);
+			name = Agility;
+			sourceTree = "<group>";
+		};
+		FA08907C1BCAD3E4003413B0 /* Luck */ = {
+			isa = PBXGroup;
+			children = (
+				FA08907D1BCAD405003413B0 /* FortuneFinder.json */,
+				FA08907F1BCAD41A003413B0 /* Scrounger.json */,
+				FA0890811BCAD430003413B0 /* BloodyMess.json */,
+				FA0890831BCAD449003413B0 /* MysteriousStranger.json */,
+				FA0890851BCAD46C003413B0 /* PotLuck.json */,
+				FA0890871BCAD47E003413B0 /* BetterCriticals.json */,
+				FA0890891BCAD490003413B0 /* KillShot.json */,
+				FA08908B1BCAD4AD003413B0 /* GrimReaper'sSprint.json */,
+				FA08908D1BCAD4C7003413B0 /* LuckOfTheIrish.json */,
+				FA08908F1BCAD4DC003413B0 /* Bulletproof.json */,
+			);
+			name = Luck;
+			sourceTree = "<group>";
+		};
+		FA08909D1BCB99B2003413B0 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				FA08909E1BCB99CE003413B0 /* LoadCharacterViewController.h */,
+				FA08909F1BCB99CE003413B0 /* LoadCharacterViewController.m */,
+				FA0890A11BCD0F28003413B0 /* LoadCharacterCell.h */,
+				FA0890A21BCD0F28003413B0 /* LoadCharacterCell.m */,
+				FA0890A41BCD4415003413B0 /* NewCharacterCell.h */,
+				FA0890A51BCD4415003413B0 /* NewCharacterCell.m */,
+			);
+			name = Loading;
+			sourceTree = "<group>";
+		};
+		FA1D50721BC31D4100F850A8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D50731BC31D5700F850A8 /* Perks.json */,
+				FA088FFC1BCACB0B003413B0 /* Strength */,
+				FA0890151BCACDEB003413B0 /* Perception */,
+				FA08902A1BCACF20003413B0 /* Endurance */,
+				FA08903F1BCAD0B2003413B0 /* Charisma */,
+				FA0890521BCAD1CB003413B0 /* Intelligence */,
+				FA0890671BCAD301003413B0 /* Agility */,
+				FA08907C1BCAD3E4003413B0 /* Luck */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		FA1D50781BC4119900F850A8 /* Perks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2865901BC058E700D61C83 /* PerksCollectionViewLayout.h */,
+				FA2865911BC058E700D61C83 /* PerksCollectionViewLayout.m */,
+				FA1D50751BC401AF00F850A8 /* PerksLoader.h */,
+				FA1D50761BC401AF00F850A8 /* PerksLoader.m */,
+				FA2865931BC0692B00D61C83 /* PerkCollectionViewCell.h */,
+				FA2865941BC0692B00D61C83 /* PerkCollectionViewCell.m */,
+				FA0890941BCAF2AF003413B0 /* SpecialCollectionViewCell.h */,
+				FA0890951BCAF2AF003413B0 /* SpecialCollectionViewCell.m */,
+				FA28658D1BC0540E00D61C83 /* PerksViewController.h */,
+				FA28658E1BC0540E00D61C83 /* PerksViewController.m */,
+				FA088FDB1BC6F0B8003413B0 /* PerksDetailViewController.h */,
+				FA088FDC1BC6F0B8003413B0 /* PerksDetailViewController.m */,
+				FA088FDE1BC7D1DA003413B0 /* PerkDescriptionCell.h */,
+				FA088FDF1BC7D1DA003413B0 /* PerkDescriptionCell.m */,
+				FA088FE11BC7D204003413B0 /* RankTableViewCell.h */,
+				FA088FE21BC7D204003413B0 /* RankTableViewCell.m */,
+				FA088FE51BC7FA7B003413B0 /* TakePerkTableViewCell.h */,
+				FA088FE61BC7FA7B003413B0 /* TakePerkTableViewCell.m */,
+			);
+			name = Perks;
+			sourceTree = "<group>";
+		};
+		FAD9F2CA1BD3C9BF0049805C /* History */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9F2CE1BD3CA0A0049805C /* CharacterHistoryViewController.h */,
+				FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */,
+				FAD9F2D11BD3CA8D0049805C /* SnapshotHistoryHelper.h */,
+				FAD9F2D21BD3CA8D0049805C /* SnapshotHistoryHelper.m */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		FADA2DA11BBDAFD00096BC9D = {
+			isa = PBXGroup;
+			children = (
+				FA2865811BBFC30500D61C83 /* Vault111-Prefix.pch */,
+				FADA2DAC1BBDAFD00096BC9D /* Vault 111 */,
+				FADA2DC91BBDAFD00096BC9D /* Vault 111Tests */,
+				FADA2DD41BBDAFD10096BC9D /* Vault 111UITests */,
+				FADA2DAB1BBDAFD00096BC9D /* Products */,
+				62894EB1B2960D8E62ED97F7 /* Pods */,
+				F45FFF813241D83DB925BB2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FADA2DAB1BBDAFD00096BC9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADA2DAA1BBDAFD00096BC9D /* Vault Tools.app */,
+				FADA2DC61BBDAFD00096BC9D /* Vault Tools.xctest */,
+				FADA2DD11BBDAFD10096BC9D /* Vault Tools.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADA2DAC1BBDAFD00096BC9D /* Vault 111 */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9F2CA1BD3C9BF0049805C /* History */,
+				FA1D50721BC31D4100F850A8 /* Data */,
+				FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */,
+				FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */,
+				FA0890971BCAF903003413B0 /* VATabBarController.h */,
+				FA0890981BCAF903003413B0 /* VATabBarController.m */,
+				FA08909D1BCB99B2003413B0 /* Loading */,
+				FA088FEA1BC936D9003413B0 /* Character */,
+				FA088FE41BC7D2F3003413B0 /* SPECIAL */,
+				FA1D50781BC4119900F850A8 /* Perks */,
+				FA28657E1BBF2A5900D61C83 /* CharacterManager.h */,
+				FA28657F1BBF2A5900D61C83 /* CharacterManager.m */,
+				FADA2DEF1BBDB6A80096BC9D /* Model */,
+				FADA2DE31BBDB0550096BC9D /* Vault111Model.xcdatamodeld */,
+				FADA2DB91BBDAFD00096BC9D /* Main.storyboard */,
+				FA088FE81BC93278003413B0 /* Ressources.xcassets */,
+				FADA2DBC1BBDAFD00096BC9D /* Assets.xcassets */,
+				FADA2DBE1BBDAFD00096BC9D /* LaunchScreen.storyboard */,
+				FADA2DC11BBDAFD00096BC9D /* Info.plist */,
+				FADA2DAD1BBDAFD00096BC9D /* Supporting Files */,
+			);
+			path = "Vault 111";
+			sourceTree = "<group>";
+		};
+		FADA2DAD1BBDAFD00096BC9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FADA2DAE1BBDAFD00096BC9D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FADA2DC91BBDAFD00096BC9D /* Vault 111Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FADA2DCA1BBDAFD00096BC9D /* Vault_111Tests.m */,
+				FADA2DCC1BBDAFD00096BC9D /* Info.plist */,
+			);
+			path = "Vault 111Tests";
+			sourceTree = "<group>";
+		};
+		FADA2DD41BBDAFD10096BC9D /* Vault 111UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FADA2DD51BBDAFD10096BC9D /* Vault_111UITests.m */,
+				FADA2DD71BBDAFD10096BC9D /* Info.plist */,
+			);
+			path = "Vault 111UITests";
+			sourceTree = "<group>";
+		};
+		FADA2DEF1BBDB6A80096BC9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAE977AB1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.h */,
+				FAE977AC1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m */,
+				FAE977AD1BD156E500F5526E /* Character+CoreDataProperties.h */,
+				FAE977AE1BD156E500F5526E /* Character+CoreDataProperties.m */,
+				FAE977A41BD155BE00F5526E /* StatsSnapshot.h */,
+				FAE977A51BD155BE00F5526E /* StatsSnapshot.m */,
+				FA2865741BBF29EF00D61C83 /* Character.h */,
+				FA2865751BBF29EF00D61C83 /* Character.m */,
+				FA2865761BBF29EF00D61C83 /* Perk+CoreDataProperties.h */,
+				FA2865771BBF29EF00D61C83 /* Perk+CoreDataProperties.m */,
+				FA2865781BBF29EF00D61C83 /* Perk.h */,
+				FA2865791BBF29EF00D61C83 /* Perk.m */,
+				FA2865961BC19E9E00D61C83 /* PerkDescription.h */,
+				FA2865971BC19E9E00D61C83 /* PerkDescription.m */,
+				FA1D507E1BC5039C00F850A8 /* PerkRank.h */,
+				FA1D507F1BC5039C00F850A8 /* PerkRank.m */,
+				FADA2DEC1BBDB6A20096BC9D /* SPECIAL.h */,
+				FADA2DED1BBDB6A20096BC9D /* SPECIAL.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADA2DA91BBDAFD00096BC9D /* Vault Tools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADA2DDA1BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault Tools" */;
+			buildPhases = (
+				4032EBBCB69A410AAD3E0053 /* Check Pods Manifest.lock */,
+				FADA2DA61BBDAFD00096BC9D /* Sources */,
+				FADA2DA71BBDAFD00096BC9D /* Frameworks */,
+				FADA2DA81BBDAFD00096BC9D /* Resources */,
+				E4556EB7C6D30DAF4D212605 /* Copy Pods Resources */,
+				0EE0A47A28CF9C5D91800A87 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vault Tools";
+			productName = "Vault 111";
+			productReference = FADA2DAA1BBDAFD00096BC9D /* Vault Tools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FADA2DC51BBDAFD00096BC9D /* Vault ToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADA2DDD1BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault ToolsTests" */;
+			buildPhases = (
+				FADA2DC21BBDAFD00096BC9D /* Sources */,
+				FADA2DC31BBDAFD00096BC9D /* Frameworks */,
+				FADA2DC41BBDAFD00096BC9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADA2DC81BBDAFD00096BC9D /* PBXTargetDependency */,
+			);
+			name = "Vault ToolsTests";
+			productName = "Vault 111Tests";
+			productReference = FADA2DC61BBDAFD00096BC9D /* Vault Tools.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FADA2DD01BBDAFD10096BC9D /* Vault ToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADA2DE01BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault ToolsUITests" */;
+			buildPhases = (
+				FADA2DCD1BBDAFD10096BC9D /* Sources */,
+				FADA2DCE1BBDAFD10096BC9D /* Frameworks */,
+				FADA2DCF1BBDAFD10096BC9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADA2DD31BBDAFD10096BC9D /* PBXTargetDependency */,
+			);
+			name = "Vault ToolsUITests";
+			productName = "Vault 111UITests";
+			productReference = FADA2DD11BBDAFD10096BC9D /* Vault Tools.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADA2DA21BBDAFD00096BC9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Alexander Heemann";
+				TargetAttributes = {
+					FADA2DA91BBDAFD00096BC9D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					FADA2DC51BBDAFD00096BC9D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FADA2DA91BBDAFD00096BC9D;
+					};
+					FADA2DD01BBDAFD10096BC9D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FADA2DA91BBDAFD00096BC9D;
+					};
+				};
+			};
+			buildConfigurationList = FADA2DA51BBDAFD00096BC9D /* Build configuration list for PBXProject "Vault Tools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADA2DA11BBDAFD00096BC9D;
+			productRefGroup = FADA2DAB1BBDAFD00096BC9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADA2DA91BBDAFD00096BC9D /* Vault Tools */,
+				FADA2DC51BBDAFD00096BC9D /* Vault ToolsTests */,
+				FADA2DD01BBDAFD10096BC9D /* Vault ToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADA2DA81BBDAFD00096BC9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA08905E1BCAD2A6003413B0 /* Science!.json in Resources */,
+				FA08907E1BCAD405003413B0 /* FortuneFinder.json in Resources */,
+				FA08907B1BCAD3D0003413B0 /* GunFu.json in Resources */,
+				FA088FFB1BCA8E00003413B0 /* LocalLeader.json in Resources */,
+				FA08900E1BCACD27003413B0 /* Defender.json in Resources */,
+				FADA2DC01BBDAFD00096BC9D /* LaunchScreen.storyboard in Resources */,
+				FA0890621BCAD2CF003413B0 /* RoboticsExpert.json in Resources */,
+				FA0890301BCACFEF003413B0 /* LifeGiver.json in Resources */,
+				FA0890561BCAD252003413B0 /* Medic.json in Resources */,
+				FA08901B1BCACE48003413B0 /* Awareness.json in Resources */,
+				FA0890231BCACEB0003413B0 /* Resonance.json in Resources */,
+				FA28658C1BC01E5C00D61C83 /* SPECIALFooterView.xib in Resources */,
+				FA0890451BCAD118003413B0 /* LoneWanderer.json in Resources */,
+				FA0890081BCACCE5003413B0 /* BigGuns.json in Resources */,
+				FA0890711BCAD375003413B0 /* ActionBoy.json in Resources */,
+				FA0890271BCACED7003413B0 /* Detection.json in Resources */,
+				FA0890001BCACB72003413B0 /* IronFist.json in Resources */,
+				FA0890291BCACEFB003413B0 /* ConcentratedFire.json in Resources */,
+				FA08901F1BCACE83003413B0 /* DemolitionExpert.json in Resources */,
+				FA0890841BCAD449003413B0 /* MysteriousStranger.json in Resources */,
+				FA0890361BCAD034003413B0 /* RadResistant.json in Resources */,
+				FA0890581BCAD262003413B0 /* GunNut.json in Resources */,
+				FA0890541BCAD204003413B0 /* VANS.json in Resources */,
+				FA08901D1BCACE6B003413B0 /* Lockpick.json in Resources */,
+				FA0890101BCACD3C003413B0 /* Slayer.json in Resources */,
+				FA0890731BCAD387003413B0 /* Avoidance.json in Resources */,
+				FA0890211BCACE9A003413B0 /* NightPerson.json in Resources */,
+				FA0890801BCAD41A003413B0 /* Scrounger.json in Resources */,
+				FA0890321BCAD007003413B0 /* ChemResistant.json in Resources */,
+				FA0890601BCAD2B9003413B0 /* Chemist.json in Resources */,
+				FA0890861BCAD46C003413B0 /* PotLuck.json in Resources */,
+				FA0890511BCAD1B8003413B0 /* Intimidation.json in Resources */,
+				FADA2DBD1BBDAFD00096BC9D /* Assets.xcassets in Resources */,
+				FA08905A1BCAD27B003413B0 /* Hacker.json in Resources */,
+				FA0890171BCACE15003413B0 /* Pickpocket.json in Resources */,
+				FA08903E1BCAD09F003413B0 /* SolarPowered.json in Resources */,
+				FA0890141BCACDA9003413B0 /* Juggernaut.json in Resources */,
+				FA0890251BCACEC5003413B0 /* Sniper.json in Resources */,
+				FA0890691BCAD319003413B0 /* Gunslinger.json in Resources */,
+				FA0890021BCACC2F003413B0 /* BigLeagues.json in Resources */,
+				FA0890881BCAD47E003413B0 /* BetterCriticals.json in Resources */,
+				FA1D50741BC31D5700F850A8 /* Perks.json in Resources */,
+				FA08905C1BCAD28A003413B0 /* Engineer.json in Resources */,
+				FA0890641BCAD2E4003413B0 /* Fusion.json in Resources */,
+				FA0890491BCAD149003413B0 /* AnimalFriend.json in Resources */,
+				FA08904B1BCAD16B003413B0 /* PartyBoy.json in Resources */,
+				FA0890381BCAD051003413B0 /* AdamantiumSkeleton.json in Resources */,
+				FA08900A1BCACCF9003413B0 /* StrongBack.json in Resources */,
+				FA08902E1BCACF5B003413B0 /* LeadBelly.json in Resources */,
+				FA08900C1BCACD12003413B0 /* SizeMatters.json in Resources */,
+				FA08902C1BCACF36003413B0 /* Toughness.json in Resources */,
+				FA08906F1BCAD35B003413B0 /* MisterSandman.json in Resources */,
+				FA0890061BCACCC3003413B0 /* Weaponsmith.json in Resources */,
+				FADA2DBB1BBDAFD00096BC9D /* Main.storyboard in Resources */,
+				FA08906D1BCAD34B003413B0 /* Sneak.json in Resources */,
+				FA08904F1BCAD196003413B0 /* WastelandWhisperer.json in Resources */,
+				FA08908E1BCAD4C7003413B0 /* LuckOfTheIrish.json in Resources */,
+				FA0890751BCAD39B003413B0 /* Ninja.json in Resources */,
+				FA0890901BCAD4DC003413B0 /* Bulletproof.json in Resources */,
+				FA08903C1BCAD08A003413B0 /* BlastRadius.json in Resources */,
+				FA08906B1BCAD330003413B0 /* Commando.json in Resources */,
+				FA08908C1BCAD4AD003413B0 /* GrimReaper'sSprint.json in Resources */,
+				FA0890411BCAD0DE003413B0 /* CapCollector.json in Resources */,
+				FA0890431BCAD0FC003413B0 /* LadyKiller.json in Resources */,
+				FA08903A1BCAD071003413B0 /* Cannibal.json in Resources */,
+				FA0890341BCAD01D003413B0 /* MarineBoy.json in Resources */,
+				FA08904D1BCAD17F003413B0 /* Inspirational.json in Resources */,
+				FA0890791BCAD3BE003413B0 /* Escape.json in Resources */,
+				FA0890041BCACCA0003413B0 /* Armorer.json in Resources */,
+				FA088FE91BC93278003413B0 /* Ressources.xcassets in Resources */,
+				FA08908A1BCAD490003413B0 /* KillShot.json in Resources */,
+				FA0890191BCACE33003413B0 /* Rifleman.json in Resources */,
+				FA0890471BCAD132003413B0 /* AttackDog.json in Resources */,
+				FA0890661BCAD2F3003413B0 /* NerdRage!.json in Resources */,
+				FA0890771BCAD3AB003413B0 /* RapidReload.json in Resources */,
+				FA0890821BCAD430003413B0 /* BloodyMess.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DC41BBDAFD00096BC9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DCF1BBDAFD10096BC9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EE0A47A28CF9C5D91800A87 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vault 111/Pods-Vault 111-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4032EBBCB69A410AAD3E0053 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4556EB7C6D30DAF4D212605 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vault 111/Pods-Vault 111-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADA2DA61BBDAFD00096BC9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA088FE31BC7D204003413B0 /* RankTableViewCell.m in Sources */,
+				FA28657C1BBF29EF00D61C83 /* Perk+CoreDataProperties.m in Sources */,
+				FA088FF01BC95947003413B0 /* CharacterViewController.m in Sources */,
+				FAE977A71BD155BE00F5526E /* StatsSnapshot.m in Sources */,
+				FA088FF91BCA8153003413B0 /* CharacterPerkCell.m in Sources */,
+				FA0890A61BCD4415003413B0 /* NewCharacterCell.m in Sources */,
+				FA1D50771BC401AF00F850A8 /* PerksLoader.m in Sources */,
+				FA088FF31BC959BD003413B0 /* CharacterLevelCell.m in Sources */,
+				FA28657B1BBF29EF00D61C83 /* Character.m in Sources */,
+				FA088FDD1BC6F0B8003413B0 /* PerksDetailViewController.m in Sources */,
+				FA0890A31BCD0F28003413B0 /* LoadCharacterCell.m in Sources */,
+				FA2865981BC19E9E00D61C83 /* PerkDescription.m in Sources */,
+				FADA2DEB1BBDB41B0096BC9D /* SPECIALTableViewCell.m in Sources */,
+				FADA2DB21BBDAFD00096BC9D /* AppDelegate.m in Sources */,
+				FADA2DE81BBDB2FA0096BC9D /* SPECIALViewController.m in Sources */,
+				FA088FE71BC7FA7B003413B0 /* TakePerkTableViewCell.m in Sources */,
+				FAD9F2D01BD3CA0A0049805C /* CharacterHistoryViewController.m in Sources */,
+				FA0890A01BCB99CE003413B0 /* LoadCharacterViewController.m in Sources */,
+				FAE977B01BD156E500F5526E /* Character+CoreDataProperties.m in Sources */,
+				FA0890991BCAF903003413B0 /* VATabBarController.m in Sources */,
+				FA28658A1BC01E4900D61C83 /* SPECIALFooterView.m in Sources */,
+				FA088FE01BC7D1DA003413B0 /* PerkDescriptionCell.m in Sources */,
+				FA08909C1BCAFBB6003413B0 /* CharacterSpecialCell.m in Sources */,
+				FA28657D1BBF29EF00D61C83 /* Perk.m in Sources */,
+				FADA2DE51BBDB0550096BC9D /* Vault111Model.xcdatamodeld in Sources */,
+				FA1D50801BC5039C00F850A8 /* PerkRank.m in Sources */,
+				FA28658F1BC0540E00D61C83 /* PerksViewController.m in Sources */,
+				FA088FF61BCA5D23003413B0 /* CharacterNameCell.m in Sources */,
+				FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */,
+				FAD9F2D31BD3CA8D0049805C /* SnapshotHistoryHelper.m in Sources */,
+				FAE977AF1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m in Sources */,
+				FA0890A91BCD6C27003413B0 /* CharacterResetCell.m in Sources */,
+				FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */,
+				FAE9779E1BD10B7700F5526E /* CharacterStatsCell.m in Sources */,
+				FA0890961BCAF2AF003413B0 /* SpecialCollectionViewCell.m in Sources */,
+				FA2865921BC058E700D61C83 /* PerksCollectionViewLayout.m in Sources */,
+				FAE977A11BD12C0E00F5526E /* SPECIALBarView.m in Sources */,
+				FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */,
+				FA2865951BC0692B00D61C83 /* PerkCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DC21BBDAFD00096BC9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADA2DCB1BBDAFD00096BC9D /* Vault_111Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADA2DCD1BBDAFD10096BC9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADA2DD61BBDAFD10096BC9D /* Vault_111UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADA2DC81BBDAFD00096BC9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADA2DA91BBDAFD00096BC9D /* Vault Tools */;
+			targetProxy = FADA2DC71BBDAFD00096BC9D /* PBXContainerItemProxy */;
+		};
+		FADA2DD31BBDAFD10096BC9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADA2DA91BBDAFD00096BC9D /* Vault Tools */;
+			targetProxy = FADA2DD21BBDAFD10096BC9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FADA2DB91BBDAFD00096BC9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADA2DBA1BBDAFD00096BC9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FADA2DBE1BBDAFD00096BC9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADA2DBF1BBDAFD00096BC9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FADA2DD81BBDAFD10096BC9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADA2DD91BBDAFD10096BC9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADA2DDB1BBDAFD10096BC9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 034F01D2603CAE04A8AB447E /* Pods-Vault 111.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$SRCROOT/Vault111-Prefix.pch";
+				INFOPLIST_FILE = "Vault 111/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111";
+				PRODUCT_NAME = "Vault Tools";
+			};
+			name = Debug;
+		};
+		FADA2DDC1BBDAFD10096BC9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527DB0D67E60E80738767AE0 /* Pods-Vault 111.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$SRCROOT/Vault111-Prefix.pch";
+				INFOPLIST_FILE = "Vault 111/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111";
+				PRODUCT_NAME = "Vault Tools";
+			};
+			name = Release;
+		};
+		FADA2DDE1BBDAFD10096BC9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Vault 111Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111Tests";
+				PRODUCT_NAME = "Vault Tools";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vault Tools.app/Vault Tools";
+			};
+			name = Debug;
+		};
+		FADA2DDF1BBDAFD10096BC9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Vault 111Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111Tests";
+				PRODUCT_NAME = "Vault Tools";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vault Tools.app/Vault Tools";
+			};
+			name = Release;
+		};
+		FADA2DE11BBDAFD10096BC9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Vault 111UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111UITests";
+				PRODUCT_NAME = "Vault Tools";
+				TEST_TARGET_NAME = "Vault 111";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FADA2DE21BBDAFD10096BC9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Vault 111UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heemann.Vault-111UITests";
+				PRODUCT_NAME = "Vault Tools";
+				TEST_TARGET_NAME = "Vault 111";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADA2DA51BBDAFD00096BC9D /* Build configuration list for PBXProject "Vault Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADA2DD81BBDAFD10096BC9D /* Debug */,
+				FADA2DD91BBDAFD10096BC9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADA2DDA1BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADA2DDB1BBDAFD10096BC9D /* Debug */,
+				FADA2DDC1BBDAFD10096BC9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADA2DDD1BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault ToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADA2DDE1BBDAFD10096BC9D /* Debug */,
+				FADA2DDF1BBDAFD10096BC9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADA2DE01BBDAFD10096BC9D /* Build configuration list for PBXNativeTarget "Vault ToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADA2DE11BBDAFD10096BC9D /* Debug */,
+				FADA2DE21BBDAFD10096BC9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FADA2DE31BBDB0550096BC9D /* Vault111Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FADA2DE41BBDB0550096BC9D /* Vault111Model.xcdatamodel */,
+			);
+			currentVersion = FADA2DE41BBDB0550096BC9D /* Vault111Model.xcdatamodel */;
+			path = Vault111Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FADA2DA21BBDAFD00096BC9D /* Project object */;
+}
