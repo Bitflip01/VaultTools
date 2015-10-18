@@ -78,6 +78,10 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
     return self.SPECIALArray.count;
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.backgroundColor = cell.contentView.backgroundColor;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

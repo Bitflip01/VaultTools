@@ -163,6 +163,11 @@ typedef NS_ENUM(NSUInteger, LoadCharacterViewControllerSection)
     return 60;
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.backgroundColor = cell.contentView.backgroundColor;
+}
+
 - (IBAction)cancelTapped:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
