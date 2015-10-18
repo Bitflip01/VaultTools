@@ -387,7 +387,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Character" id="HAf-bq-hQs">
-                        <barButtonItem key="rightBarButtonItem" title="Load" id="ABf-kZ-Qwy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="ABf-kZ-Qwy">
                             <color key="tintColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="ehD-qe-6Oa" kind="presentation" id="tuy-fP-MYP"/>
