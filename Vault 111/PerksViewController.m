@@ -64,13 +64,13 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell *cell;
+    UIFont *font = [UIFont fontWithName:@"Futura-Medium" size:12 * (self.itemWidth/80.0)];
     
     if (indexPath.row == 0)
     {
         SpecialCollectionViewCell *specialCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SpecialCollectionViewCell" forIndexPath:indexPath];
         specialCell.specialTitleLabel.text = [SPECIAL nameForType:indexPath.section];
-        PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
-        specialCell.specialTitleLabel.font = [UIFont systemFontOfSize:14 * (layout.itemWidth/80.0)];
+        specialCell.specialTitleLabel.font = font;
         cell = specialCell;
     }
     else
@@ -78,7 +78,7 @@
         PerkCollectionViewCell *perkCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PerkCollectionViewCell" forIndexPath:indexPath];
         PerkDescription *perk = self.perkDescriptions[indexPath.section][indexPath.row - 1];
         perkCell.perk = perk;
-        perkCell.perkTitleLabel.font = [UIFont systemFontOfSize:12 * (self.itemWidth/80.0)];
+        perkCell.perkTitleLabel.font = font;
         
         perkCell.minWidthConstraint.constant = self.itemWidth;
         

@@ -106,7 +106,7 @@ typedef NS_ENUM(NSUInteger, SPECIALCell)
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 108;
+    return 120;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section

@@ -31,10 +31,25 @@
 - (void)setupAppearance
 {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor flatWhiteColor] }
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor flatWhiteColor],
+                                                         NSFontAttributeName: [UIFont fontWithName:@"Futura-Medium" size:10.0f]}
                                              forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor flatGreenColor] }
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor flatGreenColor],
+                                                         NSFontAttributeName: [UIFont fontWithName:@"Futura-Medium" size:10.0f]}
                                              forState:UIControlStateSelected];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSForegroundColorAttributeName: [UIColor flatWhiteColor],
+                                                           NSFontAttributeName: [UIFont fontWithName:@"Futura-Medium" size:18.0f]
+                                                           }];
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
+     setTitleTextAttributes:
+     @{
+       NSForegroundColorAttributeName: [UIColor flatWhiteColor],
+       NSFontAttributeName: [UIFont fontWithName:@"Futura-Medium" size:15.0f]
+       }
+     forState:UIControlStateNormal];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
