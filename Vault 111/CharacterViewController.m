@@ -304,9 +304,9 @@ static NSString *const LevelDownAlertShown = @"levelDownAlertShown";
     return 60;
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    [self.nameTextField resignFirstResponder];
+        [self.nameTextField resignFirstResponder];
 }
 
 - (void)resetTapped
