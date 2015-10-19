@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +18,34 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vault_tools_logo" translatesAutoresizingMaskIntoConstraints="NO" id="nmV-hg-GmV">
+                                <rect key="frame" x="44" y="44" width="512" height="512"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nmV-hg-GmV" secondAttribute="height" multiplier="1:1" id="cPn-kv-ueZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zo-5a-BDy">
+                                <rect key="frame" x="263.5" y="258" width="73.5" height="83.5"/>
+                                <string key="text">Vault
+Tools</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
+                                <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.17077735066413879" green="0.30895513296127319" blue="0.37797331809997559" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nmV-hg-GmV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0cq-8A-NRf"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nmV-hg-GmV" secondAttribute="bottom" id="1Ii-Oe-UVW"/>
+                            <constraint firstItem="8zo-5a-BDy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="49O-4r-jMj"/>
+                            <constraint firstItem="8zo-5a-BDy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="S7v-7v-K37"/>
+                            <constraint firstItem="nmV-hg-GmV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="UT3-w0-7Bw"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="nmV-hg-GmV" secondAttribute="trailing" id="XHl-E1-aYN"/>
+                            <constraint firstItem="nmV-hg-GmV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="c0n-4w-6sI"/>
+                            <constraint firstItem="nmV-hg-GmV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="rMG-hV-bgK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,4 +53,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="vault_tools_logo" width="512" height="512"/>
+    </resources>
 </document>
