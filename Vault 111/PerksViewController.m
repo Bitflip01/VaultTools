@@ -124,7 +124,7 @@
 {
     PerksCollectionViewLayout *const layout = (PerksCollectionViewLayout *)self.collectionView.collectionViewLayout;
     
-    self.itemWidth = MAX(30, MIN(100, self.originalItemWidth * pinchRecogniser.scale));
+    self.itemWidth = MAX(40, MIN(100, self.originalItemWidth * pinchRecogniser.scale));
     layout.itemWidth = self.itemWidth;
     layout.itemHeight = self.itemWidth;
     [self.collectionView.collectionViewLayout invalidateLayout];
