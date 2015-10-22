@@ -108,6 +108,7 @@
 		FA2865951BC0692B00D61C83 /* PerkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865941BC0692B00D61C83 /* PerkCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA2865981BC19E9E00D61C83 /* PerkDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865971BC19E9E00D61C83 /* PerkDescription.m */; settings = {ASSET_TAGS = (); }; };
 		FA28659A1BC1B9EB00D61C83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */; };
+		FAB331381BD9037400974A20 /* HistorySnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB331371BD9037400974A20 /* HistorySnapshot.m */; settings = {ASSET_TAGS = (); }; };
 		FAD9F2D01BD3CA0A0049805C /* CharacterHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FAD9F2D31BD3CA8D0049805C /* SnapshotHistoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9F2D21BD3CA8D0049805C /* SnapshotHistoryHelper.m */; settings = {ASSET_TAGS = (); }; };
 		FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DAE1BBDAFD00096BC9D /* main.m */; };
@@ -276,6 +277,8 @@
 		FA2865961BC19E9E00D61C83 /* PerkDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerkDescription.h; sourceTree = "<group>"; };
 		FA2865971BC19E9E00D61C83 /* PerkDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerkDescription.m; sourceTree = "<group>"; };
 		FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FAB331361BD9037400974A20 /* HistorySnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistorySnapshot.h; sourceTree = "<group>"; };
+		FAB331371BD9037400974A20 /* HistorySnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistorySnapshot.m; sourceTree = "<group>"; };
 		FAD9F2CE1BD3CA0A0049805C /* CharacterHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterHistoryViewController.h; sourceTree = "<group>"; };
 		FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterHistoryViewController.m; sourceTree = "<group>"; };
 		FAD9F2D11BD3CA8D0049805C /* SnapshotHistoryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapshotHistoryHelper.h; sourceTree = "<group>"; };
@@ -574,6 +577,8 @@
 				FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */,
 				FAD9F2D11BD3CA8D0049805C /* SnapshotHistoryHelper.h */,
 				FAD9F2D21BD3CA8D0049805C /* SnapshotHistoryHelper.m */,
+				FAB331361BD9037400974A20 /* HistorySnapshot.h */,
+				FAB331371BD9037400974A20 /* HistorySnapshot.m */,
 			);
 			name = History;
 			sourceTree = "<group>";
@@ -940,6 +945,7 @@
 				FAE977A71BD155BE00F5526E /* StatsSnapshot.m in Sources */,
 				FA088FF91BCA8153003413B0 /* CharacterPerkCell.m in Sources */,
 				FA0890A61BCD4415003413B0 /* NewCharacterCell.m in Sources */,
+				FAB331381BD9037400974A20 /* HistorySnapshot.m in Sources */,
 				FA1D50771BC401AF00F850A8 /* PerksLoader.m in Sources */,
 				FA088FF31BC959BD003413B0 /* CharacterLevelCell.m in Sources */,
 				FA28657B1BBF29EF00D61C83 /* Character.m in Sources */,
