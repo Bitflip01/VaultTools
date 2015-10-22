@@ -13,10 +13,32 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSString *const kSnapshotSpecialPoints;
+extern NSString *const kSnapshotPerkPoints;
+extern NSString *const kSnapshotStrength;
+extern NSString *const kSnapshotPerception;
+extern NSString *const kSnapshotEndurance;
+extern NSString *const kSnapshotCharisma;
+extern NSString *const kSnapshotIntelligence;
+extern NSString *const kSnapshotAgility;
+extern NSString *const kSnapshotLuck;
+
+extern NSString *const kPerk;
+extern NSString *const kPerkChange;
+extern NSString *const kPerkRankChange;
+
+typedef NS_ENUM(NSUInteger, PerkChange)
+{
+    PerkChangeAdded,
+    PerkChangeRemoved,
+    PerkChangeRankChanged,
+};
+
+
 @interface StatsSnapshot : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass
-- (BOOL)hasChangesFromSnapshot:(StatsSnapshot *)snapshot;
+- (NSDictionary *)changesSinceSnapshot:(StatsSnapshot *)snapshot;
 
 @end
 
