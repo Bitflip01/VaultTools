@@ -13,5 +13,6 @@
 
 @property (nonatomic, strong, readwrite) StatsSnapshot *snapshot;
 @property (nonatomic, strong, readwrite) NSDictionary *changes;
+@property (nonatomic, strong, readwrite) NSArray *keys;
 
 @end

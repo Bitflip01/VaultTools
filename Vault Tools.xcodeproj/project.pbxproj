@@ -109,6 +109,7 @@
 		FA2865981BC19E9E00D61C83 /* PerkDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865971BC19E9E00D61C83 /* PerkDescription.m */; settings = {ASSET_TAGS = (); }; };
 		FA28659A1BC1B9EB00D61C83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */; };
 		FAB331381BD9037400974A20 /* HistorySnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB331371BD9037400974A20 /* HistorySnapshot.m */; settings = {ASSET_TAGS = (); }; };
+		FAB3313B1BD9092200974A20 /* SnapshotChangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3313A1BD9092200974A20 /* SnapshotChangeCell.m */; settings = {ASSET_TAGS = (); }; };
 		FAD9F2D01BD3CA0A0049805C /* CharacterHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FAD9F2D31BD3CA8D0049805C /* SnapshotHistoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9F2D21BD3CA8D0049805C /* SnapshotHistoryHelper.m */; settings = {ASSET_TAGS = (); }; };
 		FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA2DAE1BBDAFD00096BC9D /* main.m */; };
@@ -279,6 +280,8 @@
 		FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FAB331361BD9037400974A20 /* HistorySnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistorySnapshot.h; sourceTree = "<group>"; };
 		FAB331371BD9037400974A20 /* HistorySnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistorySnapshot.m; sourceTree = "<group>"; };
+		FAB331391BD9092200974A20 /* SnapshotChangeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapshotChangeCell.h; sourceTree = "<group>"; };
+		FAB3313A1BD9092200974A20 /* SnapshotChangeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapshotChangeCell.m; sourceTree = "<group>"; };
 		FAD9F2CE1BD3CA0A0049805C /* CharacterHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterHistoryViewController.h; sourceTree = "<group>"; };
 		FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterHistoryViewController.m; sourceTree = "<group>"; };
 		FAD9F2D11BD3CA8D0049805C /* SnapshotHistoryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapshotHistoryHelper.h; sourceTree = "<group>"; };
@@ -575,6 +578,8 @@
 			children = (
 				FAD9F2CE1BD3CA0A0049805C /* CharacterHistoryViewController.h */,
 				FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */,
+				FAB331391BD9092200974A20 /* SnapshotChangeCell.h */,
+				FAB3313A1BD9092200974A20 /* SnapshotChangeCell.m */,
 				FAD9F2D11BD3CA8D0049805C /* SnapshotHistoryHelper.h */,
 				FAD9F2D21BD3CA8D0049805C /* SnapshotHistoryHelper.m */,
 				FAB331361BD9037400974A20 /* HistorySnapshot.h */,
@@ -609,12 +614,12 @@
 		FADA2DAC1BBDAFD00096BC9D /* Vault 111 */ = {
 			isa = PBXGroup;
 			children = (
-				FAD9F2CA1BD3C9BF0049805C /* History */,
 				FA1D50721BC31D4100F850A8 /* Data */,
 				FADA2DB01BBDAFD00096BC9D /* AppDelegate.h */,
 				FADA2DB11BBDAFD00096BC9D /* AppDelegate.m */,
 				FA0890971BCAF903003413B0 /* VATabBarController.h */,
 				FA0890981BCAF903003413B0 /* VATabBarController.m */,
+				FAD9F2CA1BD3C9BF0049805C /* History */,
 				FA08909D1BCB99B2003413B0 /* Loading */,
 				FA088FEA1BC936D9003413B0 /* Character */,
 				FA088FE41BC7D2F3003413B0 /* SPECIAL */,
@@ -975,6 +980,7 @@
 				FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */,
 				FAE9779E1BD10B7700F5526E /* CharacterStatsCell.m in Sources */,
 				FA0890961BCAF2AF003413B0 /* SpecialCollectionViewCell.m in Sources */,
+				FAB3313B1BD9092200974A20 /* SnapshotChangeCell.m in Sources */,
 				FA2865921BC058E700D61C83 /* PerksCollectionViewLayout.m in Sources */,
 				FAE977A11BD12C0E00F5526E /* SPECIALBarView.m in Sources */,
 				FADA2DAF1BBDAFD00096BC9D /* main.m in Sources */,

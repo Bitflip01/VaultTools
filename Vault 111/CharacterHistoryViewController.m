@@ -7,8 +7,15 @@
 //
 
 #import "CharacterHistoryViewController.h"
+#import "SnapshotHistoryHelper.h"
+#import "HistorySnapshot.h"
+#import "Character.h"
+#import "CharacterManager.h"
+#import "SnapshotChangeCell.h"
 
 @interface CharacterHistoryViewController ()
+
+@property (nonatomic, strong, readwrite) NSArray *snapshots;
 
 @end
 
@@ -18,11 +25,10 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    Character *curChar = [CharacterManager sharedCharacterManager].currentCharacter;
+    [curChar createSnapshotForCurrentLevel];
+    [curChar save];
+    self.snapshots = [SnapshotHistoryHelper snapshotsForHistoryFromSnapshots:[curChar.snapshots allObjects]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,25 +40,125 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return self.snapshots.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    HistorySnapshot *snapshot = self.snapshots[section];
+    if (snapshot.changes[kPerkChanges] && snapshot.changes.count > 0)
+    {
+        return snapshot.keys.count + [snapshot.changes[kPerkChanges] count] - 1;
+    }
+    else
+    {
+        return snapshot.keys.count;
+    }
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SnapshotChangeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SnapshotChangeCell" forIndexPath:indexPath];
+    HistorySnapshot *snapshot = self.snapshots[indexPath.section];
+    NSString *key;
+    if (indexPath.row < snapshot.keys.count)
+    {
+        key = snapshot.keys[indexPath.row];
+    }
+    else
+    {
+        key = kPerkChanges;
+    }
     
-    // Configure the cell...
+    NSString *fullChangeString;
+    NSString *changeTypeString;
+    if (![key isEqualToString:kPerkChanges])
+    {
+        NSDictionary *changeDict = snapshot.changes[key];
+        NSInteger changeValue = [changeDict[kSpecialChangeRelative] integerValue];
+        NSInteger absoluteValue = [changeDict[kSpecialChangeAbsolute] integerValue];
+        changeTypeString = [self stringForRelativeChange:changeValue];
+        
+        NSString *special;
+        if ([key isEqualToString:kSnapshotStrength])
+        {
+            special = @"strength";
+        }
+        else if ([key isEqualToString:kSnapshotPerception])
+        {
+            special = @"perception";
+        }
+        else if ([key isEqualToString:kSnapshotEndurance])
+        {
+            special = @"endurance";
+        }
+        else if ([key isEqualToString:kSnapshotCharisma])
+        {
+            special = @"charisma";
+        }
+        else if ([key isEqualToString:kSnapshotIntelligence])
+        {
+            special = @"intelligence";
+        }
+        else if ([key isEqualToString:kSnapshotAgility])
+        {
+            special = @"agility";
+        }
+        else if ([key isEqualToString:kSnapshotLuck])
+        {
+            special = @"luck";
+        }
+        
+        fullChangeString = [NSString stringWithFormat:@"%@ %@ by %ld to %ld", changeTypeString, special, labs(changeValue), absoluteValue];
+    }
+    else
+    {
+        NSArray *perkChanges = snapshot.changes[kPerkChanges];
+        NSDictionary *perkChange = perkChanges[indexPath.row - (snapshot.keys.count - 1)];
+        
+        if ([perkChange[kPerkChange] integerValue] == PerkChangeAdded)
+        {
+            fullChangeString = [NSString stringWithFormat:@"Added Perk %@", perkChange[kPerk]];
+        }
+        else if ([perkChange[kPerkChange] integerValue] == PerkChangeRemoved)
+        {
+            fullChangeString = [NSString stringWithFormat:@"Removed Perk %@", perkChange[kPerk]];
+        }
+        else if ([perkChange[kPerkChange] integerValue] == PerkChangeRankChanged)
+        {
+            NSInteger perkRankChange = [perkChange[kPerkRankChangeRelative] integerValue];
+            NSInteger perkRankChangeAbsolute = [perkChange[kPerkRankChangeAbsolute] integerValue];
+            changeTypeString = [self stringForRelativeChange:perkRankChange];
+            fullChangeString = [NSString stringWithFormat:@"%@ rank of perk %@ by %ld to %ld",
+                                changeTypeString,
+                                perkChange[kPerk],
+                                perkRankChange,
+                                perkRankChangeAbsolute];
+        }
+    }
+    
+    
+    cell.changeLabel.text = fullChangeString;
     
     return cell;
 }
-*/
+
+- (NSString *)stringForRelativeChange:(NSInteger)change
+{
+    if (change > 0)
+    {
+        return @"Increased";
+    }
+    else
+    {
+        return @"Decreased";
+    }
+}
+
+- (IBAction)cancelTapped:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 /*
 // Override to support conditional editing of the table view.

@@ -23,9 +23,14 @@ extern NSString *const kSnapshotIntelligence;
 extern NSString *const kSnapshotAgility;
 extern NSString *const kSnapshotLuck;
 
+extern NSString *const kSpecialChangeRelative;
+extern NSString *const kSpecialChangeAbsolute;
+
 extern NSString *const kPerk;
+extern NSString *const kPerkChanges;
 extern NSString *const kPerkChange;
-extern NSString *const kPerkRankChange;
+extern NSString *const kPerkRankChangeRelative;
+extern NSString *const kPerkRankChangeAbsolute;
 
 typedef NS_ENUM(NSUInteger, PerkChange)
 {
@@ -39,6 +44,7 @@ typedef NS_ENUM(NSUInteger, PerkChange)
 
 // Insert code here to declare functionality of your managed object subclass
 - (NSDictionary *)changesSinceSnapshot:(StatsSnapshot *)snapshot;
+- (NSDictionary *)dictionaryRepresentation;
 
 @end
 

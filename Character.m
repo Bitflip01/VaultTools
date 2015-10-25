@@ -81,6 +81,25 @@
     }
 }
 
+- (void)createSnapshotForCurrentLevel
+{
+    StatsSnapshot *snapshot = [self findSnapshotForLevel:[self.level integerValue]];
+    if (snapshot)
+    {
+        for (Perk *perk in [snapshot.perks copy])
+        {
+            [perk MR_deleteEntity];
+            [snapshot removePerksObject:perk];
+        }
+        
+        [self fillSnapshotWithCurrentStats:snapshot];
+    }
+    else
+    {
+        [self createSnapshot];
+    }
+}
+
 - (void)setSpecial:(SPECIAL *)special
 {
     NSInteger diff = 0;
@@ -174,9 +193,8 @@
     [self setupDefaultWithName:self.name];
 }
 
-- (void)createSnapshot
+- (void)fillSnapshotWithCurrentStats:(StatsSnapshot *)snapshot
 {
-    StatsSnapshot *snapshot = [StatsSnapshot MR_createEntity];
     snapshot.level = @([self.level integerValue]);
     snapshot.strength = @([self.strength integerValue]);
     snapshot.perception = @([self.perception integerValue]);
@@ -195,6 +213,12 @@
         newPerk.rank = @([perk.rank integerValue]);
         [snapshot addPerksObject:newPerk];
     }
+}
+
+- (void)createSnapshot
+{
+    StatsSnapshot *snapshot = [StatsSnapshot MR_createEntity];
+    [self fillSnapshotWithCurrentStats:snapshot];
     
     [self addSnapshotsObject:snapshot];
 }
