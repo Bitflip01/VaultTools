@@ -11,6 +11,7 @@
 #import "PerkDescription.h"
 #import "PerkRank.h"
 #import "StatsSnapshot.h"
+#import "HistorySnapshot.h"
 
 #define START_SPECIAL_POINTS 21
 
@@ -81,23 +82,12 @@
     }
 }
 
-- (void)createSnapshotForCurrentLevel
+- (StatsSnapshot *)snapshotForCurrentLevel
 {
-    StatsSnapshot *snapshot = [self findSnapshotForLevel:[self.level integerValue]];
-    if (snapshot)
-    {
-        for (Perk *perk in [snapshot.perks copy])
-        {
-            [perk MR_deleteEntity];
-            [snapshot removePerksObject:perk];
-        }
-        
-        [self fillSnapshotWithCurrentStats:snapshot];
-    }
-    else
-    {
-        [self createSnapshot];
-    }
+    StatsSnapshot *snapshot = [StatsSnapshot MR_createEntity];
+    
+    [self fillSnapshotWithCurrentStats:snapshot];
+    return snapshot;
 }
 
 - (void)setSpecial:(SPECIAL *)special
@@ -261,9 +251,9 @@
                 
                 [perk MR_deleteEntity];
             }
-
-            [snapshot MR_deleteEntity];
+            
             [self removeSnapshotsObject:snapshot];
+            [snapshot MR_deleteEntity];
         }
     }
 }

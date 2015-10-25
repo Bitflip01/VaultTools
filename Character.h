@@ -13,6 +13,7 @@
 #import "PerkDescription.h"
 
 @class StatsSnapshot;
+@class HistorySnapshot;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)reset;
 - (void)levelUp;
 - (void)levelDown;
-- (void)createSnapshotForCurrentLevel;
+- (StatsSnapshot *)snapshotForCurrentLevel;
 
 /**
  * Validates perks to remove invalid ones and return the corresponding perk points.

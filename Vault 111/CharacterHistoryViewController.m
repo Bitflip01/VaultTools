@@ -16,6 +16,7 @@
 @interface CharacterHistoryViewController ()
 
 @property (nonatomic, strong, readwrite) NSArray *snapshots;
+@property (nonatomic, strong, readwrite) StatsSnapshot *createdSnapshot;
 
 @end
 
@@ -24,11 +25,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self createSnapshots];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    for (Perk *perk in self.createdSnapshot.perks)
+    {
+        [perk MR_deleteEntity];
+    }
+    [self.createdSnapshot MR_deleteEntity];
+}
+
+- (void)createSnapshots
+{
     Character *curChar = [CharacterManager sharedCharacterManager].currentCharacter;
-    [curChar createSnapshotForCurrentLevel];
-    [curChar save];
-    self.snapshots = [SnapshotHistoryHelper snapshotsForHistoryFromSnapshots:[curChar.snapshots allObjects]];
+    NSMutableArray *curCharSnapshots = [NSMutableArray arrayWithArray:[curChar.snapshots allObjects]];
+    self.createdSnapshot = [curChar snapshotForCurrentLevel];
+    [curCharSnapshots addObject:self.createdSnapshot];
+    self.snapshots = [SnapshotHistoryHelper snapshotsForHistoryFromSnapshots:curCharSnapshots];
 }
 
 - (void)didReceiveMemoryWarning {
