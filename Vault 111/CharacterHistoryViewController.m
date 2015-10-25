@@ -71,6 +71,13 @@
     }
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    HistorySnapshot *snapshot = self.snapshots[section];
+    NSInteger level = [snapshot.snapshot.level integerValue];
+    return [NSString stringWithFormat:@"Level %ld", level];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SnapshotChangeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SnapshotChangeCell" forIndexPath:indexPath];
