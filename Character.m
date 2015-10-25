@@ -251,31 +251,6 @@
             self.perkPoints = @([snapshot.perkPoints integerValue]);
             self.specialPoints = @([snapshot.specialPoints integerValue]);
             
-//            for (Perk *perk in [self.perks copy])
-//            {
-//                // Compare snapshot and current state and remove perks that are not in the snapshot
-//                NSSet *snapshotPerks = [snapshot.perks objectsPassingTest:^BOOL(Perk * _Nonnull obj, BOOL * _Nonnull stop) {
-//                    if ([obj.name isEqualToString:perk.name])
-//                    {
-//                        *stop = YES;
-//                        return YES;
-//                    }
-//                    return NO;
-//                }];
-//                if (snapshotPerks.count == 0)
-//                {
-//                    [self removePerksObject:perk];
-//                    [perk MR_deleteEntity];
-//                }
-//                else
-//                {
-//                    Perk *snapshotPerk = [snapshotPerks anyObject];
-//                    if ([perk.rank integerValue] != [snapshotPerk.rank integerValue])
-//                    {
-//                        perk.rank = @([snapshotPerk.rank integerValue]);
-//                    }
-//                }
-//            }
             [self removeAllPerks];
             for (Perk *perk in [snapshot.perks copy])
             {
