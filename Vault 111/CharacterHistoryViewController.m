@@ -147,7 +147,7 @@
             fullChangeString = [NSString stringWithFormat:@"%@ rank of perk %@ by %ld to %ld",
                                 changeTypeString,
                                 perkChange[kPerk],
-                                perkRankChange,
+                                labs(perkRankChange),
                                 perkRankChangeAbsolute];
         }
     }
