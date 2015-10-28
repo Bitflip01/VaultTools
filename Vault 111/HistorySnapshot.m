@@ -45,4 +45,10 @@
     return [order[key] integerValue];
 }
 
+- (BOOL)hasSPECIALChanges
+{
+    return (self.changes[kSnapshotStrength] || self.changes[kSnapshotPerception] || self.changes[kSnapshotEndurance] || self.changes[kSnapshotCharisma] ||
+            self.changes[kSnapshotIntelligence] || self.changes[kSnapshotAgility] || self.changes[kSnapshotLuck]);
+}
+
 @end

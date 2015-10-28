@@ -108,6 +108,8 @@
 		FA2865951BC0692B00D61C83 /* PerkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865941BC0692B00D61C83 /* PerkCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA2865981BC19E9E00D61C83 /* PerkDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865971BC19E9E00D61C83 /* PerkDescription.m */; settings = {ASSET_TAGS = (); }; };
 		FA28659A1BC1B9EB00D61C83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */; };
+		FA536EFF1BE0A15B00618BE1 /* HistorySectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA536EFE1BE0A15B00618BE1 /* HistorySectionHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		FA536F011BE0A16B00618BE1 /* HistorySectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA536F001BE0A16B00618BE1 /* HistorySectionHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
 		FAB331381BD9037400974A20 /* HistorySnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB331371BD9037400974A20 /* HistorySnapshot.m */; settings = {ASSET_TAGS = (); }; };
 		FAB3313B1BD9092200974A20 /* SnapshotChangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3313A1BD9092200974A20 /* SnapshotChangeCell.m */; settings = {ASSET_TAGS = (); }; };
 		FAD9F2D01BD3CA0A0049805C /* CharacterHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9F2CF1BD3CA0A0049805C /* CharacterHistoryViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -278,6 +280,9 @@
 		FA2865961BC19E9E00D61C83 /* PerkDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerkDescription.h; sourceTree = "<group>"; };
 		FA2865971BC19E9E00D61C83 /* PerkDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerkDescription.m; sourceTree = "<group>"; };
 		FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FA536EFD1BE0A15B00618BE1 /* HistorySectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistorySectionHeaderView.h; sourceTree = "<group>"; };
+		FA536EFE1BE0A15B00618BE1 /* HistorySectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistorySectionHeaderView.m; sourceTree = "<group>"; };
+		FA536F001BE0A16B00618BE1 /* HistorySectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistorySectionHeaderView.xib; sourceTree = "<group>"; };
 		FAB331361BD9037400974A20 /* HistorySnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistorySnapshot.h; sourceTree = "<group>"; };
 		FAB331371BD9037400974A20 /* HistorySnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistorySnapshot.m; sourceTree = "<group>"; };
 		FAB331391BD9092200974A20 /* SnapshotChangeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapshotChangeCell.h; sourceTree = "<group>"; };
@@ -584,6 +589,9 @@
 				FAD9F2D21BD3CA8D0049805C /* SnapshotHistoryHelper.m */,
 				FAB331361BD9037400974A20 /* HistorySnapshot.h */,
 				FAB331371BD9037400974A20 /* HistorySnapshot.m */,
+				FA536EFD1BE0A15B00618BE1 /* HistorySectionHeaderView.h */,
+				FA536EFE1BE0A15B00618BE1 /* HistorySectionHeaderView.m */,
+				FA536F001BE0A16B00618BE1 /* HistorySectionHeaderView.xib */,
 			);
 			name = History;
 			sourceTree = "<group>";
@@ -864,6 +872,7 @@
 				FA0890341BCAD01D003413B0 /* MarineBoy.json in Resources */,
 				FA08904D1BCAD17F003413B0 /* Inspirational.json in Resources */,
 				FA0890791BCAD3BE003413B0 /* Escape.json in Resources */,
+				FA536F011BE0A16B00618BE1 /* HistorySectionHeaderView.xib in Resources */,
 				FA0890041BCACCA0003413B0 /* Armorer.json in Resources */,
 				FA088FE91BC93278003413B0 /* Ressources.xcassets in Resources */,
 				FA08908A1BCAD490003413B0 /* KillShot.json in Resources */,
@@ -976,6 +985,7 @@
 				FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */,
 				FAD9F2D31BD3CA8D0049805C /* SnapshotHistoryHelper.m in Sources */,
 				FAE977AF1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m in Sources */,
+				FA536EFF1BE0A15B00618BE1 /* HistorySectionHeaderView.m in Sources */,
 				FA0890A91BCD6C27003413B0 /* CharacterResetCell.m in Sources */,
 				FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */,
 				FAE9779E1BD10B7700F5526E /* CharacterStatsCell.m in Sources */,

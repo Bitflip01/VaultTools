@@ -12,6 +12,7 @@
 #import "Character.h"
 #import "CharacterManager.h"
 #import "SnapshotChangeCell.h"
+#import "HistorySectionHeaderView.h"
 
 @interface CharacterHistoryViewController ()
 
@@ -71,11 +72,42 @@
     }
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     HistorySnapshot *snapshot = self.snapshots[section];
-    NSInteger level = [snapshot.snapshot.level integerValue];
-    return [NSString stringWithFormat:@"Level %ld", level];
+    if ([snapshot hasSPECIALChanges])
+    {
+        return 45;
+    }
+    else
+    {
+        return 25;
+    }
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    HistorySnapshot *snapshot = self.snapshots[section];
+    HistorySectionHeaderView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"HistorySectionHeaderView" owner:self options:nil] objectAtIndex:0];
+    headerView.levelLabel.text = [NSString stringWithFormat:@"Level %ld", [snapshot.snapshot.level integerValue]];
+    if ([snapshot hasSPECIALChanges])
+    {
+        headerView.specialOverviewLabel.text = [NSString stringWithFormat:@"S: %ld  P: %ld  E: %ld  C: %ld  I:%ld  A: %ld  L: %ld",
+                                                [snapshot.snapshot.strength integerValue],
+                                                [snapshot.snapshot.perception integerValue],
+                                                [snapshot.snapshot.endurance integerValue],
+                                                [snapshot.snapshot.charisma integerValue],
+                                                [snapshot.snapshot.intelligence integerValue],
+                                                [snapshot.snapshot.agility integerValue],
+                                                [snapshot.snapshot.luck integerValue]];
+        headerView.specialOverviewLabel.hidden = NO;
+    }
+    else
+    {
+        headerView.specialOverviewLabel.hidden = YES;
+    }
+    
+    return headerView;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

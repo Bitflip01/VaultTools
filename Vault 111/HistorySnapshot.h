@@ -15,4 +15,6 @@
 @property (nonatomic, strong, readwrite) NSDictionary *changes;
 @property (nonatomic, strong, readwrite) NSArray *keys;
 
+- (BOOL)hasSPECIALChanges;
+
 @end
