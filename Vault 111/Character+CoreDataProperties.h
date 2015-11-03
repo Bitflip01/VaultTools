@@ -2,7 +2,7 @@
 //  Character+CoreDataProperties.h
 //  
 //
-//  Created by Alexander Heemann on 16/10/15.
+//  Created by Alexander Heemann on 03/11/15.
 //
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu

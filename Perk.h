@@ -10,6 +10,8 @@
 #import <CoreData/CoreData.h>
 #import "PerkDescription.h"
 
+@class StatsSnapshot;
+@class Character;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Perk : NSManagedObject

@@ -98,7 +98,6 @@
 		FA1D50771BC401AF00F850A8 /* PerksLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D50761BC401AF00F850A8 /* PerksLoader.m */; settings = {ASSET_TAGS = (); }; };
 		FA1D50801BC5039C00F850A8 /* PerkRank.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1D507F1BC5039C00F850A8 /* PerkRank.m */; settings = {ASSET_TAGS = (); }; };
 		FA28657B1BBF29EF00D61C83 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865751BBF29EF00D61C83 /* Character.m */; settings = {ASSET_TAGS = (); }; };
-		FA28657C1BBF29EF00D61C83 /* Perk+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865771BBF29EF00D61C83 /* Perk+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		FA28657D1BBF29EF00D61C83 /* Perk.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865791BBF29EF00D61C83 /* Perk.m */; settings = {ASSET_TAGS = (); }; };
 		FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA28657F1BBF2A5900D61C83 /* CharacterManager.m */; settings = {ASSET_TAGS = (); }; };
 		FA28658A1BC01E4900D61C83 /* SPECIALFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865891BC01E4900D61C83 /* SPECIALFooterView.m */; settings = {ASSET_TAGS = (); }; };
@@ -108,6 +107,9 @@
 		FA2865951BC0692B00D61C83 /* PerkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865941BC0692B00D61C83 /* PerkCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FA2865981BC19E9E00D61C83 /* PerkDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2865971BC19E9E00D61C83 /* PerkDescription.m */; settings = {ASSET_TAGS = (); }; };
 		FA28659A1BC1B9EB00D61C83 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */; };
+		FA364C501BE8CEB9009BC0F3 /* Perk+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA364C4B1BE8CEB9009BC0F3 /* Perk+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		FA364C511BE8CEB9009BC0F3 /* Character+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA364C4D1BE8CEB9009BC0F3 /* Character+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		FA364C521BE8CEB9009BC0F3 /* StatsSnapshot+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA364C4F1BE8CEB9009BC0F3 /* StatsSnapshot+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		FA536EFF1BE0A15B00618BE1 /* HistorySectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA536EFE1BE0A15B00618BE1 /* HistorySectionHeaderView.m */; settings = {ASSET_TAGS = (); }; };
 		FA536F011BE0A16B00618BE1 /* HistorySectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA536F001BE0A16B00618BE1 /* HistorySectionHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
 		FAB331381BD9037400974A20 /* HistorySnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB331371BD9037400974A20 /* HistorySnapshot.m */; settings = {ASSET_TAGS = (); }; };
@@ -128,8 +130,6 @@
 		FAE9779E1BD10B7700F5526E /* CharacterStatsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE9779D1BD10B7700F5526E /* CharacterStatsCell.m */; settings = {ASSET_TAGS = (); }; };
 		FAE977A11BD12C0E00F5526E /* SPECIALBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977A01BD12C0E00F5526E /* SPECIALBarView.m */; settings = {ASSET_TAGS = (); }; };
 		FAE977A71BD155BE00F5526E /* StatsSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977A51BD155BE00F5526E /* StatsSnapshot.m */; settings = {ASSET_TAGS = (); }; };
-		FAE977AF1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977AC1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		FAE977B01BD156E500F5526E /* Character+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE977AE1BD156E500F5526E /* Character+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,8 +261,6 @@
 		FA1D507F1BC5039C00F850A8 /* PerkRank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerkRank.m; sourceTree = "<group>"; };
 		FA2865741BBF29EF00D61C83 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Character.h; path = ../Character.h; sourceTree = "<group>"; };
 		FA2865751BBF29EF00D61C83 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Character.m; path = ../Character.m; sourceTree = "<group>"; };
-		FA2865761BBF29EF00D61C83 /* Perk+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Perk+CoreDataProperties.h"; path = "../Perk+CoreDataProperties.h"; sourceTree = "<group>"; };
-		FA2865771BBF29EF00D61C83 /* Perk+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Perk+CoreDataProperties.m"; path = "../Perk+CoreDataProperties.m"; sourceTree = "<group>"; };
 		FA2865781BBF29EF00D61C83 /* Perk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Perk.h; path = ../Perk.h; sourceTree = "<group>"; };
 		FA2865791BBF29EF00D61C83 /* Perk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Perk.m; path = ../Perk.m; sourceTree = "<group>"; };
 		FA28657E1BBF2A5900D61C83 /* CharacterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterManager.h; sourceTree = "<group>"; };
@@ -280,6 +278,13 @@
 		FA2865961BC19E9E00D61C83 /* PerkDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerkDescription.h; sourceTree = "<group>"; };
 		FA2865971BC19E9E00D61C83 /* PerkDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerkDescription.m; sourceTree = "<group>"; };
 		FA2865991BC1B9EB00D61C83 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FA364C461BE8CBA6009BC0F3 /* Vault111Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Vault111Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		FA364C4A1BE8CEB9009BC0F3 /* Perk+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Perk+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FA364C4B1BE8CEB9009BC0F3 /* Perk+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Perk+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FA364C4C1BE8CEB9009BC0F3 /* Character+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Character+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FA364C4D1BE8CEB9009BC0F3 /* Character+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Character+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FA364C4E1BE8CEB9009BC0F3 /* StatsSnapshot+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StatsSnapshot+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FA364C4F1BE8CEB9009BC0F3 /* StatsSnapshot+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StatsSnapshot+CoreDataProperties.m"; sourceTree = "<group>"; };
 		FA536EFD1BE0A15B00618BE1 /* HistorySectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistorySectionHeaderView.h; sourceTree = "<group>"; };
 		FA536EFE1BE0A15B00618BE1 /* HistorySectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistorySectionHeaderView.m; sourceTree = "<group>"; };
 		FA536F001BE0A16B00618BE1 /* HistorySectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistorySectionHeaderView.xib; sourceTree = "<group>"; };
@@ -318,10 +323,6 @@
 		FAE977A01BD12C0E00F5526E /* SPECIALBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPECIALBarView.m; sourceTree = "<group>"; };
 		FAE977A41BD155BE00F5526E /* StatsSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsSnapshot.h; sourceTree = "<group>"; };
 		FAE977A51BD155BE00F5526E /* StatsSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsSnapshot.m; sourceTree = "<group>"; };
-		FAE977AB1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StatsSnapshot+CoreDataProperties.h"; sourceTree = "<group>"; };
-		FAE977AC1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StatsSnapshot+CoreDataProperties.m"; sourceTree = "<group>"; };
-		FAE977AD1BD156E500F5526E /* Character+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Character+CoreDataProperties.h"; sourceTree = "<group>"; };
-		FAE977AE1BD156E500F5526E /* Character+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Character+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -675,16 +676,16 @@
 		FADA2DEF1BBDB6A80096BC9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FAE977AB1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.h */,
-				FAE977AC1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m */,
-				FAE977AD1BD156E500F5526E /* Character+CoreDataProperties.h */,
-				FAE977AE1BD156E500F5526E /* Character+CoreDataProperties.m */,
+				FA364C4A1BE8CEB9009BC0F3 /* Perk+CoreDataProperties.h */,
+				FA364C4B1BE8CEB9009BC0F3 /* Perk+CoreDataProperties.m */,
+				FA364C4C1BE8CEB9009BC0F3 /* Character+CoreDataProperties.h */,
+				FA364C4D1BE8CEB9009BC0F3 /* Character+CoreDataProperties.m */,
+				FA364C4E1BE8CEB9009BC0F3 /* StatsSnapshot+CoreDataProperties.h */,
+				FA364C4F1BE8CEB9009BC0F3 /* StatsSnapshot+CoreDataProperties.m */,
 				FAE977A41BD155BE00F5526E /* StatsSnapshot.h */,
 				FAE977A51BD155BE00F5526E /* StatsSnapshot.m */,
 				FA2865741BBF29EF00D61C83 /* Character.h */,
 				FA2865751BBF29EF00D61C83 /* Character.m */,
-				FA2865761BBF29EF00D61C83 /* Perk+CoreDataProperties.h */,
-				FA2865771BBF29EF00D61C83 /* Perk+CoreDataProperties.m */,
 				FA2865781BBF29EF00D61C83 /* Perk.h */,
 				FA2865791BBF29EF00D61C83 /* Perk.m */,
 				FA2865961BC19E9E00D61C83 /* PerkDescription.h */,
@@ -954,8 +955,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA088FE31BC7D204003413B0 /* RankTableViewCell.m in Sources */,
-				FA28657C1BBF29EF00D61C83 /* Perk+CoreDataProperties.m in Sources */,
 				FA088FF01BC95947003413B0 /* CharacterViewController.m in Sources */,
+				FA364C511BE8CEB9009BC0F3 /* Character+CoreDataProperties.m in Sources */,
 				FAE977A71BD155BE00F5526E /* StatsSnapshot.m in Sources */,
 				FA088FF91BCA8153003413B0 /* CharacterPerkCell.m in Sources */,
 				FA0890A61BCD4415003413B0 /* NewCharacterCell.m in Sources */,
@@ -972,9 +973,9 @@
 				FA088FE71BC7FA7B003413B0 /* TakePerkTableViewCell.m in Sources */,
 				FAD9F2D01BD3CA0A0049805C /* CharacterHistoryViewController.m in Sources */,
 				FA0890A01BCB99CE003413B0 /* LoadCharacterViewController.m in Sources */,
-				FAE977B01BD156E500F5526E /* Character+CoreDataProperties.m in Sources */,
 				FA0890991BCAF903003413B0 /* VATabBarController.m in Sources */,
 				FA28658A1BC01E4900D61C83 /* SPECIALFooterView.m in Sources */,
+				FA364C521BE8CEB9009BC0F3 /* StatsSnapshot+CoreDataProperties.m in Sources */,
 				FA088FE01BC7D1DA003413B0 /* PerkDescriptionCell.m in Sources */,
 				FA08909C1BCAFBB6003413B0 /* CharacterSpecialCell.m in Sources */,
 				FA28657D1BBF29EF00D61C83 /* Perk.m in Sources */,
@@ -984,11 +985,11 @@
 				FA088FF61BCA5D23003413B0 /* CharacterNameCell.m in Sources */,
 				FA2865801BBF2A5900D61C83 /* CharacterManager.m in Sources */,
 				FAD9F2D31BD3CA8D0049805C /* SnapshotHistoryHelper.m in Sources */,
-				FAE977AF1BD156E500F5526E /* StatsSnapshot+CoreDataProperties.m in Sources */,
 				FA536EFF1BE0A15B00618BE1 /* HistorySectionHeaderView.m in Sources */,
 				FA0890A91BCD6C27003413B0 /* CharacterResetCell.m in Sources */,
 				FADA2DEE1BBDB6A20096BC9D /* SPECIAL.m in Sources */,
 				FAE9779E1BD10B7700F5526E /* CharacterStatsCell.m in Sources */,
+				FA364C501BE8CEB9009BC0F3 /* Perk+CoreDataProperties.m in Sources */,
 				FA0890961BCAF2AF003413B0 /* SpecialCollectionViewCell.m in Sources */,
 				FAB3313B1BD9092200974A20 /* SnapshotChangeCell.m in Sources */,
 				FA2865921BC058E700D61C83 /* PerksCollectionViewLayout.m in Sources */,
@@ -1256,9 +1257,10 @@
 		FADA2DE31BBDB0550096BC9D /* Vault111Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				FA364C461BE8CBA6009BC0F3 /* Vault111Model 2.xcdatamodel */,
 				FADA2DE41BBDB0550096BC9D /* Vault111Model.xcdatamodel */,
 			);
-			currentVersion = FADA2DE41BBDB0550096BC9D /* Vault111Model.xcdatamodel */;
+			currentVersion = FA364C461BE8CBA6009BC0F3 /* Vault111Model 2.xcdatamodel */;
 			path = Vault111Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

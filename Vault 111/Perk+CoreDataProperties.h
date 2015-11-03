@@ -1,9 +1,9 @@
 //
 //  Perk+CoreDataProperties.h
-//  Vault 111
+//  
 //
-//  Created by Alexander Heemann on 02/10/15.
-//  Copyright © 2015 Alexander Heemann. All rights reserved.
+//  Created by Alexander Heemann on 03/11/15.
+//
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
 //  to delete and recreate this implementation file for your updated model.
@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *name;
 @property (nullable, nonatomic, retain) NSNumber *rank;
 @property (nullable, nonatomic, retain) NSNumber *specialType;
+@property (nullable, nonatomic, retain) Character *character;
+@property (nullable, nonatomic, retain) StatsSnapshot *snapshot;
 
 @end
 

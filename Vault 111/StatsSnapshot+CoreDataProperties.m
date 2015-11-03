@@ -2,7 +2,7 @@
 //  StatsSnapshot+CoreDataProperties.m
 //  
 //
-//  Created by Alexander Heemann on 16/10/15.
+//  Created by Alexander Heemann on 03/11/15.
 //
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,16 +13,17 @@
 
 @implementation StatsSnapshot (CoreDataProperties)
 
-@dynamic level;
-@dynamic strength;
-@dynamic perception;
-@dynamic endurance;
-@dynamic charisma;
-@dynamic intelligence;
 @dynamic agility;
+@dynamic charisma;
+@dynamic endurance;
+@dynamic intelligence;
+@dynamic level;
 @dynamic luck;
-@dynamic specialPoints;
+@dynamic perception;
 @dynamic perkPoints;
+@dynamic specialPoints;
+@dynamic strength;
 @dynamic perks;
+@dynamic character;
 
 @end

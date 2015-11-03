@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 
 @class Perk;
+@class Character;
 
 NS_ASSUME_NONNULL_BEGIN
 
