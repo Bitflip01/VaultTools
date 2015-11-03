@@ -148,7 +148,21 @@ typedef NS_ENUM(NSUInteger, PerksDetailViewControllerSection)
             RankTableViewCell *rankTableViewCell = (RankTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:@"RankTableViewCell"];
             
             PerkRank *rank = self.perkDescription.ranks[indexPath.row];
-            rankTableViewCell.rankDescriptionLabel.text = rank.rankDescription;
+            NSMutableAttributedString *rankDescription = [[NSMutableAttributedString alloc] initWithString:rank.rankDescription];
+            
+            [rankDescription addAttribute:NSForegroundColorAttributeName
+                             value:[UIColor flatWhiteColor]
+                             range:NSMakeRange(0, rank.rankDescription.length)];
+            
+            if (rank.minLevel > 0)
+            {
+                NSString *levelString = [NSString stringWithFormat:@" (Level: %ld)", rank.minLevel];
+                NSMutableAttributedString *levelAttrString = [[NSMutableAttributedString alloc] initWithString:levelString];
+                [levelAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor flatSkyBlueColor] range:NSMakeRange(0, levelString.length)];
+                [rankDescription appendAttributedString:levelAttrString];
+            }
+            
+            rankTableViewCell.rankDescriptionLabel.attributedText = rankDescription;
             rankTableViewCell.rankTaken = self.perkDescription.rank > indexPath.row;
             cell = rankTableViewCell;
             break;
