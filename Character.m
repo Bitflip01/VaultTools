@@ -365,7 +365,7 @@
 
 - (NSInteger)carryWeight
 {
-    return 180 + [self.strength integerValue] * 20;
+    return 200 + [self.strength integerValue] * 10;
 }
 
 - (NSInteger)actionPoints
