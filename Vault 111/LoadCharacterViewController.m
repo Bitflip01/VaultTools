@@ -129,18 +129,7 @@ typedef NS_ENUM(NSUInteger, LoadCharacterViewControllerSection)
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
         Character *character = self.allCharacters[indexPath.row];
-        for (Perk *perk in character.perks)
-        {
-            [perk MR_deleteEntity];
-        }
-        for (StatsSnapshot *snapshot in character.snapshots)
-        {
-            for (Perk *perk in snapshot.perks)
-            {
-                [perk MR_deleteEntity];
-            }
-            [snapshot MR_deleteEntity];
-        }
+        [character deleteSnapshotsAndPerks];
         [character MR_deleteEntity];
         [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
         [self.allCharacters removeObjectAtIndex:indexPath.row];

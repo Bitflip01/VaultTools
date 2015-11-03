@@ -172,14 +172,27 @@
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 }
 
-- (void)reset
+- (void)deleteSnapshotsAndPerks
 {
     for (Perk *perk in self.perks)
     {
         [perk MR_deleteEntity];
     }
+    for (StatsSnapshot *snapshot in self.snapshots)
+    {
+        for (Perk *perk in snapshot.perks)
+        {
+            [perk MR_deleteEntity];
+        }
+        [snapshot MR_deleteEntity];
+    }
     [self removePerks:self.perks];
-    
+    [self removeSnapshots:self.snapshots];
+}
+
+- (void)reset
+{
+    [self deleteSnapshotsAndPerks];
     [self setupDefaultWithName:self.name];
 }
 

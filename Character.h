@@ -34,6 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)levelUp;
 - (void)levelDown;
 - (StatsSnapshot *)snapshotForCurrentLevel;
+- (void)deleteSnapshotsAndPerks;
 
 /**
  * Validates perks to remove invalid ones and return the corresponding perk points.
