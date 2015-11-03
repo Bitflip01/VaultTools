@@ -163,36 +163,44 @@
             special = @"luck";
         }
         
-        fullChangeString = [NSString stringWithFormat:@"%@ %@ by %ld to %ld", changeTypeString, special, labs(changeValue), absoluteValue];
+        NSInteger specialOriginal = absoluteValue - changeValue;
+        fullChangeString = [NSString stringWithFormat:@"%@ %@ from %ld to %ld", changeTypeString, special, specialOriginal, absoluteValue];
     }
     else
     {
         NSArray *perkChanges = snapshot.changes[kPerkChanges];
         NSDictionary *perkChange = perkChanges[indexPath.row - (snapshot.keys.count - 1)];
         
+        NSInteger perkRankChange = [perkChange[kPerkRankChangeRelative] integerValue];
+        NSInteger perkRankChangeAbsolute = [perkChange[kPerkRankChangeAbsolute] integerValue];
+        
         if ([perkChange[kPerkChange] integerValue] == PerkChangeAdded)
         {
-            fullChangeString = [NSString stringWithFormat:@"Added Perk %@", perkChange[kPerk]];
+            fullChangeString = [NSString stringWithFormat:@"Added perk %@", perkChange[kPerk]];
+            if (labs(perkRankChange) > 1)
+            {
+                fullChangeString = [NSString stringWithFormat:@"%@ and increased rank to %ld", fullChangeString, perkRankChangeAbsolute];
+            }
         }
         else if ([perkChange[kPerkChange] integerValue] == PerkChangeRemoved)
         {
-            fullChangeString = [NSString stringWithFormat:@"Removed Perk %@", perkChange[kPerk]];
+            fullChangeString = [NSString stringWithFormat:@"Removed perk %@", perkChange[kPerk]];
         }
         else if ([perkChange[kPerkChange] integerValue] == PerkChangeRankChanged)
         {
-            NSInteger perkRankChange = [perkChange[kPerkRankChangeRelative] integerValue];
-            NSInteger perkRankChangeAbsolute = [perkChange[kPerkRankChangeAbsolute] integerValue];
             changeTypeString = [self stringForRelativeChange:perkRankChange];
-            fullChangeString = [NSString stringWithFormat:@"%@ rank of perk %@ by %ld to %ld",
+            NSInteger perkRankOriginal = perkRankChangeAbsolute - perkRankChange;
+            fullChangeString = [NSString stringWithFormat:@"%@ rank of perk %@ from %ld to %ld",
                                 changeTypeString,
                                 perkChange[kPerk],
-                                labs(perkRankChange),
+                                perkRankOriginal,
                                 perkRankChangeAbsolute];
         }
     }
     
     
     cell.changeLabel.text = fullChangeString;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }

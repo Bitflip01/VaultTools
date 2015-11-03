@@ -106,6 +106,8 @@ NSString *const kPerkRankChangeAbsolute = @"kPerkRankChangeAbsolute";
         if (!otherPerk)
         {
             perkChangeDict[kPerkChange] = @(PerkChangeAdded);
+            perkChangeDict[kPerkRankChangeRelative] = perk.rank;
+            perkChangeDict[kPerkRankChangeAbsolute] = perk.rank;
             [perkChanges addObject:perkChangeDict];
         }
         else if (otherPerk.rank != perk.rank)
