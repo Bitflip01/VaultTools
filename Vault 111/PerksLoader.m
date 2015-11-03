@@ -64,6 +64,10 @@
 {
     NSString *strippedName = [name stringByReplacingOccurrencesOfString:@" " withString:@""];
     strippedName = [strippedName stringByReplacingOccurrencesOfString:@"." withString:@""];
+    if ([strippedName isEqualToString:@"ActionBoy/ActionGirl"])
+    {
+        strippedName = @"ActionBoy";
+    }
     NSString *filePath = [[NSBundle mainBundle] pathForResource:strippedName ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
