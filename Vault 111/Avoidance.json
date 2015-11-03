@@ -1,9 +1,0 @@
-{"name": "Avoidance",
-    "ranks": [{"rankDescription": "TBD",
-              "minLevel": 0},
-              ],
-    "maxRank": 1,
-    "minSpecial": 6,
-    "specialType": "agility",
-    "description": "TBD",
-}

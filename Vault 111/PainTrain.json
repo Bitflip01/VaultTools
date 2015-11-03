@@ -1,0 +1,13 @@
+{"name": "Pain Train",
+    "ranks": [{"rankDescription": "Choo Choo! All aboard! While wearing Power Armor,sprinting into enemies hurts and staggers them. (Robots and oversized enemies are immune to the stagger.)",
+              "minLevel": 0},
+              {"rankDescription": "Sprinting into enemies while wearing Power Armor now causes severe damage and a more powerful stagger. (Robots and oversized enemies are immune to the stagger.)",
+              "minLevel": 24},
+              {"rankDescription": "Sprinting into enemies while wearing Power Armor now causes massive damage and knocks them down. Impact landing near enemies inflicts even more damage.",
+              "minLevel": 50},
+              ],
+    "maxRank": 3,
+    "minSpecial": 10,
+    "specialType": "strength",
+    "description": "TBD",
+}

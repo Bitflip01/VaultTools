@@ -1,0 +1,13 @@
+{"name": "Blacksmith",
+    "ranks": [{"rankDescription": "Fire up the forge and gain access to base level and Rank 1 melee weapon mods.",
+              "minLevel": 0},
+              {"rankDescription": "You gain access to Rank 2 melee weapon mods.",
+              "minLevel": 0},
+              {"rankDescription": "You gain access to Rank 3 melee weapon mods.",
+              "minLevel": 0},
+              ],
+    "maxRank": 3,
+    "minSpecial": 4,
+    "specialType": "strength",
+    "description": "TBD",
+}

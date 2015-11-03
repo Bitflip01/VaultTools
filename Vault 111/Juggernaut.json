@@ -1,9 +1,0 @@
-{"name": "Juggernaut",
-    "ranks": [{"rankDescription": "TBD",
-              "minLevel": 0},
-              ],
-    "maxRank": 1,
-    "minSpecial": 10,
-    "specialType": "strength",
-    "description": "TBD",
-}

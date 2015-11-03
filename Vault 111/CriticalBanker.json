@@ -1,0 +1,13 @@
+{"name": "Critical Banker",
+    "ranks": [{"rankDescription": "You're a patient battlefield tactician, and can save a Critical Hit, to be used in V.A.T.S. when you need it most.",
+              "minLevel": 0},
+              {"rankDescription": "You can now save 2 Critical Hits, to be used in V.A.T.S. when you need them the most.",
+              "minLevel": 17},
+              {"rankDescription": "You can now save 3 Critical Hits, to be used in V.A.T.S. when you need them the most. Banking a Critical has a chance to save an additional Critical.",
+              "minLevel": 40},
+              ],
+    "maxRank": 3,
+    "minSpecial": 7,
+    "specialType": "luck",
+    "description": "TBD",
+}

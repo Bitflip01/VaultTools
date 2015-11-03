@@ -1,0 +1,13 @@
+{"name": "Moving Target",
+    "ranks": [{"rankDescription": "They can't hurt what they can't hit! Get 25+ Damage Resistance and 25+ Energy Resistance when you're sprinting.",
+              "minLevel": 0},
+              {"rankDescription": "You now get +50 Damage Resistance and +50 Energy Resistance when you're sprinting.",
+              "minLevel": 24},
+              {"rankDescription": "Sprinting costs 50% fewer Action Points.",
+              "minLevel": 44},
+              ],
+    "maxRank": 3,
+    "minSpecial": 6,
+    "specialType": "agility",
+    "description": "TBD",
+}

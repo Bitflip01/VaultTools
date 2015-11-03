@@ -1,0 +1,11 @@
+{"name": "SteadyAim",
+    "ranks": [{"rankDescription": "Stay on target! Hip-fire accuracy is improved when firing any gun.",
+              "minLevel": 0},
+              {"rankDescription": "Hip-fire accuracy is improved even more when firing any gun.",
+              "minLevel": 28},
+              ],
+    "maxRank": 2,
+    "minSpecial": 7,
+    "specialType": "strength",
+    "description": "TBD",
+}

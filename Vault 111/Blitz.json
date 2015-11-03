@@ -1,0 +1,11 @@
+{"name": "Blitz",
+    "ranks": [{"rankDescription": "Find the gap and make the tackle! V.A.T.S. melee distance is increased significantly.",
+              "minLevel": 0},
+              {"rankDescription": "V.A.T.S. melee distance is increased even more, and the farther the Blitz distance, the greater the damage.",
+              "minLevel": 29},
+              ],
+    "maxRank": 2,
+    "minSpecial": 9,
+    "specialType": "agility",
+    "description": "TBD",
+}

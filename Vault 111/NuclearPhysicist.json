@@ -1,0 +1,13 @@
+{"name": "Nuclear Physicist",
+    "ranks": [{"rankDescription": "You've learned to split the atom... and command it. Radiation weapons do 50% more damage and Fusion Cores last an extra 25% longer.",
+              "minLevel": 0},
+              {"rankDescription": "Radiation weapons now do double damage and Fusion Cores last an extra 50% longer.",
+              "minLevel": 14},
+              {"rankDescription": "Fusion Cores can be ejected from Power Armor like devastating grenades and Fusion Cores last twice as long.",
+              "minLevel": 26},
+              ],
+    "maxRank": 3,
+    "minSpecial": 9,
+    "specialType": "intelligence",
+    "description": "TBD",
+}

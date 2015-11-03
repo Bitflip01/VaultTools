@@ -1,0 +1,11 @@
+{"name": "Scrapper",
+    "ranks": [{"rankDescription": "Waste not, want not! You can salvage uncommon components like screws, aluminum, and copper when scrapping weapons and armor",
+              "minLevel": 0},
+              {"rankDescription": "You can salvage rare components like circuitry, nuclear material, and fiber optics when scrapping weapons and armor. Items with favorited components are highlighted.",
+              "minLevel": 0},
+              ],
+    "maxRank": 2,
+    "minSpecial": 5,
+    "specialType": "intelligence",
+    "description": "TBD",
+}

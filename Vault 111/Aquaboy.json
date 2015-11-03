@@ -1,0 +1,11 @@
+{"name": "Aquaboy",
+    "ranks": [{"rankDescription": "Water is your ally. You no longer take radiation damage from swimming, and can breath underwater.",
+              "minLevel": 0},
+              {"rankDescription": "You become totally undetectable while submerged.",
+              "minLevel": 0},
+              ],
+    "maxRank": 2,
+    "minSpecial": 5,
+    "specialType": "endurance",
+    "description": "TBD",
+}

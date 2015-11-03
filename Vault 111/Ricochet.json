@@ -1,0 +1,13 @@
+{"name": "Ricochet",
+    "ranks": [{"rankDescription": "What goes around comes around! Any enemy's ranged attacks will sometimes ricochet back and instantly kill them. The closer you are to death, the higher the chance.",
+              "minLevel": 0},
+              {"rankDescription": "There's an increased chance that an enemy's shot will ricochet back and kill them.",
+              "minLevel": 29},
+              {"rankDescription": "When an enemy's shot ricochets back and kills them, there is a chance your Critical meter gets filled.",
+              "minLevel": 50},
+              ],
+    "maxRank": 3,
+    "minSpecial": 10,
+    "specialType": "luck",
+    "description": "TBD",
+}

@@ -1,0 +1,11 @@
+{"name": "Penetrator",
+    "ranks": [{"rankDescription": "There's no place to hide! In V.A.T.S you can target an enemy's body parts that are blocked by cover, with a decrease in accuracy.",
+              "minLevel": 0},
+              {"rankDescription": "In V.A.T.S when you target an enemy's body parts that are blocked by cover, there is no decrease in accuracy.",
+              "minLevel": 28},
+              ],
+    "maxRank": 2,
+    "minSpecial": 9,
+    "specialType": "perception",
+    "description": "TBD",
+}

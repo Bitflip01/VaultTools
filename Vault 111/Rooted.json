@@ -1,0 +1,13 @@
+{"name": "Rooted",
+    "ranks": [{"rankDescription": "You're part tree! While standing still, you gain +25 Damage Resistance and your melee and unarmed attacks deal 25% more damage.",
+              "minLevel": 0},
+              {"rankDescription": "While standing still, you now gain +50 Damage Resistance and your melee and unarmed attacks deal 50% more damage.",
+              "minLevel": 22},
+              {"rankDescription": "While standing still, you may automatically disarm enemies that use melee weapons against you.",
+              "minLevel": 43},
+              ],
+    "maxRank": 3,
+    "minSpecial": 9,
+    "specialType": "strength",
+    "description": "TBD",
+}

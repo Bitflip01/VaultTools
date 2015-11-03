@@ -1,0 +1,13 @@
+{"name": "Ghoulish",
+    "ranks": [{"rankDescription": "Sure, you're still human - on the outside! Radiation now regenerates your lost Health.",
+              "minLevel": 0},
+              {"rankDescription": "Radiation now regenerates even more of your lost Health.",
+              "minLevel": 24},
+              {"rankDescription": "Radiation now regenerates even more of your lost Health, and some Feral Ghouls will randomly become friendly.",
+              "minLevel": 48},
+              ],
+    "maxRank": 3,
+    "minSpecial": 9,
+    "specialType": "endurance",
+    "description": "TBD",
+}

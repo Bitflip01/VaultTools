@@ -1,0 +1,13 @@
+{"name": "Lifegiver",
+    "ranks": [{"rankDescription": "You embody wellness! Instantly gain +20 maximum Health.",
+              "minLevel": 0},
+              {"rankDescription": "You instantly gain another +20 maximum Health.",
+              "minLevel": 8},
+              {"rankDescription": "You instantly gain another +20 maximum Health, and slowly regenerate lost Health.",
+              "minLevel": 0},
+              ],
+    "maxRank": 3,
+    "minSpecial": 3,
+    "specialType": "endurance",
+    "description": "TBD",
+}

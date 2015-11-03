@@ -1,0 +1,13 @@
+{"name": "Idiot Savant",
+    "ranks": [{"rankDescription": "You're not stupid! Just... different. Randomly receive 3x XP from any action, and the lower your Intelligence, the greater the chance.",
+              "minLevel": 0},
+              {"rankDescription": "You now randomly receive 5x XP from any action. The lower your Intelligence, the greater the chance.",
+              "minLevel": 0},
+              {"rankDescription": "Randomly receiving bonus XP from any action may trigger 3x XP for all kills for a short period of time. The lower your Intelligence, the greater the chance.",
+              "minLevel": 0},
+              ],
+    "maxRank": 3,
+    "minSpecial": 5,
+    "specialType": "luck",
+    "description": "TBD",
+}

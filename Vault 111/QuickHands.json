@@ -1,0 +1,11 @@
+{"name": "Quick Hands",
+    "ranks": [{"rankDescription": "In combat, there's no time to hesitate. You can reload all guns faster.",
+              "minLevel": 0},
+              {"rankDescription": "Reloading guns costs no Action Points in V.A.T.S.",
+              "minLevel": 23},
+              ],
+    "maxRank": 2,
+    "minSpecial": 8,
+    "specialType": "agility",
+    "description": "TBD",
+}
