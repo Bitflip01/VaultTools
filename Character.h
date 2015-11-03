@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)hasEnoughSpecialPointsForPerk:(PerkDescription *)perk;
 - (Perk *)perkForPerkDescription:(PerkDescription *)perkDescription;
 - (NSInteger)specialValueForType:(SPECIALType)type;
+- (BOOL)hasTakenPerkWithName:(NSString *)name;
 - (void)reset;
 - (void)levelUp;
 - (void)levelDown;

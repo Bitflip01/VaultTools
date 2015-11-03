@@ -358,9 +358,30 @@
     return YES;
 }
 
+- (BOOL)hasTakenPerkWithName:(NSString *)name
+{
+    return [self perkForName:name] != nil;
+}
+
+- (Perk *)perkForName:(NSString *)name
+{
+    NSSet<Perk *>* passingPerks = [self.perks objectsPassingTest:^BOOL(Perk * _Nonnull obj, BOOL * _Nonnull stop) {
+        if ([obj.name isEqualToString:name])
+        {
+            *stop = YES;
+            return YES;
+        }
+        return NO;
+    }];
+    
+    return [passingPerks anyObject];
+}
+
 - (NSInteger)health
 {
-    return 80 + [self.endurance integerValue] * 5;
+    Perk *lifegiver = [self perkForName:@"Lifegiver"];
+    
+    return 80 + [self.endurance integerValue] * 5 + ([lifegiver.rank integerValue] * 20);
 }
 
 - (NSInteger)carryWeight
