@@ -80,7 +80,7 @@
         perkCell.perk = perk;
         perkCell.perkTitleLabel.font = font;
         
-        perkCell.minWidthConstraint.constant = self.itemWidth;
+        perkCell.minWidthConstraint.constant = self.itemWidth - 2;
         
         if ([[CharacterManager sharedCharacterManager].currentCharacter hasEnoughSpecialPointsForPerk:perk])
         {
