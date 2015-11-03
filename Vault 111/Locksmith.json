@@ -1,3 +1,4 @@
+
 {"name": "Locksmith",
     "ranks": [{"rankDescription": "Your nimble fingers allow you to pick advanced locks",
               "minLevel": 0},
@@ -8,7 +9,7 @@
               {"rankDescription": "Your bobby pins never break during lockpicking.",
               "minLevel": 0},
               ],
-    "maxRank": 1,
+    "maxRank": 4,
     "minSpecial": 4,
     "specialType": "perception",
     "description": "TBD",
