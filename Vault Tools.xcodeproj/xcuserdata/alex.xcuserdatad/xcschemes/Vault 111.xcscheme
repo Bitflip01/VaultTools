@@ -106,6 +106,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Vault Tools"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

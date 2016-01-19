@@ -1,0 +1,19 @@
+//
+//  VaultTools-Prefix.pch
+//  Vault Tools
+//
+//  Created by Alexander Heemann on 03/10/15.
+//  Copyright © 2015 Alexander Heemann. All rights reserved.
+//
+
+#ifndef VaultTools_Prefix_pch
+#define VaultTools_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define MR_SHORTHAND 0
+#import <MagicalRecord/MagicalRecord.h>
+#import <ChameleonFramework/Chameleon.h>
+
+#endif /* VaultTools_Prefix_pch */
